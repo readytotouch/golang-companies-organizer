@@ -1,2 +1,1 @@
-# gocompanies
-Golang companies
+# Companies that use Golang
