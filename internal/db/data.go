@@ -184,6 +184,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "Dailymotion",
+			URL:  "https://www.dailymotion.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    24411,
+					Alias: "dailymotion",
+					Name:  "Dailymotion",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "dailymotion",
+				RepositoryCount: 18,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dailymotion-EI_IE372880.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dailymotion-Reviews-E372880.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
