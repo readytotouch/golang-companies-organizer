@@ -12,6 +12,7 @@
             <th>Name</th>
             <th>LinkedIn</th>
             <th>GitHub</th>
+            <th>Glassdoor</th>
             <th>Go main language</th>
         </tr>
         {% for _, company := range companies %}
@@ -23,6 +24,7 @@
                     {%- endfor -%}
                 </td>
                 <td><a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: {%d company.GitHubProfile.RepositoryCount %}</td>
+                <td><a href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>, <a href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a></td>
                 <td>{% if company.MainLanguage %}✔️{% endif %}</td>
             </tr>
         {% endfor %}

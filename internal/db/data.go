@@ -18,6 +18,10 @@ func Companies() []domain.Company {
 				Login:           "google",
 				RepositoryCount: 157,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",
+			},
 			MainLanguage: false,
 		},
 		{
@@ -33,6 +37,10 @@ func Companies() []domain.Company {
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "VictoriaMetrics",
 				RepositoryCount: 10,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.google.com/search?q=Glassdoor+VictoriaMetrics",
+				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+VictoriaMetrics+reviews",
 			},
 			MainLanguage: true,
 		},
@@ -50,6 +58,10 @@ func Companies() []domain.Company {
 				Login:           "dochq",
 				RepositoryCount: 9,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.google.com/search?q=Glassdoor+DocHQ",
+				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+DocHQ+reviews",
+			},
 			MainLanguage: true,
 		},
 		{
@@ -65,6 +77,10 @@ func Companies() []domain.Company {
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "uber",
 				RepositoryCount: 30,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Uber-EI_IE575263.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Uber-Reviews-E575263.htm",
 			},
 			MainLanguage: true,
 		},
@@ -82,6 +98,10 @@ func Companies() []domain.Company {
 				Login:           "careem",
 				RepositoryCount: 3,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Careem-Reviews-E1438731.htm",
+			},
 			MainLanguage: true,
 		},
 		{
@@ -97,6 +117,10 @@ func Companies() []domain.Company {
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "cloudflare",
 				RepositoryCount: 87,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudflare-EI_IE430862.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
 			},
 			MainLanguage: false,
 		},
@@ -114,6 +138,10 @@ func Companies() []domain.Company {
 				Login:           "bitly",
 				RepositoryCount: 11,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitly-EI_IE800313.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bitly-Reviews-E800313.htm",
+			},
 			MainLanguage: true, // https://bitly.com/blog/why-we-write-everything-in-go/
 		},
 		{
@@ -129,6 +157,10 @@ func Companies() []domain.Company {
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "cockroachdb",
 				RepositoryCount: 92,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cockroach-Labs-EI_IE1168502.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cockroach-Labs-Reviews-E1168502.htm",
 			},
 			MainLanguage: true,
 		},
@@ -146,6 +178,10 @@ func Companies() []domain.Company {
 				Login:           "reddit",
 				RepositoryCount: 20,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Reddit-EI_IE796358.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Reddit-Reviews-E796358.htm",
+			},
 			MainLanguage: false,
 		},
 		//{
@@ -161,6 +197,10 @@ func Companies() []domain.Company {
 		//	GitHubProfile: domain.GitHubProfile{
 		//		Login:           "",
 		//		RepositoryCount: 0,
+		//	},
+		//	GlassdoorProfile: domain.GlassdoorProfile{
+		//		OverviewURL: "",
+		//		ReviewsURL:  "",
 		//	},
 		//	MainLanguage: false,
 		//},

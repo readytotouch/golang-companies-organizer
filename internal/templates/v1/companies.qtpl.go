@@ -28,6 +28,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
             <th>Name</th>
             <th>LinkedIn</th>
             <th>GitHub</th>
+            <th>Glassdoor</th>
             <th>Go main language</th>
         </tr>
         `)
@@ -58,6 +59,11 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
 		qw422016.N().S(`/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: `)
 		qw422016.N().D(company.GitHubProfile.RepositoryCount)
 		qw422016.N().S(`</td>
+                <td><a href="`)
+		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+		qw422016.N().S(`">Overview</a>, <a href="`)
+		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
+		qw422016.N().S(`">Reviews</a></td>
                 <td>`)
 		if company.MainLanguage {
 			qw422016.N().S(`✔️`)

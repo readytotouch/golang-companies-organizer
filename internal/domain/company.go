@@ -11,10 +11,16 @@ type GitHubProfile struct {
 	RepositoryCount int
 }
 
+type GlassdoorProfile struct {
+	OverviewURL string
+	ReviewsURL  string
+}
+
 type Company struct {
 	Name             string
 	URL              string
 	LinkedInProfiles []LinkedInProfile
 	GitHubProfile    GitHubProfile
+	GlassdoorProfile GlassdoorProfile
 	MainLanguage     bool // Golang is the main language
 }
