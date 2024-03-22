@@ -4,6 +4,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/readytotouch/gocompanies/internal/db"
+
 	tv1 "github.com/readytotouch/gocompanies/internal/templates/v1"
 )
 
@@ -13,7 +15,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	tv1.WriteCompanies(f)
+	tv1.WriteCompanies(f, db.Companies())
 
 	err = f.Close()
 	if err != nil {

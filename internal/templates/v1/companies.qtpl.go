@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamCompanies(qw422016 *qt422016.Writer) {
+func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,59 +22,57 @@ func StreamCompanies(qw422016 *qt422016.Writer) {
     <title>Golang companies</title>
 </head>
 <body>
-    <h1>Companies that use Golang</h1>
-    <table>
+    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"></h1>
+    <table border="1">
         <tr>
             <th>Name</th>
             <th>LinkedIn</th>
-            <th>Repositories</th>
-            <th>Why</th>
+            <th>GitHub</th>
+            <th>Go main language</th>
         </tr>
-        <tr>
-            <td><a href="https://www.google.com/">google.com</a></td>
-            <td><a href="https://www.linkedin.com/company/google/">/company/google/</a></td>
-            <td><a href="https://github.com/orgs/google/repositories?q=lang:go">GitHub</a>: 157</td>
-            <td><a href="https://go.dev/talks/2012/splash.article">Go at Google</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://victoriametrics.com/">victoriametrics.com</a></td>
-            <td><a href="https://www.linkedin.com/company/victoriametrics/">/company/victoriametrics/</a></td>
-            <td><a href="https://github.com/orgs/VictoriaMetrics/repositories?q=lang:go">GitHub</a>: 10</td>
-            <td><a href="https://github.com/VictoriaMetrics/VictoriaMetrics">github.com/cockroachdb/cockroach</a></td>
-        <tr>
-            <td><a href="https://www.uber.com/">uber.com</a></td>
-            <td><a href="https://www.linkedin.com/company/uber-com/">/company/uber-com/</a></td>
-            <td><a href="https://github.com/orgs/uber/repositories?q=lang:go">GitHub</a>: 30</td>
-            <td><a href="https://www.uber.com/en-TR/blog/data-race-patterns-in-go/">Go at Uber</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.cloudflare.com/">cloudflare.com</a></td>
-            <td><a href="https://www.linkedin.com/company/cloudflare/">/company/cloudflare/</a></td>
-            <td><a href="https://github.com/orgs/cloudflare/repositories?q=lang:go">GitHub</a>: 87</td>
-            <td><a href="https://blog.cloudflare.com/tag/go">Go at Cloudflare</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://bitly.com/">bitly.com</a></td>
-            <td><a href="https://www.linkedin.com/company/bitly/">/company/bitly/</a></td>
-            <td><a href="https://github.com/orgs/bitly/repositories?q=lang:go">GitHub</a>: 11</td>
-            <td><a href="https://bitly.com/blog/why-we-write-everything-in-go/">Go at Bitly</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.cockroachlabs.com/">cockroachlabs.com</a></td>
-            <td><a href="https://www.linkedin.com/company/cockroach-labs/">/company/cockroach-labs/</a></td>
-            <td><a href="https://github.com/orgs/cockroachdb/repositories?q=lang:go">GitHub</a>: 92</td>
-            <td><a href="https://github.com/cockroachdb/cockroach">github.com/cockroachdb/cockroach</a>
-        </td>
-        <tr>
-            <td><a href="https://www.reddit.com/">reddit.com</a></td>
-            <td><a href="https://www.linkedin.com/company/reddit-com/">/company/reddit-com/</a></td>
-            <td><a href="https://github.com/orgs/reddit/repositories?q=lang:go">GitHub</a>: 20</td>
-            <td><a href="https://app.otta.com/dashboard/jobs/T2ZxNGhO">Senior Software Engineer</a></td>
-        </tr>
+        `)
+	for _, company := range companies {
+		qw422016.N().S(`
+            <tr>
+                <td><a href="`)
+		qw422016.E().S(company.URL)
+		qw422016.N().S(`">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a></td>
+                <td>
+`)
+		for _, profile := range company.LinkedInProfiles {
+			qw422016.N().S(`                        <a href="https://www.linkedin.com/company/`)
+			qw422016.E().S(profile.Alias)
+			qw422016.N().S(`/" title="`)
+			qw422016.E().S(profile.Name)
+			qw422016.N().S(`"><img width="20px" src="./icons/linkedin.svg"/></a>`)
+			qw422016.N().S(`
+`)
+			qw422016.N().S(`
+`)
+		}
+		qw422016.N().S(`                </td>
+                <td><a href="https://github.com/orgs/`)
+		qw422016.E().S(company.GitHubProfile.Login)
+		qw422016.N().S(`/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: `)
+		qw422016.N().D(company.GitHubProfile.RepositoryCount)
+		qw422016.N().S(`</td>
+                <td>`)
+		if company.MainLanguage {
+			qw422016.N().S(`✔️`)
+		}
+		qw422016.N().S(`</td>
+            </tr>
+        `)
+	}
+	qw422016.N().S(`
     </table>
     <h3>LinkedIn</h3>
     <ul>
-        <li><a href="https://www.linkedin.com/search/results/PEOPLE/?currentCompany=%5B%22150573%22%2C%229309408%22%2C%22552285%22%2C%22407222%22%2C%221815218%22%2C%2230169914%22%2C%221441%22%5D&network=%5B%22F%22%2C%22S%22%5D">LinkedIn Connections</a></li>
+        <li><a href="`)
+	qw422016.E().S(linkedinConnections(companies))
+	qw422016.N().S(`">LinkedIn Connections</a></li>
         <li><a href="https://www.linkedin.com/jobs/search/?keywords=%22Golang%20Engineer%22%20OR%20%22Golang%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22%20OR%20%22Go%20Engineer%22%20OR%20%22Go%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22&location=Worldwide">LinkedIn Golang Worldwide Jobs</a></li>
     </ul>
     <footer>
@@ -85,15 +83,15 @@ func StreamCompanies(qw422016 *qt422016.Writer) {
 `)
 }
 
-func WriteCompanies(qq422016 qtio422016.Writer) {
+func WriteCompanies(qq422016 qtio422016.Writer, companies []Company) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamCompanies(qw422016)
+	StreamCompanies(qw422016, companies)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func Companies() string {
+func Companies(companies []Company) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteCompanies(qb422016)
+	WriteCompanies(qb422016, companies)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
