@@ -204,6 +204,46 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "Stream",
+			URL:  "https://getstream.io/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    5338728,
+					Alias: "getstream",
+					Name:  "Stream",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "GetStream",
+				RepositoryCount: 32,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stream-CO-EI_IE1703813.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stream-CO-Reviews-E1703813.htm",
+			},
+			MainLanguage: false,
+		},
+		//{
+		//	Name: "",
+		//	URL:  "",
+		//	LinkedInProfiles: []domain.LinkedInProfile{
+		//		{
+		//			ID:    0,
+		//			Alias: "",
+		//			Name:  "",
+		//		},
+		//	},
+		//	GitHubProfile: domain.GitHubProfile{
+		//		Login:           "",
+		//		RepositoryCount: 0,
+		//	},
+		//	GlassdoorProfile: domain.GlassdoorProfile{
+		//		OverviewURL: "",
+		//		ReviewsURL:  "",
+		//	},
+		//	MainLanguage: false,
+		//},
 		//{
 		//	Name: "",
 		//	URL:  "",
