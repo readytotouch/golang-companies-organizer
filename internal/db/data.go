@@ -508,6 +508,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Grafana-Labs",
 			MainLanguage:    true,
 		},
+		{
+			Name: "Weaviate",
+			URL:  "https://weaviate.io/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    11702022,
+					Alias: "weaviate-io",
+					Name:  "Weaviate",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "weaviate",
+				RepositoryCount: 13,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Weaviate-EI_IE7479527.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Weaviate-Reviews-E7479527.htm",
+			},
+			OttaProfileSlug: "Weaviate",
+			MainLanguage:    true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
