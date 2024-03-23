@@ -364,6 +364,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: true,
 		},
+		{
+			Name: "HelloFresh",
+			URL:  "https://www.hellofresh.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    2454643,
+					Alias: "hellofresh",
+					Name:  "HelloFresh",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "hellofresh",
+				RepositoryCount: 9,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HelloFresh-EI_IE998728.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HelloFresh-Reviews-E998728.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
