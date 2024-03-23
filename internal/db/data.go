@@ -424,6 +424,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "Delivery Hero",
+			URL:  "https://www.deliveryhero.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    2393200,
+					Alias: "delivery-hero-se",
+					Name:  "Delivery Hero",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "deliveryhero",
+				RepositoryCount: 11,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Delivery-Hero-EI_IE504556.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Delivery-Hero-Reviews-E504556.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
