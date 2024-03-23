@@ -404,6 +404,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "Gymondo",
+			URL:  "https://www.gymondo.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    5233814,
+					Alias: "gymondo-gmbh",
+					Name:  "Gymondo",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Gymondo-git",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gymondo-EI_IE1344198.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Gymondo-Reviews-E1344198.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

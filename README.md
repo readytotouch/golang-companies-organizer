@@ -13,5 +13,6 @@
 - https://golang.cafe/job/senior-data-software-engineer-90poe-1621513889
 - https://careers.hellofresh.com/global/en/job/5318250/Senior-Backend-Engineer-Planning-Golang-m-f-x
 - https://jobs.dou.ua/companies/autodoc/vacancies/262441/
+- https://www.linkedin.com/jobs/view/3865206621/ Gymondo Golang
 - https://relocate.me/the-united-kingdom/london/form3/senior-software-engineer-go-7646
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/
