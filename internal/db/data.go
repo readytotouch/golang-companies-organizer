@@ -634,6 +634,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Yassir",
 			MainLanguage:    false,
 		},
+		{
+			Name: "DoorDash",
+			URL:  "https://doordash.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    3205573,
+					Alias: "doordash",
+					Name:  "DoorDash",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "doordash",
+				RepositoryCount: 7,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DoorDash-EI_IE813073.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DoorDash-Reviews-E813073.htm",
+			},
+			OttaProfileSlug: "DoorDash",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
