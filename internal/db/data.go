@@ -384,6 +384,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "AUTODOC",
+			URL:  "https://autodoc.group/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    7703911,
+					Alias: "autodoc",
+					Name:  "AUTODOC",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // unknown
+				RepositoryCount: 0,  // unknown
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AUTODOC-EI_IE2179604.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AUTODOC-Reviews-E2179604.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
