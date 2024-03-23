@@ -284,6 +284,46 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "Docker",
+			URL:  "https://www.docker.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1301808,
+					Alias: "docker",
+					Name:  "Docker, Inc",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "docker",
+				RepositoryCount: 28,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Docker-Reviews-E1089506.htm",
+			},
+			MainLanguage: true,
+		},
+		{
+			Name: "Assertive Yield",
+			URL:  "https://www.assertiveyield.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    76806664,
+					Alias: "assertive-yield",
+					Name:  "Assertive Yield B.V.",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Assertive-Yield",
+				RepositoryCount: 1,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: `https://www.google.com/search?q=Glassdoor+"Assertive+Yield"`,
+				ReviewsURL:  `https://www.google.com/search?q=Glassdoor+%22Assertive+Yield%22+reviews`,
+			},
+			MainLanguage: true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
