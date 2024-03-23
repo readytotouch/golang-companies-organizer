@@ -264,6 +264,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: true,
 		},
+		{
+			Name: "Form3",
+			URL:  "https://www.form3.tech/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    15156804,
+					Alias: "form3-financial-cloud",
+					Name:  "Form3",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "form3tech-oss",
+				RepositoryCount: 43,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Form3-EI_IE2008415.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Form3-Reviews-E2008415.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
