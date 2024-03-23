@@ -6,7 +6,7 @@
     <title>Golang companies</title>
 </head>
 <body>
-    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"></h1>
+    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
     <table border="1">
         <tr>
             <th>Name</th>

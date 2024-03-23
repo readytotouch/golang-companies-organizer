@@ -324,6 +324,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: true,
 		},
+		{
+			Name: "Splunk",
+			URL:  "https://www.splunk.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    20226,
+					Alias: "splunk",
+					Name:  "Splunk",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "splunk",
+				RepositoryCount: 43,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Splunk-EI_IE117313.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Splunk-Reviews-E117313.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
