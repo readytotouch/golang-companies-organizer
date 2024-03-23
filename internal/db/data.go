@@ -571,6 +571,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Okta",
 			MainLanguage:    false,
 		},
+		{
+			Name: "1Password",
+			URL:  "https://1password.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    18648301,
+					Alias: "1password",
+					Name:  "1Password",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "1Password",
+				RepositoryCount: 19,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-1Password-EI_IE2984143.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/1Password-Reviews-E2984143.htm",
+			},
+			OttaProfileSlug: "1Password",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
