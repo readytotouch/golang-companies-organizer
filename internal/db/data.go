@@ -244,6 +244,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "FerretDB",
+			URL:  "https://www.ferretdb.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    80672744,
+					Alias: "ferretdb",
+					Name:  "FerretDB",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "FerretDB",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.google.com/search?q=Glassdoor+FerretDB",
+				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+FerretDB+reviews",
+			},
+			MainLanguage: true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
