@@ -466,6 +466,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Delivery-Hero",
 			MainLanguage:    false,
 		},
+		{
+			Name: "HashiCorp",
+			URL:  "https://www.hashicorp.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    2830763,
+					Alias: "hashicorp",
+					Name:  "HashiCorp",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "hashicorp",
+				RepositoryCount: 296,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HashiCorp-EI_IE1359860.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HashiCorp-Reviews-E1359860.htm",
+			},
+			OttaProfileSlug: "HashiCorp",
+			MainLanguage:    true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
@@ -484,7 +505,8 @@ func Companies() []domain.Company {
 		//		OverviewURL: "",
 		//		ReviewsURL:  "",
 		//	},
-		//	MainLanguage: false,
+		//	OttaProfileSlug: "",
+		//	MainLanguage:    false,
 		//},
 	}
 }
