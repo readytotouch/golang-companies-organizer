@@ -592,6 +592,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "1Password",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Fubo",
+			URL:  "https://www.fubo.tv/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    5316737,
+					Alias: "fubotv",
+					Name:  "Fubo",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "fubotv",
+				RepositoryCount: 6,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FuboTV-EI_IE1006878.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FuboTV-Reviews-E1006878.htm",
+			},
+			OttaProfileSlug: "fubo",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
