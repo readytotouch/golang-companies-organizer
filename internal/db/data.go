@@ -613,6 +613,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "fubo",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Yassir",
+			URL:  "https://yassir.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    19069709,
+					Alias: "yassir",
+					Name:  "Yassir",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "YAtechnologies",
+				RepositoryCount: 0, // 0
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-YASSIR-EI_IE2601333.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/YASSIR-Reviews-E2601333.htm",
+			},
+			OttaProfileSlug: "Yassir",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
