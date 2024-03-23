@@ -15,4 +15,5 @@
 - https://jobs.dou.ua/companies/autodoc/vacancies/262441/
 - https://www.linkedin.com/jobs/view/3865206621/ Gymondo Golang
 - https://relocate.me/the-united-kingdom/london/form3/senior-software-engineer-go-7646
+- https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/

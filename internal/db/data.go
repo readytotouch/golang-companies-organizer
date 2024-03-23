@@ -487,6 +487,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "HashiCorp",
 			MainLanguage:    true,
 		},
+		{
+			Name: "Grafana Labs",
+			URL:  "https://grafana.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    11062162,
+					Alias: "grafana-labs",
+					Name:  "Grafana Labs",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "grafana",
+				RepositoryCount: 233,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grafana-Labs-Reviews-E2300269.htm",
+			},
+			OttaProfileSlug: "Grafana-Labs",
+			MainLanguage:    true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
