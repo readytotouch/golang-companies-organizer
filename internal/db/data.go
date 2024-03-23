@@ -550,6 +550,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Palantir",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Okta",
+			URL:  "https://www.okta.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    926041,
+					Alias: "okta-inc-",
+					Name:  "Okta",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "okta",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Okta-EI_IE444756.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Okta-Reviews-E444756.htm",
+			},
+			OttaProfileSlug: "Okta",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
