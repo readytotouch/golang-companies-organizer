@@ -529,6 +529,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Weaviate",
 			MainLanguage:    true,
 		},
+		{
+			Name: "Palantir",
+			URL:  "https://www.palantir.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    20708,
+					Alias: "palantir-technologies",
+					Name:  "Palantir Technologies",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "palantir",
+				RepositoryCount: 57,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palantir-Technologies-EI_IE236375.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Palantir-Technologies-Reviews-E236375.htm",
+			},
+			OttaProfileSlug: "Palantir",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
