@@ -41,9 +41,10 @@
     </table>
     <h3>LinkedIn</h3>
     <ul>
-        <li><a href="{%s linkedinConnections(companies, false) %}">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
-        <li><a href="{%s linkedinConnections(companies, true)  %}">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
-        <li><a href="https://www.linkedin.com/jobs/search/?keywords=%22Golang%20Engineer%22%20OR%20%22Golang%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22%20OR%20%22Go%20Engineer%22%20OR%20%22Go%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22&location=Worldwide">LinkedIn Jobs [Golang] [Worldwide]</a></li>
+        <li><a href="{%s linkedinConnectionsURL(companies, false) %}">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
+        <li><a href="{%s linkedinConnectionsURL(companies, true)  %}">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
+        <li><a href="{%s linkedinJobsURL(nil, keywordsTitles) %}">LinkedIn Jobs [Golang] [Worldwide]</a></li>
+        <li><a href="{%s linkedinJobsURL(companies, keywordsSkills) %}">LinkedIn Jobs [Golang] [Companies] [Worldwide]</a></li>
     </ul>
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>

@@ -29,6 +29,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
             <th>LinkedIn</th>
             <th>GitHub</th>
             <th>Glassdoor</th>
+            <th>Otta</th>
             <th>Go main language</th>
         </tr>
         `)
@@ -70,6 +71,15 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
 		qw422016.N().S(`">Overview</a>, <a href="`)
 		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
 		qw422016.N().S(`">Reviews</a></td>
+                <td>
+`)
+		if company.OttaProfileSlug != "" {
+			qw422016.N().S(`                        <a href="https://app.otta.com/companies/`)
+			qw422016.E().S(company.OttaProfileSlug)
+			qw422016.N().S(`"><img width="20px" src="./icons/otta.png"/></a>
+`)
+		}
+		qw422016.N().S(`                </td>
                 <td>`)
 		if company.MainLanguage {
 			qw422016.N().S(`✔️`)
@@ -83,12 +93,17 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
     <h3>LinkedIn</h3>
     <ul>
         <li><a href="`)
-	qw422016.E().S(linkedinConnections(companies, false))
+	qw422016.E().S(linkedinConnectionsURL(companies, false))
 	qw422016.N().S(`">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
         <li><a href="`)
-	qw422016.E().S(linkedinConnections(companies, true))
+	qw422016.E().S(linkedinConnectionsURL(companies, true))
 	qw422016.N().S(`">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
-        <li><a href="https://www.linkedin.com/jobs/search/?keywords=%22Golang%20Engineer%22%20OR%20%22Golang%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22%20OR%20%22Go%20Engineer%22%20OR%20%22Go%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22&location=Worldwide">LinkedIn Golang Worldwide Jobs</a></li>
+        <li><a href="`)
+	qw422016.E().S(linkedinJobsURL(nil, keywordsTitles))
+	qw422016.N().S(`">LinkedIn Jobs [Golang] [Worldwide]</a></li>
+        <li><a href="`)
+	qw422016.E().S(linkedinJobsURL(companies, keywordsSkills))
+	qw422016.N().S(`">LinkedIn Jobs [Golang] [Companies] [Worldwide]</a></li>
     </ul>
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
