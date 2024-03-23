@@ -224,26 +224,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
-		//{
-		//	Name: "",
-		//	URL:  "",
-		//	LinkedInProfiles: []domain.LinkedInProfile{
-		//		{
-		//			ID:    0,
-		//			Alias: "",
-		//			Name:  "",
-		//		},
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:           "",
-		//		RepositoryCount: 0,
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "",
-		//		ReviewsURL:  "",
-		//	},
-		//	MainLanguage: false,
-		//},
+		{
+			Name: "Workato",
+			URL:  "https://www.workato.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    3675685,
+					Alias: "workato",
+					Name:  "Workato",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "workato",
+				RepositoryCount: 4,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Workato-EI_IE1333040.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Workato-Reviews-E1333040.htm",
+			},
+			MainLanguage: false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
