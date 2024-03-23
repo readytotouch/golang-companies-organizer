@@ -344,6 +344,26 @@ func Companies() []domain.Company {
 			},
 			MainLanguage: false,
 		},
+		{
+			Name: "90POE",
+			URL:  "https://www.90poe.io/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    18466590,
+					Alias: "90poe",
+					Name:  "Ninety Percent of Everything (90POE)",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "90poe",
+				RepositoryCount: 28,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-90-POE-EI_IE3898368.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/90-POE-Reviews-E3898368.htm",
+			},
+			MainLanguage: true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
