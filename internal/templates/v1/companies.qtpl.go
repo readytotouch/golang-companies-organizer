@@ -22,7 +22,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
     <title>Golang companies</title>
 </head>
 <body>
-    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"></h1>
+    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
     <table border="1">
         <tr>
             <th>Name</th>
@@ -54,11 +54,17 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
 `)
 		}
 		qw422016.N().S(`                </td>
-                <td><a href="https://github.com/orgs/`)
-		qw422016.E().S(company.GitHubProfile.Login)
-		qw422016.N().S(`/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: `)
-		qw422016.N().D(company.GitHubProfile.RepositoryCount)
-		qw422016.N().S(`</td>
+                <td>
+`)
+		if company.GitHubProfile.Login != "" {
+			qw422016.N().S(`                        <a href="https://github.com/orgs/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: `)
+			qw422016.N().D(company.GitHubProfile.RepositoryCount)
+			qw422016.N().S(`
+`)
+		}
+		qw422016.N().S(`                </td>
                 <td><a href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
 		qw422016.N().S(`">Overview</a>, <a href="`)
@@ -77,8 +83,11 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
     <h3>LinkedIn</h3>
     <ul>
         <li><a href="`)
-	qw422016.E().S(linkedinConnections(companies))
-	qw422016.N().S(`">LinkedIn Connections</a></li>
+	qw422016.E().S(linkedinConnections(companies, false))
+	qw422016.N().S(`">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
+        <li><a href="`)
+	qw422016.E().S(linkedinConnections(companies, true))
+	qw422016.N().S(`">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
         <li><a href="https://www.linkedin.com/jobs/search/?keywords=%22Golang%20Engineer%22%20OR%20%22Golang%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22%20OR%20%22Go%20Engineer%22%20OR%20%22Go%20Software%20Engineer%22%20OR%20%22Golang%20Developer%22&location=Worldwide">LinkedIn Golang Worldwide Jobs</a></li>
     </ul>
     <footer>
