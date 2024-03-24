@@ -655,6 +655,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "DoorDash",
 			MainLanguage:    false,
 		},
+		{
+			Name: "BeReal.",
+			URL:  "https://bereal.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    34731272,
+					Alias: "bereal-app",
+					Name:  "BeReal.",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "BeReal-App",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BeReal-EI_IE7468524.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BeReal-Reviews-E7468524.htm",
+			},
+			OttaProfileSlug: "BeReal",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
