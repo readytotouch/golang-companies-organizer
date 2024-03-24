@@ -676,6 +676,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "BeReal",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Vio.com",
+			URL:  "https://www.vio.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1192098,
+					Alias: "viodotcom",
+					Name:  "Vio.com",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "viodotcom",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vio-com-EI_IE940798.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vio-com-Reviews-E940798.htm",
+			},
+			OttaProfileSlug: "Vio-com",
+			MainLanguage:    false, // https://www.linkedin.com/jobs/view/3819771736/
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
