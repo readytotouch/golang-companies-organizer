@@ -22,7 +22,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "",
+			MainLanguage:    false,
 		},
 		{
 			Name: "VictoriaMetrics",
@@ -42,7 +43,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.google.com/search?q=Glassdoor+VictoriaMetrics",
 				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+VictoriaMetrics+reviews",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "",
+			MainLanguage:    true,
 		},
 		{
 			Name: "DocHQ",
@@ -62,7 +64,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.google.com/search?q=Glassdoor+DocHQ",
 				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+DocHQ+reviews",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Uber",
@@ -82,7 +85,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Uber-EI_IE575263.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Uber-Reviews-E575263.htm",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "Uber",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Careem",
@@ -102,7 +106,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Careem-Reviews-E1438731.htm",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "Careem",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Cloudflare",
@@ -122,7 +127,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudflare-EI_IE430862.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Cloudflare-1",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Bitly",
@@ -142,7 +148,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitly-EI_IE800313.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bitly-Reviews-E800313.htm",
 			},
-			MainLanguage: true, // https://bitly.com/blog/why-we-write-everything-in-go/
+			OttaProfileSlug: "Bitly",
+			MainLanguage:    true, // https://bitly.com/blog/why-we-write-everything-in-go/
 		},
 		{
 			Name: "Cockroach Labs",
@@ -162,7 +169,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cockroach-Labs-EI_IE1168502.11,25.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cockroach-Labs-Reviews-E1168502.htm",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "Cockroach-Labs",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Reddit",
@@ -182,7 +190,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Reddit-EI_IE796358.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Reddit-Reviews-E796358.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Reddit-1",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Dailymotion",
@@ -202,7 +211,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dailymotion-EI_IE372880.11,22.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dailymotion-Reviews-E372880.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Dailymotion",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Stream",
@@ -222,7 +232,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stream-CO-EI_IE1703813.11,20.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stream-CO-Reviews-E1703813.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Stream",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Workato",
@@ -242,7 +253,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Workato-EI_IE1333040.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Workato-Reviews-E1333040.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Workato",
+			MainLanguage:    false,
 		},
 		{
 			Name: "FerretDB",
@@ -262,7 +274,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.google.com/search?q=Glassdoor+FerretDB",
 				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+FerretDB+reviews",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "FerretDB",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Form3",
@@ -282,7 +295,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Form3-EI_IE2008415.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Form3-Reviews-E2008415.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Form3",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Docker",
@@ -302,7 +316,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Docker-Reviews-E1089506.htm",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "Docker-1",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Assertive Yield",
@@ -322,7 +337,8 @@ func Companies() []domain.Company {
 				OverviewURL: `https://www.google.com/search?q=Glassdoor+"Assertive+Yield"`,
 				ReviewsURL:  `https://www.google.com/search?q=Glassdoor+%22Assertive+Yield%22+reviews`,
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "",
+			MainLanguage:    true,
 		},
 		{
 			Name: "Splunk",
@@ -342,7 +358,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Splunk-EI_IE117313.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Splunk-Reviews-E117313.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Splunk",
+			MainLanguage:    false,
 		},
 		{
 			Name: "90POE",
@@ -362,7 +379,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-90-POE-EI_IE3898368.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/90-POE-Reviews-E3898368.htm",
 			},
-			MainLanguage: true,
+			OttaProfileSlug: "",
+			MainLanguage:    true,
 		},
 		{
 			Name: "HelloFresh",
@@ -382,7 +400,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HelloFresh-EI_IE998728.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/HelloFresh-Reviews-E998728.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "HelloFresh",
+			MainLanguage:    false,
 		},
 		{
 			Name: "AUTODOC",
@@ -402,7 +421,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AUTODOC-EI_IE2179604.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/AUTODOC-Reviews-E2179604.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Gymondo",
@@ -422,7 +442,8 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gymondo-EI_IE1344198.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Gymondo-Reviews-E1344198.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Gymondo",
+			MainLanguage:    false,
 		},
 		{
 			Name: "Delivery Hero",
@@ -442,7 +463,239 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Delivery-Hero-EI_IE504556.11,24.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Delivery-Hero-Reviews-E504556.htm",
 			},
-			MainLanguage: false,
+			OttaProfileSlug: "Delivery-Hero",
+			MainLanguage:    false,
+		},
+		{
+			Name: "HashiCorp",
+			URL:  "https://www.hashicorp.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    2830763,
+					Alias: "hashicorp",
+					Name:  "HashiCorp",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "hashicorp",
+				RepositoryCount: 296,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HashiCorp-EI_IE1359860.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HashiCorp-Reviews-E1359860.htm",
+			},
+			OttaProfileSlug: "HashiCorp",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Grafana Labs",
+			URL:  "https://grafana.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    11062162,
+					Alias: "grafana-labs",
+					Name:  "Grafana Labs",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "grafana",
+				RepositoryCount: 233,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grafana-Labs-Reviews-E2300269.htm",
+			},
+			OttaProfileSlug: "Grafana-Labs",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Weaviate",
+			URL:  "https://weaviate.io/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    11702022,
+					Alias: "weaviate-io",
+					Name:  "Weaviate",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "weaviate",
+				RepositoryCount: 13,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Weaviate-EI_IE7479527.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Weaviate-Reviews-E7479527.htm",
+			},
+			OttaProfileSlug: "Weaviate",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Palantir",
+			URL:  "https://www.palantir.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    20708,
+					Alias: "palantir-technologies",
+					Name:  "Palantir Technologies",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "palantir",
+				RepositoryCount: 57,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palantir-Technologies-EI_IE236375.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Palantir-Technologies-Reviews-E236375.htm",
+			},
+			OttaProfileSlug: "Palantir",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Okta",
+			URL:  "https://www.okta.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    926041,
+					Alias: "okta-inc-",
+					Name:  "Okta",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "okta",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Okta-EI_IE444756.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Okta-Reviews-E444756.htm",
+			},
+			OttaProfileSlug: "Okta",
+			MainLanguage:    false,
+		},
+		{
+			Name: "1Password",
+			URL:  "https://1password.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    18648301,
+					Alias: "1password",
+					Name:  "1Password",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "1Password",
+				RepositoryCount: 19,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-1Password-EI_IE2984143.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/1Password-Reviews-E2984143.htm",
+			},
+			OttaProfileSlug: "1Password",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Fubo",
+			URL:  "https://www.fubo.tv/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    5316737,
+					Alias: "fubotv",
+					Name:  "Fubo",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "fubotv",
+				RepositoryCount: 6,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FuboTV-EI_IE1006878.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FuboTV-Reviews-E1006878.htm",
+			},
+			OttaProfileSlug: "fubo",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Yassir",
+			URL:  "https://yassir.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    19069709,
+					Alias: "yassir",
+					Name:  "Yassir",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "YAtechnologies",
+				RepositoryCount: 0, // 0
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-YASSIR-EI_IE2601333.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/YASSIR-Reviews-E2601333.htm",
+			},
+			OttaProfileSlug: "Yassir",
+			MainLanguage:    false,
+		},
+		{
+			Name: "DoorDash",
+			URL:  "https://doordash.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    3205573,
+					Alias: "doordash",
+					Name:  "DoorDash",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "doordash",
+				RepositoryCount: 7,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DoorDash-EI_IE813073.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DoorDash-Reviews-E813073.htm",
+			},
+			OttaProfileSlug: "DoorDash",
+			MainLanguage:    false,
+		},
+		{
+			Name: "BeReal.",
+			URL:  "https://bereal.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    34731272,
+					Alias: "bereal-app",
+					Name:  "BeReal.",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "BeReal-App",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BeReal-EI_IE7468524.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BeReal-Reviews-E7468524.htm",
+			},
+			OttaProfileSlug: "BeReal",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Vio.com",
+			URL:  "https://www.vio.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1192098,
+					Alias: "viodotcom",
+					Name:  "Vio.com",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "viodotcom",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vio-com-EI_IE940798.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vio-com-Reviews-E940798.htm",
+			},
+			OttaProfileSlug: "Vio-com",
+			MainLanguage:    false, // https://www.linkedin.com/jobs/view/3819771736/
 		},
 		//{
 		//	Name: "",
@@ -462,7 +715,8 @@ func Companies() []domain.Company {
 		//		OverviewURL: "",
 		//		ReviewsURL:  "",
 		//	},
-		//	MainLanguage: false,
+		//	OttaProfileSlug: "",
+		//	MainLanguage:    false,
 		//},
 	}
 }

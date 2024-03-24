@@ -4,26 +4,25 @@ import (
 	"encoding/json"
 	"net/url"
 	"strconv"
+	"strings"
 
 	"github.com/readytotouch/gocompanies/internal/domain"
 )
 
 type Company = domain.Company
 
-func linkedinConnections(companies []Company, ukrainianUniversity bool) string {
-	ids := make([]string, len(companies))
-	for i, c := range companies {
-		for _, l := range c.LinkedInProfiles {
-			ids[i] = strconv.FormatInt(int64(l.ID), 10)
-		}
-	}
+const (
+	keywordsSkills = `"Go" OR "Golang"`
+	keywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
+)
 
-	companyQueryParam, _ := json.Marshal(ids)
+func linkedinConnectionsURL(companies []Company, ukrainianUniversity bool) string {
+	companyQueryParam, _ := json.Marshal(toIDs(companies))
 
 	values := url.Values{
 		"currentCompany": {string(companyQueryParam)},
 		"network":        {`["F","S"]`},
-		"keywords":       {`"Go" OR "Golang"`},
+		"keywords":       {keywordsSkills},
 	}
 
 	if ukrainianUniversity {
@@ -31,4 +30,27 @@ func linkedinConnections(companies []Company, ukrainianUniversity bool) string {
 	}
 
 	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+}
+
+func linkedinJobsURL(companies []Company, keywords string) string {
+	values := url.Values{
+		"keywords": {keywords},
+		"location": {"Worldwide"},
+	}
+
+	if len(companies) > 0 {
+		values["f_C"] = []string{strings.Join(toIDs(companies), ",")}
+	}
+
+	return "https://www.linkedin.com/jobs/search/?" + values.Encode()
+}
+
+func toIDs(companies []Company) []string {
+	ids := make([]string, 0, len(companies))
+	for _, company := range companies {
+		for _, profile := range company.LinkedInProfiles {
+			ids = append(ids, strconv.FormatInt(int64(profile.ID), 10))
+		}
+	}
+	return ids
 }

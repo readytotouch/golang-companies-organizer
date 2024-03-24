@@ -22,5 +22,6 @@ type Company struct {
 	LinkedInProfiles []LinkedInProfile
 	GitHubProfile    GitHubProfile
 	GlassdoorProfile GlassdoorProfile
+	OttaProfileSlug  string
 	MainLanguage     bool // Golang is the main language
 }
