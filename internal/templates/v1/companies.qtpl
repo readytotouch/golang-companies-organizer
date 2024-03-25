@@ -1,4 +1,4 @@
-{%- func Companies(companies []Company) -%}
+{%- func Companies(companies []Company, universities []University) -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +41,8 @@
     </table>
     <h3>LinkedIn</h3>
     <ul>
-        <li><a href="{%s linkedinConnectionsURL(companies, false) %}">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
-        <li><a href="{%s linkedinConnectionsURL(companies, true)  %}">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
+        <li><a href="{%s linkedinConnectionsURL(companies, nil) %}">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
+        <li><a href="{%s linkedinConnectionsURL(companies, universities)  %}">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
         <li><a href="{%s linkedinJobsURL(nil, keywordsTitles) %}">LinkedIn Jobs [Golang] [Worldwide]</a></li>
         <li><a href="{%s linkedinJobsURL(companies, keywordsSkills) %}">LinkedIn Jobs [Golang] [Companies] [Worldwide]</a></li>
     </ul>

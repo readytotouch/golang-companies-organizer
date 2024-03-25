@@ -15,7 +15,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	tv1.WriteCompanies(f, db.Companies())
+	tv1.WriteCompanies(f, db.Companies(), db.Universities())
 
 	err = f.Close()
 	if err != nil {
