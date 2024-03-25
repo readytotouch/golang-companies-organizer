@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
+func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universities []University) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,10 +93,10 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
     <h3>LinkedIn</h3>
     <ul>
         <li><a href="`)
-	qw422016.E().S(linkedinConnectionsURL(companies, false))
+	qw422016.E().S(linkedinConnectionsURL(companies, nil))
 	qw422016.N().S(`">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a></li>
         <li><a href="`)
-	qw422016.E().S(linkedinConnectionsURL(companies, true))
+	qw422016.E().S(linkedinConnectionsURL(companies, universities))
 	qw422016.N().S(`">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian University]</a></li>
         <li><a href="`)
 	qw422016.E().S(linkedinJobsURL(nil, keywordsTitles))
@@ -113,15 +113,15 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company) {
 `)
 }
 
-func WriteCompanies(qq422016 qtio422016.Writer, companies []Company) {
+func WriteCompanies(qq422016 qtio422016.Writer, companies []Company, universities []University) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamCompanies(qw422016, companies)
+	StreamCompanies(qw422016, companies, universities)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func Companies(companies []Company) string {
+func Companies(companies []Company, universities []University) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteCompanies(qb422016, companies)
+	WriteCompanies(qb422016, companies, universities)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

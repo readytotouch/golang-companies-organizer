@@ -10,14 +10,15 @@ import (
 )
 
 type Company = domain.Company
+type University = domain.University
 
 const (
 	keywordsSkills = `"Go" OR "Golang"`
 	keywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
 )
 
-func linkedinConnectionsURL(companies []Company, ukrainianUniversity bool) string {
-	companyQueryParam, _ := json.Marshal(toIDs(companies))
+func linkedinConnectionsURL(companies []Company, universities []University) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
 
 	values := url.Values{
 		"currentCompany": {string(companyQueryParam)},
@@ -25,8 +26,10 @@ func linkedinConnectionsURL(companies []Company, ukrainianUniversity bool) strin
 		"keywords":       {keywordsSkills},
 	}
 
-	if ukrainianUniversity {
-		values["schoolFilter"] = []string{`["364340","496320","782774","818029","850102","1257361","15099424","15099711","15101057","15101979","15102004","15250306"]`}
+	if len(universities) > 0 {
+		schoolQueryParam, _ := json.Marshal(universitiesToLinkedInIDs(universities))
+
+		values["schoolFilter"] = []string{string(schoolQueryParam)}
 	}
 
 	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
@@ -36,18 +39,31 @@ func linkedinJobsURL(companies []Company, keywords string) string {
 	values := url.Values{
 		"keywords": {keywords},
 		"location": {"Worldwide"},
+		"sortBy":   {"DD"},
+		// Remote
+		// f_WT => 2
 	}
 
 	if len(companies) > 0 {
-		values["f_C"] = []string{strings.Join(toIDs(companies), ",")}
+		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies), ",")}
 	}
 
 	return "https://www.linkedin.com/jobs/search/?" + values.Encode()
 }
 
-func toIDs(companies []Company) []string {
+func companiesToLinkedInIDs(companies []Company) []string {
 	ids := make([]string, 0, len(companies))
 	for _, company := range companies {
+		for _, profile := range company.LinkedInProfiles {
+			ids = append(ids, strconv.FormatInt(int64(profile.ID), 10))
+		}
+	}
+	return ids
+}
+
+func universitiesToLinkedInIDs(universities []University) []string {
+	ids := make([]string, 0, len(universities))
+	for _, company := range universities {
 		for _, profile := range company.LinkedInProfiles {
 			ids = append(ids, strconv.FormatInt(int64(profile.ID), 10))
 		}
