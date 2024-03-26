@@ -20,6 +20,15 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 <head>
     <meta charset="UTF-8">
     <title>Golang companies</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCD3QKRT9Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VCD3QKRT9Z');
+    </script>
 </head>
 <body>
     <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
