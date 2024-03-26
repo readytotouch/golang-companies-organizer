@@ -52,6 +52,8 @@
 - https://www.linkedin.com/jobs/view/3856676914/ Devoteam (IT Services and IT Consulting)
 - https://tryremotely.com/jobs/oowlish-golang-developer-79695 Oowlish (IT Services and IT Consulting)
 - https://www.linkedin.com/jobs/view/3868148428/ Vertisystem (Outsource)
+- https://www.linkedin.com/jobs/view/3868454344/ Colaberry
+- https://www.linkedin.com/jobs/view/3871356973/ Conexess Group
 
 ### Sites:
 - https://wellfound.com/

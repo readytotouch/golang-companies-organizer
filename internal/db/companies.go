@@ -955,6 +955,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "",
 			MainLanguage:    false,
 		},
+		{
+			Name: "OpenTag",
+			URL:  "https://theopentag.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    20565935,
+					Alias: "theopentag",
+					Name:  "OpenTag",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "OpenTagOS",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenTag-EI_IE3310869.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OpenTag-Reviews-E3310869.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
