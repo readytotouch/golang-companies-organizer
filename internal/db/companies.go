@@ -999,6 +999,29 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://justjoin.it/offers/oxla-golang-developer-gdansk-362959"},
 		},
+		{
+			Name: "Lightspeed",
+			URL:  "https://www.lightspeedhq.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1557218,
+					Alias: "lightspeedcommerce",
+					Name:  "Lightspeed Commerce",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "lightspeed",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lightspeed-EI_IE648762.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lightspeed-Reviews-E648762.htm",
+			},
+			OttaProfileSlug:   "Lightspeed",
+			YouTubeChannelURL: "https://www.youtube.com/channel/UCqOEKwLpolZBcj4LfU3R0Fg",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/RnXM1YTv"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
