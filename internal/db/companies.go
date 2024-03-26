@@ -297,6 +297,9 @@ func Companies() []domain.Company {
 			},
 			OttaProfileSlug: "Form3",
 			MainLanguage:    false,
+			Vacancies: []string{
+				"https://relocate.me/the-united-kingdom/london/form3/senior-software-engineer-go-7646",
+			},
 		},
 		{
 			Name: "Docker",
@@ -505,8 +508,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grafana-Labs-Reviews-E2300269.htm",
 			},
-			OttaProfileSlug: "Grafana-Labs",
-			MainLanguage:    true,
+			OttaProfileSlug:   "Grafana-Labs",
+			YouTubeChannelURL: "https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw",
+			MainLanguage:      true,
+			Vacancies:         nil,
 		},
 		{
 			Name: "Weaviate",
@@ -907,6 +912,48 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Pinterest",
 			MainLanguage:    false,
 			Vacancies:       []string{"https://app.otta.com/jobs/JwXeQ-gm"},
+		},
+		{
+			Name: "Tyk",
+			URL:  "https://tyk.io/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    10775050,
+					Alias: "tyk",
+					Name:  "Tyk",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "TykTechnologies",
+				RepositoryCount: 79,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tyk-EI_IE2321465.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tyk-Reviews-E2321465.htm",
+			},
+			OttaProfileSlug: "Tyk",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Sixt",
+			URL:  "https://www.sixt.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    17120,
+					Alias: "sixt",
+					Name:  "SIXT",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Sixt",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sixt-EI_IE10875.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sixt-Reviews-E10875.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    false,
 		},
 		//{
 		//	Name: "",

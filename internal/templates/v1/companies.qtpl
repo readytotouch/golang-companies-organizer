@@ -35,6 +35,7 @@
             <th><img width="20px" src="./icons/github.svg"/> GitHub</th>
             <th>Glassdoor</th>
             <th><img width="20px" src="./icons/otta.png"/> Otta</th>
+            <th><img width="20px" src="./icons/youtube.svg"/> YouTube</th>
             <th>Vacancies</th>
             <th>Go main language</th>
             <th>Actions</th>
@@ -62,6 +63,11 @@
                 <td>
                     {%- if company.OttaProfileSlug != "" -%}
                         <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
+                    {%- endif -%}
+                </td>
+                <td>
+                    {%- if company.YouTubeChannelURL != "" -%}
+                        <a href="{%s company.YouTubeChannelURL %}">Overview</a>
                     {%- endif -%}
                 </td>
                 <td>
