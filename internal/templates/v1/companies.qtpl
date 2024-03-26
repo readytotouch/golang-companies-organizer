@@ -35,6 +35,7 @@
             <th><img width="20px" src="./icons/github.svg"/> GitHub</th>
             <th>Glassdoor</th>
             <th><img width="20px" src="./icons/otta.png"/> Otta</th>
+            <th>Vacancies</th>
             <th>Go main language</th>
             <th>Actions</th>
         </tr>
@@ -62,6 +63,11 @@
                     {%- if company.OttaProfileSlug != "" -%}
                         <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
                     {%- endif -%}
+                </td>
+                <td>
+                    {%- for i, vacancy := range company.Vacancies -%}
+                        <a href="{%s vacancy %}">#{%d i %}</a>
+                    {%- endfor -%}
                 </td>
                 <td>
                     {% if company.MainLanguage %}✔️ TRUE{% endif %}

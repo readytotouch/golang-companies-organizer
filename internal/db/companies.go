@@ -886,6 +886,28 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "runZero",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Pinterest",
+			URL:  "https://www.pinterest.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1124131,
+					Alias: "pinterest",
+					Name:  "Pinterest",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "pinterest",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pinterest-Reviews-E503467.htm",
+			},
+			OttaProfileSlug: "Pinterest",
+			MainLanguage:    false,
+			Vacancies:       []string{"https://app.otta.com/jobs/JwXeQ-gm"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
