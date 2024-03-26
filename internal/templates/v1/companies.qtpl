@@ -24,6 +24,7 @@
             <th>Glassdoor</th>
             <th>Otta</th>
             <th>Go main language</th>
+            <th>Actions</th>
         </tr>
         {% for _, company := range companies %}
             <tr>
@@ -45,6 +46,7 @@
                     {%- endif -%}
                 </td>
                 <td>{% if company.MainLanguage %}✔️{% endif %}</td>
+                <td><a href="{%s googleCompanyJobsURL(company) %}">Search in Google</a></td>
             </tr>
         {% endfor %}
     </table>

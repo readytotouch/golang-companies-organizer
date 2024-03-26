@@ -697,6 +697,195 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Vio-com",
 			MainLanguage:    false, // https://www.linkedin.com/jobs/view/3819771736/
 		},
+		{
+			Name: "Monzo",
+			URL:  "https://monzo.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    9471107,
+					Alias: "monzo-bank",
+					Name:  "Monzo Bank",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "monzo",
+				RepositoryCount: 76,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Monzo-Bank-EI_IE1557148.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Monzo-Bank-Reviews-E1557148.htm",
+			},
+			OttaProfileSlug: "Monzo",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Mastercard",
+			URL:  "https://www.mastercard.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    3015,
+					Alias: "mastercard",
+					Name:  "Mastercard",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Mastercard",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mastercard-Reviews-E3677.htm",
+			},
+			OttaProfileSlug: "Mastercard",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Cynergy Bank",
+			URL:  "https://www.cynergybank.co.uk/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    18921842,
+					Alias: "cynergy-bank",
+					Name:  "Cynergy Bank",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynergy-Bank-EI_IE769090.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.co.uk/Reviews/Cynergy-Bank-Reviews-E769090.htm",
+			},
+			OttaProfileSlug: "", // NOP
+			MainLanguage:    false,
+		},
+		{
+			Name: "Canonical",
+			URL:  "https://canonical.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    234280,
+					Alias: "canonical",
+					Name:  "Canonical",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "canonical",
+				RepositoryCount: 83,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Canonical-EI_IE230560.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm",
+			},
+			OttaProfileSlug: "canonical",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Vodeno",
+			URL:  "https://vodeno.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    19016391,
+					Alias: "vodeno",
+					Name:  "Vodeno",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "vodeno",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vodeno-EI_IE2877672.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vodeno-Reviews-E2877672.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Utility Warehouse",
+			URL:  "https://uw.co.uk/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    457903,
+					Alias: "utilitywarehouse",
+					Name:  "Utility Warehouse",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "utilitywarehouse",
+				RepositoryCount: 85,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Utility-Warehouse-EI_IE512935.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Utility-Warehouse-Reviews-E512935.htm",
+			},
+			OttaProfileSlug: "Utility-Warehouse",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Codenotary",
+			URL:  "https://codenotary.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    35523736,
+					Alias: "codenotary",
+					Name:  "Codenotary",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "codenotary",
+				RepositoryCount: 23,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CodeNotary-EI_IE3677292.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CodeNotary-Reviews-E3677292.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Audigent",
+			URL:  "https://audigent.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    10642467,
+					Alias: "audigent",
+					Name:  "Audigent",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "AuDigent",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Audigent-EI_IE5815298.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Audigent-Reviews-E5815298.htm",
+			},
+			OttaProfileSlug: "Audigent",
+			MainLanguage:    false,
+		},
+		{
+			Name: "runZero",
+			URL:  "https://www.runzero.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    33274038,
+					Alias: "runzero",
+					Name:  "runZero",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "runZeroInc",
+				RepositoryCount: 7,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-runZero-EI_IE7717209.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/runZero-Reviews-E7717209.htm",
+			},
+			OttaProfileSlug: "runZero",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

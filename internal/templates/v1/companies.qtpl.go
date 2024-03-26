@@ -40,6 +40,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
             <th>Glassdoor</th>
             <th>Otta</th>
             <th>Go main language</th>
+            <th>Actions</th>
         </tr>
         `)
 	for _, company := range companies {
@@ -94,6 +95,9 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 			qw422016.N().S(`✔️`)
 		}
 		qw422016.N().S(`</td>
+                <td><a href="`)
+		qw422016.E().S(googleCompanyJobsURL(company))
+		qw422016.N().S(`">Search in Google</a></td>
             </tr>
         `)
 	}
