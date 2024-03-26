@@ -43,6 +43,12 @@
 - https://www.lifewire.com/boolean-search-terms-google-1616810
 - https://www.golangprojects.com/golang-go-job-fzy-Remote-Software-Engineer-Go-Seattle-Bluesky-remotework.html
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/
+- https://www.remocate.app/jobs/deputy-head-of-backend-golang
+- https://www.remocate.app/jobs/golang-developer
+- https://www.remocate.app/jobs/mid-go-developer
+- https://www.remocate.app/jobs/senior-golang-engineer
+- https://www.remocate.app/jobs/senior-go-proxy-engineer
+- https://app.otta.com/jobs/JwXeQ-gm
 
 ### Potential companies:
 - https://wellfound.com/jobs/1294436-senior-backend-api-engineer-d-f-m Vivenu "TypeScript and Node.js in the backend with a continuously increasing share of Golang"

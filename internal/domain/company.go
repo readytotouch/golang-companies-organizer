@@ -24,4 +24,5 @@ type Company struct {
 	GlassdoorProfile GlassdoorProfile
 	OttaProfileSlug  string
 	MainLanguage     bool // Golang is the main language
+	Vacancies        []string
 }
