@@ -739,6 +739,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Mastercard",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Cynergy Bank",
+			URL:  "https://www.cynergybank.co.uk/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    18921842,
+					Alias: "cynergy-bank",
+					Name:  "Cynergy Bank",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynergy-Bank-EI_IE769090.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.co.uk/Reviews/Cynergy-Bank-Reviews-E769090.htm",
+			},
+			OttaProfileSlug: "", // NOP
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

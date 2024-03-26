@@ -22,8 +22,6 @@
 - https://app.otta.com/companies/Tanium
 - https://app.otta.com/jobs/kgXX99Pm Vimeo
 - https://app.otta.com/jobs/k_17Qlf3 Wise
-- https://www.linkedin.com/jobs/view/3842471708/ Mastercard
-- https://www.linkedin.com/jobs/view/3868356139/ Cynergy Bank
 - https://www.linkedin.com/jobs/view/3868148428/ Vertisystem
 - https://www.linkedin.com/jobs/view/3867709652/ Pure Storage
 - https://www.linkedin.com/jobs/view/3865272063/ Canonical
