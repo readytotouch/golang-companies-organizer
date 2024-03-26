@@ -823,6 +823,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Utility-Warehouse",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Codenotary",
+			URL:  "https://codenotary.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    35523736,
+					Alias: "codenotary",
+					Name:  "Codenotary",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "codenotary",
+				RepositoryCount: 23,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CodeNotary-EI_IE3677292.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CodeNotary-Reviews-E3677292.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

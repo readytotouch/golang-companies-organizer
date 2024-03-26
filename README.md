@@ -32,7 +32,6 @@
 - https://adevinta.com/jobs/backend-developer-go/ leboncoin
 - https://wellfound.com/jobs/2924731-golang-engineer Holdex
 - https://codersera.com/hire/hire-golang-developer
-- https://wellfound.com/jobs/1306140-senior-go-developer Codenotary
 - https://wellfound.com/jobs/1294436-senior-backend-api-engineer-d-f-m Vivenu "TypeScript and Node.js in the backend with a continuously increasing share of Golang"
 - https://www.linkedin.com/jobs/view/3856676914/ Devoteam
 - https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
