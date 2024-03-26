@@ -802,6 +802,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Utility Warehouse",
+			URL:  "https://uw.co.uk/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    457903,
+					Alias: "utilitywarehouse",
+					Name:  "Utility Warehouse",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "utilitywarehouse",
+				RepositoryCount: 85,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Utility-Warehouse-EI_IE512935.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Utility-Warehouse-Reviews-E512935.htm",
+			},
+			OttaProfileSlug: "Utility-Warehouse",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
