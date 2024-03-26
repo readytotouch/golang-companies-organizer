@@ -22,7 +22,6 @@
 - https://app.otta.com/companies/Tanium
 - https://app.otta.com/jobs/kgXX99Pm Vimeo
 - https://app.otta.com/jobs/k_17Qlf3 Wise
-- https://app.otta.com/jobs/--81VGdE Monzo
 - https://www.linkedin.com/jobs/view/3842471708/ Mastercard
 - https://www.linkedin.com/jobs/view/3868356139/ Cynergy Bank
 - https://www.linkedin.com/jobs/view/3868148428/ Vertisystem
@@ -62,5 +61,4 @@
 - https://startup.jobs/?q=Golang
 - https://www.lifewire.com/boolean-search-terms-google-1616810
 - https://www.golangprojects.com/golang-go-job-fzy-Remote-Software-Engineer-Go-Seattle-Bluesky-remotework.html
-- Google search month `tbs	qdr:m` Ukraine ("Golang Developer" OR "Go Developer")
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/

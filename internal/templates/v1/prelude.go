@@ -2,6 +2,7 @@ package v1
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/url"
 	"strconv"
 	"strings"
@@ -16,6 +17,15 @@ const (
 	keywordsSkills = `"Go" OR "Golang"`
 	keywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
 )
+
+func googleCompanyJobsURL(company Company) string {
+	values := url.Values{
+		"q":   {fmt.Sprintf("%q (%s)", company.Name, keywordsTitles)},
+		"tbs": {"qdr:m"},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
 	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))

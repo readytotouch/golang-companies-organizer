@@ -718,6 +718,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Monzo",
 			MainLanguage:    true,
 		},
+		{
+			Name: "Mastercard",
+			URL:  "https://www.mastercard.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    3015,
+					Alias: "mastercard",
+					Name:  "Mastercard",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Mastercard",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mastercard-Reviews-E3677.htm",
+			},
+			OttaProfileSlug: "Mastercard",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
