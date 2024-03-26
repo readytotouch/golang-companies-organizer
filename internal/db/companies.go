@@ -781,6 +781,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "canonical",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Vodeno",
+			URL:  "https://vodeno.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    19016391,
+					Alias: "vodeno",
+					Name:  "Vodeno",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "vodeno",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vodeno-EI_IE2877672.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vodeno-Reviews-E2877672.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

@@ -27,7 +27,6 @@
 - https://tryremotely.com/jobs/oowlish-golang-developer-79695 Oowlish
 - https://tryremotely.com/jobs/runzero-senior-software-engineer-go-77972 runZero
 - https://justjoin.it/offers/oxla-golang-developer-gdansk-362959 Oxla
-- https://justjoin.it/offers/vodeno-go-developer-kielce-358668 Vodeno
 - https://jobs.dell.com/en/job/united-kingdom/intern-software-engineer-platform-engineering-100-remote-uk/375/62765277904 Dell
 - https://wellfound.com/jobs/2844005-sr-software-engineer-golang Audigent
 - https://adevinta.com/jobs/backend-developer-go/ leboncoin
