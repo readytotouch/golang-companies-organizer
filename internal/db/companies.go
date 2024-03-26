@@ -865,6 +865,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Audigent",
 			MainLanguage:    false,
 		},
+		{
+			Name: "runZero",
+			URL:  "https://www.runzero.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    33274038,
+					Alias: "runzero",
+					Name:  "runZero",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "runZeroInc",
+				RepositoryCount: 7,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-runZero-EI_IE7717209.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/runZero-Reviews-E7717209.htm",
+			},
+			OttaProfileSlug: "runZero",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
