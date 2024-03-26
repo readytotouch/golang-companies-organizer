@@ -697,6 +697,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "Vio-com",
 			MainLanguage:    false, // https://www.linkedin.com/jobs/view/3819771736/
 		},
+		{
+			Name: "Monzo",
+			URL:  "https://monzo.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    9471107,
+					Alias: "monzo-bank",
+					Name:  "Monzo Bank",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "monzo",
+				RepositoryCount: 76,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Monzo-Bank-EI_IE1557148.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Monzo-Bank-Reviews-E1557148.htm",
+			},
+			OttaProfileSlug: "Monzo",
+			MainLanguage:    true,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

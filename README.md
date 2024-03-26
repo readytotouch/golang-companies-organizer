@@ -20,9 +20,9 @@
 - https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw
 - https://github.com/mercari
 - https://app.otta.com/companies/Tanium
-- https://app.otta.com/jobs/kgXX99Pm
-- https://app.otta.com/jobs/k_17Qlf3
-- https://app.otta.com/jobs/--81VGdE
+- https://app.otta.com/jobs/kgXX99Pm Vimeo
+- https://app.otta.com/jobs/k_17Qlf3 Wise
+- https://app.otta.com/jobs/--81VGdE Monzo
 - https://www.linkedin.com/jobs/view/3842471708/ Mastercard
 - https://www.linkedin.com/jobs/view/3868356139/ Cynergy Bank
 - https://www.linkedin.com/jobs/view/3868148428/ Vertisystem
@@ -43,6 +43,7 @@
 - https://www.linkedin.com/jobs/view/3856676914/ Devoteam
 - https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
 - https://www.instahyre.com/job-308851-golang-developer-at-tinvio-work-from-home/ Tinvio
+- https://www.linkedin.com/jobs/view/3844387776/ Revoco
 - Golang Ubisoft
 - Golang DMarket
 - Golang Brimore
@@ -50,10 +51,16 @@
 - Golang Stockbit
 - Golang CountX
 - Golang JivyGroup
+- Golang Sixt
+- https://app.otta.com/jobs/rO3hXkv-
+- https://app.otta.com/jobs/RnXM1YTv
+- https://app.otta.com/jobs/f0FEae5C
 - https://www.mycareersfuture.gov.sg/job/information-technology/backend-developer-adtech-bandlab-singapore-5b45f3332b55a3b596589765992b7dbb BANDLAB
 - https://arc.dev/remote-jobs/go-golang
 - https://www.glassdoor.com/Job/golang-developer-jobs-SRCH_KO0,16.htm
 - https://www.indeed.com/jobs?q=Go+Developer
 - https://startup.jobs/?q=Golang
+- https://www.lifewire.com/boolean-search-terms-google-1616810
+- https://www.golangprojects.com/golang-go-job-fzy-Remote-Software-Engineer-Go-Seattle-Bluesky-remotework.html
 - Google search month `tbs	qdr:m` Ukraine ("Golang Developer" OR "Go Developer")
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/
