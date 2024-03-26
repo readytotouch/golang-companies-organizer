@@ -22,9 +22,8 @@
 - https://app.otta.com/companies/Tanium
 - https://app.otta.com/jobs/kgXX99Pm Vimeo
 - https://app.otta.com/jobs/k_17Qlf3 Wise
-- https://www.linkedin.com/jobs/view/3868148428/ Vertisystem
-- https://www.linkedin.com/jobs/view/3867709652/ Pure Storage
-- https://www.linkedin.com/jobs/view/3865272063/ Canonical
+- https://www.linkedin.com/jobs/view/3868148428/ Vertisystem (Outsource)
+- https://www.linkedin.com/jobs/view/3867709652/ Pure Storage (???)
 - https://tryremotely.com/jobs/oowlish-golang-developer-79695 Oowlish
 - https://tryremotely.com/jobs/runzero-senior-software-engineer-go-77972 runZero
 - https://justjoin.it/offers/oxla-golang-developer-gdansk-362959 Oxla

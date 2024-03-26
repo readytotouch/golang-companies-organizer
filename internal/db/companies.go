@@ -760,6 +760,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "", // NOP
 			MainLanguage:    false,
 		},
+		{
+			Name: "Canonical",
+			URL:  "https://canonical.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    234280,
+					Alias: "canonical",
+					Name:  "Canonical",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "canonical",
+				RepositoryCount: 83,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Canonical-EI_IE230560.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm",
+			},
+			OttaProfileSlug: "canonical",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
