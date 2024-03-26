@@ -844,6 +844,27 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "",
 			MainLanguage:    true,
 		},
+		{
+			Name: "Audigent",
+			URL:  "https://audigent.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    10642467,
+					Alias: "audigent",
+					Name:  "Audigent",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "AuDigent",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Audigent-EI_IE5815298.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Audigent-Reviews-E5815298.htm",
+			},
+			OttaProfileSlug: "Audigent",
+			MainLanguage:    false,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",

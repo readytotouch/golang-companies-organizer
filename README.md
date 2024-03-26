@@ -8,14 +8,8 @@
 ### TODO:
 - Add direct link to company vacancies
 - Link to recruiter's LinkedIn profile of company
-- https://boards.greenhouse.io/workato
-- https://www.assertiveyield.com/careers/backend-engineer-golang/
 - https://justjoin.it/all-locations/go
-- https://www.splunk.com/en_us/careers/jobs/senior-software-engineer-28594.html
 - https://golang.cafe/job/senior-data-software-engineer-90poe-1621513889
-- https://careers.hellofresh.com/global/en/job/5318250/Senior-Backend-Engineer-Planning-Golang-m-f-x
-- https://jobs.dou.ua/companies/autodoc/vacancies/262441/
-- https://www.linkedin.com/jobs/view/3865206621/ Gymondo Golang
 - https://relocate.me/the-united-kingdom/london/form3/senior-software-engineer-go-7646
 - https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw
 - https://github.com/mercari
@@ -32,11 +26,7 @@
 - https://adevinta.com/jobs/backend-developer-go/ leboncoin
 - https://wellfound.com/jobs/2924731-golang-engineer Holdex
 - https://codersera.com/hire/hire-golang-developer
-- https://wellfound.com/jobs/1294436-senior-backend-api-engineer-d-f-m Vivenu "TypeScript and Node.js in the backend with a continuously increasing share of Golang"
-- https://www.linkedin.com/jobs/view/3856676914/ Devoteam
-- https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
 - https://www.instahyre.com/job-308851-golang-developer-at-tinvio-work-from-home/ Tinvio
-- https://www.linkedin.com/jobs/view/3844387776/ Revoco
 - Golang Ubisoft
 - Golang DMarket
 - Golang Brimore
@@ -56,3 +46,16 @@
 - https://www.lifewire.com/boolean-search-terms-google-1616810
 - https://www.golangprojects.com/golang-go-job-fzy-Remote-Software-Engineer-Go-Seattle-Bluesky-remotework.html
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/
+
+### Potential companies:
+- https://wellfound.com/jobs/1294436-senior-backend-api-engineer-d-f-m Vivenu "TypeScript and Node.js in the backend with a continuously increasing share of Golang"
+- https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
+
+### Potential outsource companies:
+- https://www.linkedin.com/jobs/view/3844387776/ Revoco (Recruitment) ("London" AND "Golang" AND "Greentech")
+- https://www.linkedin.com/jobs/view/3856676914/ Devoteam (IT Services and IT Consulting)
+
+### Sites:
+- https://wellfound.com/
+- https://relocate.me/
+- https://boards.greenhouse.io/
