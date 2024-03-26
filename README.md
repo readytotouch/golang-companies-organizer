@@ -16,10 +16,7 @@
 - https://app.otta.com/companies/Tanium
 - https://app.otta.com/jobs/kgXX99Pm Vimeo
 - https://app.otta.com/jobs/k_17Qlf3 Wise
-- https://www.linkedin.com/jobs/view/3868148428/ Vertisystem (Outsource)
 - https://www.linkedin.com/jobs/view/3867709652/ Pure Storage (???)
-- https://tryremotely.com/jobs/oowlish-golang-developer-79695 Oowlish
-- https://tryremotely.com/jobs/runzero-senior-software-engineer-go-77972 runZero
 - https://justjoin.it/offers/oxla-golang-developer-gdansk-362959 Oxla
 - https://jobs.dell.com/en/job/united-kingdom/intern-software-engineer-platform-engineering-100-remote-uk/375/62765277904 Dell
 - https://wellfound.com/jobs/2844005-sr-software-engineer-golang Audigent
@@ -54,6 +51,8 @@
 ### Potential outsource companies:
 - https://www.linkedin.com/jobs/view/3844387776/ Revoco (Recruitment) ("London" AND "Golang" AND "Greentech")
 - https://www.linkedin.com/jobs/view/3856676914/ Devoteam (IT Services and IT Consulting)
+- https://tryremotely.com/jobs/oowlish-golang-developer-79695 Oowlish (IT Services and IT Consulting)
+- https://www.linkedin.com/jobs/view/3868148428/ Vertisystem (Outsource)
 
 ### Sites:
 - https://wellfound.com/
