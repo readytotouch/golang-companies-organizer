@@ -11,7 +11,6 @@
 - https://github.com/mercari
 - https://app.otta.com/companies/Tanium
 - https://www.linkedin.com/jobs/view/3867709652/ Pure Storage (???)
-- https://justjoin.it/offers/oxla-golang-developer-gdansk-362959 Oxla
 - https://jobs.dell.com/en/job/united-kingdom/intern-software-engineer-platform-engineering-100-remote-uk/375/62765277904 Dell
 - https://wellfound.com/jobs/2844005-sr-software-engineer-golang Audigent
 - https://adevinta.com/jobs/backend-developer-go/ leboncoin
@@ -25,7 +24,6 @@
 - Golang Stockbit
 - Golang CountX
 - Golang JivyGroup
-- Golang Sixt
 - https://app.otta.com/jobs/rO3hXkv-
 - https://app.otta.com/jobs/RnXM1YTv
 - https://app.otta.com/jobs/f0FEae5C

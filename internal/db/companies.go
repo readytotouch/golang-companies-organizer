@@ -976,6 +976,29 @@ func Companies() []domain.Company {
 			OttaProfileSlug: "",
 			MainLanguage:    false,
 		},
+		{
+			Name: "Oxla",
+			URL:  "https://oxla.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    79378182,
+					Alias: "oxla",
+					Name:  "Oxla",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://justjoin.it/offers/oxla-golang-developer-gdansk-362959"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
