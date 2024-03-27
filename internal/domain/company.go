@@ -17,11 +17,13 @@ type GlassdoorProfile struct {
 }
 
 type Company struct {
-	Name             string
-	URL              string
-	LinkedInProfiles []LinkedInProfile
-	GitHubProfile    GitHubProfile
-	GlassdoorProfile GlassdoorProfile
-	OttaProfileSlug  string
-	MainLanguage     bool // Golang is the main language
+	Name              string
+	URL               string
+	LinkedInProfiles  []LinkedInProfile
+	GitHubProfile     GitHubProfile
+	GlassdoorProfile  GlassdoorProfile
+	OttaProfileSlug   string
+	YouTubeChannelURL string
+	MainLanguage      bool // Golang is the main language
+	Vacancies         []string
 }

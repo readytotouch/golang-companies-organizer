@@ -297,6 +297,9 @@ func Companies() []domain.Company {
 			},
 			OttaProfileSlug: "Form3",
 			MainLanguage:    false,
+			Vacancies: []string{
+				"https://relocate.me/the-united-kingdom/london/form3/senior-software-engineer-go-7646",
+			},
 		},
 		{
 			Name: "Docker",
@@ -358,8 +361,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Splunk-EI_IE117313.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Splunk-Reviews-E117313.htm",
 			},
-			OttaProfileSlug: "Splunk",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Splunk",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://justjoin.it/offers/splunk-senior-software-engineer-backend-go-olkusz"},
 		},
 		{
 			Name: "90POE",
@@ -505,8 +510,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grafana-Labs-Reviews-E2300269.htm",
 			},
-			OttaProfileSlug: "Grafana-Labs",
-			MainLanguage:    true,
+			OttaProfileSlug:   "Grafana-Labs",
+			YouTubeChannelURL: "https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw",
+			MainLanguage:      true,
+			Vacancies:         nil,
 		},
 		{
 			Name: "Weaviate",
@@ -799,8 +806,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vodeno-EI_IE2877672.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vodeno-Reviews-E2877672.htm",
 			},
-			OttaProfileSlug: "",
-			MainLanguage:    false,
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://justjoin.it/offers/vodeno-go-developer-kielce-358668"},
 		},
 		{
 			Name: "Utility Warehouse",
@@ -885,6 +894,137 @@ func Companies() []domain.Company {
 			},
 			OttaProfileSlug: "runZero",
 			MainLanguage:    false,
+		},
+		{
+			Name: "Pinterest",
+			URL:  "https://www.pinterest.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1124131,
+					Alias: "pinterest",
+					Name:  "Pinterest",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "pinterest",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pinterest-Reviews-E503467.htm",
+			},
+			OttaProfileSlug: "Pinterest",
+			MainLanguage:    false,
+			Vacancies:       []string{"https://app.otta.com/jobs/JwXeQ-gm"},
+		},
+		{
+			Name: "Tyk",
+			URL:  "https://tyk.io/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    10775050,
+					Alias: "tyk",
+					Name:  "Tyk",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "TykTechnologies",
+				RepositoryCount: 79,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tyk-EI_IE2321465.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tyk-Reviews-E2321465.htm",
+			},
+			OttaProfileSlug: "Tyk",
+			MainLanguage:    true,
+		},
+		{
+			Name: "Sixt",
+			URL:  "https://www.sixt.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    17120,
+					Alias: "sixt",
+					Name:  "SIXT",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Sixt",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sixt-EI_IE10875.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sixt-Reviews-E10875.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    false,
+		},
+		{
+			Name: "OpenTag",
+			URL:  "https://theopentag.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    20565935,
+					Alias: "theopentag",
+					Name:  "OpenTag",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "OpenTagOS",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenTag-EI_IE3310869.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OpenTag-Reviews-E3310869.htm",
+			},
+			OttaProfileSlug: "",
+			MainLanguage:    false,
+		},
+		{
+			Name: "Oxla",
+			URL:  "https://oxla.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    79378182,
+					Alias: "oxla",
+					Name:  "Oxla",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://justjoin.it/offers/oxla-golang-developer-gdansk-362959"},
+		},
+		{
+			Name: "Lightspeed",
+			URL:  "https://www.lightspeedhq.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    1557218,
+					Alias: "lightspeedcommerce",
+					Name:  "Lightspeed Commerce",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "lightspeed",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lightspeed-EI_IE648762.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lightspeed-Reviews-E648762.htm",
+			},
+			OttaProfileSlug:   "Lightspeed",
+			YouTubeChannelURL: "https://www.youtube.com/channel/UCqOEKwLpolZBcj4LfU3R0Fg",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/RnXM1YTv"},
 		},
 		//{
 		//	Name: "",

@@ -18,9 +18,18 @@ const (
 	keywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
 )
 
-func googleCompanyJobsURL(company Company) string {
+func googleCompanyTitlesJobsURL(company Company) string {
 	values := url.Values{
 		"q":   {fmt.Sprintf("%q (%s)", company.Name, keywordsTitles)},
+		"tbs": {"qdr:m"},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleCompanySkillsJobsURL(company Company) string {
+	values := url.Values{
+		"q":   {fmt.Sprintf("%q %q (%s)", company.Name, "Software Engineer", keywordsSkills)},
 		"tbs": {"qdr:m"},
 	}
 

@@ -13,40 +13,77 @@
 
       gtag('config', 'G-VCD3QKRT9Z');
     </script>
+    <style>
+        td {
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-right:5px;
+        }
+
+        td:first-child {
+            padding-left:5px;
+            padding-right:0;
+        }
+    </style>
 </head>
 <body>
     <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
     <table border="1">
         <tr>
             <th>Name</th>
-            <th>LinkedIn</th>
-            <th>GitHub</th>
+            <th><img width="20px" src="./icons/linkedin.svg"/> LinkedIn</th>
+            <th><img width="20px" src="./icons/github.svg"/> GitHub</th>
             <th>Glassdoor</th>
-            <th>Otta</th>
+            <th><img width="20px" src="./icons/otta.png"/> Otta</th>
+            <th><img width="20px" src="./icons/youtube.svg"/> YouTube</th>
+            <th>Vacancies</th>
             <th>Go main language</th>
             <th>Actions</th>
         </tr>
         {% for _, company := range companies %}
             <tr>
-                <td><a href="{%s company.URL %}">{%s company.Name %}</a></td>
+                <td>
+                    <a href="{%s company.URL %}">{%s company.Name %}</a>
+                </td>
                 <td>
                     {%- for _, profile := range company.LinkedInProfiles -%}
-                        <a href="https://www.linkedin.com/company/{%s profile.Alias %}/" title="{%s profile.Name %}"><img width="20px" src="./icons/linkedin.svg"/></a>{% newline %}
+                        <a href="https://www.linkedin.com/company/{%s profile.Alias %}/" title="{%s profile.Name %}">Overview</a>,
                     {%- endfor -%}
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.Name %}">Connections</a>,
+                    <a href="{%s linkedinJobsURL([]Company{company}, keywordsSkills) %}" title="{%s company.Name %}">Jobs</a>
                 </td>
                 <td>
                     {%- if company.GitHubProfile.Login != "" -%}
-                        <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: {%d company.GitHubProfile.RepositoryCount %}
+                        <a href="https://github.com/{%s company.GitHubProfile.Login %}">Overview</a>, <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>: {%d company.GitHubProfile.RepositoryCount %}
                     {%- endif -%}
                 </td>
-                <td><a href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>, <a href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a></td>
+                <td>
+                    <a href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>, <a href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a>
+                </td>
                 <td>
                     {%- if company.OttaProfileSlug != "" -%}
-                        <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}"><img width="20px" src="./icons/otta.png"/></a>
+                        <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
                     {%- endif -%}
                 </td>
-                <td>{% if company.MainLanguage %}✔️{% endif %}</td>
-                <td><a href="{%s googleCompanyJobsURL(company) %}">Search in Google</a></td>
+                <td>
+                    {%- if company.YouTubeChannelURL != "" -%}
+                        <a href="{%s company.YouTubeChannelURL %}">Overview</a>
+                    {%- endif -%}
+                </td>
+                <td>
+                    {%- for i, vacancy := range company.Vacancies -%}
+                        <a href="{%s vacancy %}">#{%d i %}</a>
+                    {%- endfor -%}
+                </td>
+                <td>
+                    {% if company.MainLanguage %}✔️ TRUE{% endif %}
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="{%s googleCompanyTitlesJobsURL(company) %}">Search in Google by titles</a></li>
+                        <li><a href="{%s googleCompanySkillsJobsURL(company) %}">Search in Google by skills</a></li>
+                    </ul>
+                </td>
             </tr>
         {% endfor %}
     </table>
