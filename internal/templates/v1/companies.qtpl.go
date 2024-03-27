@@ -29,16 +29,30 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 
       gtag('config', 'G-VCD3QKRT9Z');
     </script>
+    <style>
+        td {
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-right:5px;
+        }
+
+        td:first-child {
+            padding-left:5px;
+            padding-right:0;
+        }
+    </style>
 </head>
 <body>
     <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
     <table border="1">
         <tr>
             <th>Name</th>
-            <th>LinkedIn</th>
-            <th>GitHub</th>
+            <th><img width="20px" src="./icons/linkedin.svg"/> LinkedIn</th>
+            <th><img width="20px" src="./icons/github.svg"/> GitHub</th>
             <th>Glassdoor</th>
-            <th>Otta</th>
+            <th><img width="20px" src="./icons/otta.png"/> Otta</th>
+            <th><img width="20px" src="./icons/youtube.svg"/> YouTube</th>
+            <th>Vacancies</th>
             <th>Go main language</th>
             <th>Actions</th>
         </tr>
@@ -46,11 +60,13 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 	for _, company := range companies {
 		qw422016.N().S(`
             <tr>
-                <td><a href="`)
+                <td>
+                    <a href="`)
 		qw422016.E().S(company.URL)
 		qw422016.N().S(`">`)
 		qw422016.E().S(company.Name)
-		qw422016.N().S(`</a></td>
+		qw422016.N().S(`</a>
+                </td>
                 <td>
 `)
 		for _, profile := range company.LinkedInProfiles {
@@ -58,46 +74,86 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 			qw422016.E().S(profile.Alias)
 			qw422016.N().S(`/" title="`)
 			qw422016.E().S(profile.Name)
-			qw422016.N().S(`"><img width="20px" src="./icons/linkedin.svg"/></a>`)
-			qw422016.N().S(`
-`)
-			qw422016.N().S(`
+			qw422016.N().S(`">Overview</a>,
 `)
 		}
-		qw422016.N().S(`                </td>
+		qw422016.N().S(`                    <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, universities))
+		qw422016.N().S(`" title="`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`">Connections</a>,
+                    <a href="`)
+		qw422016.E().S(linkedinJobsURL([]Company{company}, keywordsSkills))
+		qw422016.N().S(`" title="`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`">Jobs</a>
+                </td>
                 <td>
 `)
 		if company.GitHubProfile.Login != "" {
-			qw422016.N().S(`                        <a href="https://github.com/orgs/`)
+			qw422016.N().S(`                        <a href="https://github.com/`)
 			qw422016.E().S(company.GitHubProfile.Login)
-			qw422016.N().S(`/repositories?q=lang:go"><img width="20px" src="./icons/github.svg"/></a>: `)
+			qw422016.N().S(`">Overview</a>, <a href="https://github.com/orgs/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`/repositories?q=lang:go">Repositories</a>: `)
 			qw422016.N().D(company.GitHubProfile.RepositoryCount)
 			qw422016.N().S(`
 `)
 		}
 		qw422016.N().S(`                </td>
-                <td><a href="`)
+                <td>
+                    <a href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
 		qw422016.N().S(`">Overview</a>, <a href="`)
 		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
-		qw422016.N().S(`">Reviews</a></td>
+		qw422016.N().S(`">Reviews</a>
+                </td>
                 <td>
 `)
 		if company.OttaProfileSlug != "" {
 			qw422016.N().S(`                        <a href="https://app.otta.com/companies/`)
 			qw422016.E().S(company.OttaProfileSlug)
-			qw422016.N().S(`"><img width="20px" src="./icons/otta.png"/></a>
+			qw422016.N().S(`">Overview</a>
 `)
 		}
 		qw422016.N().S(`                </td>
-                <td>`)
-		if company.MainLanguage {
-			qw422016.N().S(`✔️`)
+                <td>
+`)
+		if company.YouTubeChannelURL != "" {
+			qw422016.N().S(`                        <a href="`)
+			qw422016.E().S(company.YouTubeChannelURL)
+			qw422016.N().S(`">Overview</a>
+`)
 		}
-		qw422016.N().S(`</td>
-                <td><a href="`)
-		qw422016.E().S(googleCompanyJobsURL(company))
-		qw422016.N().S(`">Search in Google</a></td>
+		qw422016.N().S(`                </td>
+                <td>
+`)
+		for i, vacancy := range company.Vacancies {
+			qw422016.N().S(`                        <a href="`)
+			qw422016.E().S(vacancy)
+			qw422016.N().S(`">#`)
+			qw422016.N().D(i)
+			qw422016.N().S(`</a>
+`)
+		}
+		qw422016.N().S(`                </td>
+                <td>
+                    `)
+		if company.MainLanguage {
+			qw422016.N().S(`✔️ TRUE`)
+		}
+		qw422016.N().S(`
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="`)
+		qw422016.E().S(googleCompanyTitlesJobsURL(company))
+		qw422016.N().S(`">Search in Google by titles</a></li>
+                        <li><a href="`)
+		qw422016.E().S(googleCompanySkillsJobsURL(company))
+		qw422016.N().S(`">Search in Google by skills</a></li>
+                    </ul>
+                </td>
             </tr>
         `)
 	}

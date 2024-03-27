@@ -42,6 +42,7 @@
 - https://wellfound.com/jobs/2924731-golang-engineer Holdex (Hong Kong)
 - https://github.com/mercari
 - https://app.otta.com/jobs/rO3hXkv-
+- https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
 
 ### Potential outsource companies:
 - https://www.linkedin.com/jobs/view/3844387776/ Revoco (Recruitment) ("London" AND "Golang" AND "Greentech")
@@ -51,6 +52,8 @@
 - https://www.linkedin.com/jobs/view/3868454344/ Colaberry
 - https://www.linkedin.com/jobs/view/3871356973/ Conexess Group
 - https://www.glassdoor.com/Job/golang-developer-jobs-SRCH_KO0,16.htm Tech Holding
+- https://app.otta.com/jobs/VzFTaW44 https://app.otta.com/companies/Exostellar
+- https://app.otta.com/jobs/6g-dr-8_ https://app.otta.com/companies/Lyft
 
 ### Sites:
 - https://wellfound.com/
