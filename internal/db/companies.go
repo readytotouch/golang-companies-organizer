@@ -1026,6 +1026,98 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://app.otta.com/jobs/RnXM1YTv"},
 		},
+		{
+			Name: "Squarespace",
+			URL:  "https://www.squarespace.com/",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    265314,
+					Alias: "squarespace",
+					Name:  "Squarespace",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "squarespace",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Squarespace-EI_IE466343.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Squarespace-Reviews-E466343.htm",
+			},
+			OttaProfileSlug:   "Squarespace-1",
+			YouTubeChannelURL: "https://www.youtube.com/squarespace",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/qAnITcbo"},
+		},
+		{
+			Name: "",
+			URL:  "",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    0,
+					Alias: "",
+					Name:  "",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         nil,
+		},
+		{
+			Name: "",
+			URL:  "",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    0,
+					Alias: "",
+					Name:  "",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         nil,
+		},
+		{
+			Name: "",
+			URL:  "",
+			LinkedInProfiles: []domain.LinkedInProfile{
+				{
+					ID:    0,
+					Alias: "",
+					Name:  "",
+				},
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         nil,
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
@@ -1044,8 +1136,10 @@ func Companies() []domain.Company {
 		//		OverviewURL: "",
 		//		ReviewsURL:  "",
 		//	},
-		//	OttaProfileSlug: "",
-		//	MainLanguage:    false,
+		//	OttaProfileSlug:   "",
+		//	YouTubeChannelURL: "",
+		//	MainLanguage:      false,
+		//	Vacancies:         nil,
 		//},
 	}
 }
