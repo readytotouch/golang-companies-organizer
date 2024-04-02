@@ -127,8 +127,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudflare-EI_IE430862.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
 			},
-			OttaProfileSlug: "Cloudflare-1",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Cloudflare-1",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/B_RaZ6l5"},
 		},
 		{
 			Name: "Bitly",
@@ -232,8 +234,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stream-CO-EI_IE1703813.11,20.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stream-CO-Reviews-E1703813.htm",
 			},
-			OttaProfileSlug: "Stream",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Stream",
+			YouTubeChannelURL: "https://www.youtube.com/@streamdevelopers",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3873637399/"},
 		},
 		{
 			Name: "Workato",
@@ -743,8 +747,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mastercard-Reviews-E3677.htm",
 			},
-			OttaProfileSlug: "Mastercard",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Mastercard",
+			YouTubeChannelURL: "https://www.youtube.com/@MasterCard",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3842471708/"},
 		},
 		{
 			Name: "Cynergy Bank",
@@ -764,8 +770,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynergy-Bank-EI_IE769090.11,23.htm",
 				ReviewsURL:  "https://www.glassdoor.co.uk/Reviews/Cynergy-Bank-Reviews-E769090.htm",
 			},
-			OttaProfileSlug: "", // NOP
-			MainLanguage:    false,
+			OttaProfileSlug:   "", // NOP
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3868356139/"},
 		},
 		{
 			Name: "Canonical",
@@ -1050,13 +1058,13 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://app.otta.com/jobs/qAnITcbo"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Curve",
+			URL:  "https://curve.com/",
 			LinkedInProfiles: []domain.LinkedInProfile{
 				{
-					ID:    0,
-					Alias: "",
-					Name:  "",
+					ID:    10023464,
+					Alias: "curve-ltd",
+					Name:  "Curve",
 				},
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1064,13 +1072,13 @@ func Companies() []domain.Company {
 				RepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Curve-EI_IE1739754.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Curve-Reviews-E1739754.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         nil,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3872933701/"},
 		},
 		{
 			Name: "",
