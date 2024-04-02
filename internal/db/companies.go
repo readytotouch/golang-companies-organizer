@@ -174,8 +174,10 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Reddit-EI_IE796358.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Reddit-Reviews-E796358.htm",
 			},
-			OttaProfileSlug: "Reddit-1",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Reddit-1",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/l-8sLbJL"},
 		},
 		{
 			Name: "Dailymotion",
@@ -1107,6 +1109,28 @@ func Companies() []domain.Company {
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3843045776/"},
+		},
+		{
+			Name: "Vonage",
+			URL:  "https://www.vonage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				IDs:   []int{5028, 1345545, 66428, 76778, 2102},
+				Alias: "vonage",
+				Name:  "Vonage",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Vonage",
+				RepositoryCount: 4,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vonage-EI_IE23019.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vonage-Reviews-E23019.htm",
+			},
+			OttaProfileSlug:   "Vonage",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3818119706/"},
 		},
 		//{
 		//	Name: "",

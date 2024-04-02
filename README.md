@@ -43,6 +43,12 @@
 - https://github.com/mercari
 - https://app.otta.com/jobs/rO3hXkv-
 - https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
+- https://app.otta.com/jobs/Uf3aEKLZ Collective Minds Radiology
+- https://app.otta.com/companies/Ashby
+- https://app.otta.com/jobs/x-Xm2wSF OpenWeb
+- https://app.otta.com/jobs/vD3lShdV EvenUp
+- https://app.otta.com/jobs/jqSvKxpk Lyft
+- https://www.linkedin.com/jobs/view/3876325971/ Snowflake
 
 ### Potential outsource companies:
 - https://www.linkedin.com/jobs/view/3844387776/ Revoco (Recruitment) ("London" AND "Golang" AND "Greentech")
@@ -53,7 +59,6 @@
 - https://www.linkedin.com/jobs/view/3871356973/ Conexess Group
 - https://www.glassdoor.com/Job/golang-developer-jobs-SRCH_KO0,16.htm Tech Holding
 - https://app.otta.com/jobs/VzFTaW44 https://app.otta.com/companies/Exostellar
-- https://app.otta.com/jobs/6g-dr-8_ https://app.otta.com/companies/Lyft
 
 ### Sites:
 - https://wellfound.com/
