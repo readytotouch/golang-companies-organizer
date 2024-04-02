@@ -54,6 +54,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
             <th><img width="20px" src="./icons/youtube.svg"/> YouTube</th>
             <th>Vacancies</th>
             <th>Go main language</th>
+            <th>SimilarWeb</th>
             <th>Actions</th>
         </tr>
         `)
@@ -68,16 +69,12 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 		qw422016.N().S(`</a>
                 </td>
                 <td>
-`)
-		for _, profile := range company.LinkedInProfiles {
-			qw422016.N().S(`                        <a href="https://www.linkedin.com/company/`)
-			qw422016.E().S(profile.Alias)
-			qw422016.N().S(`/" title="`)
-			qw422016.E().S(profile.Name)
-			qw422016.N().S(`">Overview</a>,
-`)
-		}
-		qw422016.N().S(`                    <a href="`)
+                    <a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" title="`)
+		qw422016.E().S(company.LinkedInProfile.Name)
+		qw422016.N().S(`">Overview</a>,
+                    <a href="`)
 		qw422016.E().S(linkedinConnectionsURL([]Company{company}, universities))
 		qw422016.N().S(`" title="`)
 		qw422016.E().S(company.Name)
@@ -143,6 +140,11 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 			qw422016.N().S(`✔️ TRUE`)
 		}
 		qw422016.N().S(`
+                </td>
+                <td>
+                    <a href="`)
+		qw422016.E().S(similarwebURL(company.URL))
+		qw422016.N().S(`">Overview</a>
                 </td>
                 <td>
                     <ul>

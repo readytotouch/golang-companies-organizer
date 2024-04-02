@@ -7,12 +7,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Google",
 			URL:  "https://www.google.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    1441,
-					Alias: "google",
-					Name:  "Google",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1441,
+				Alias: "google",
+				Name:  "Google",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "google",
@@ -28,12 +26,10 @@ func Companies() []domain.Company {
 		{
 			Name: "VictoriaMetrics",
 			URL:  "https://victoriametrics.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    30169914,
-					Alias: "victoriametrics",
-					Name:  "VictoriaMetrics",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    30169914,
+				Alias: "victoriametrics",
+				Name:  "VictoriaMetrics",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "VictoriaMetrics",
@@ -49,12 +45,10 @@ func Companies() []domain.Company {
 		{
 			Name: "DocHQ",
 			URL:  "https://dochq.co.uk/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    14136494,
-					Alias: "dochq",
-					Name:  "DocHQ",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    14136494,
+				Alias: "dochq",
+				Name:  "DocHQ",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "dochq",
@@ -70,12 +64,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Uber",
 			URL:  "https://www.uber.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    1815218,
-					Alias: "uber-com",
-					Name:  "Uber",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1815218,
+				Alias: "uber-com",
+				Name:  "Uber",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "uber",
@@ -91,12 +83,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Careem",
 			URL:  "https://www.careem.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    2852511,
-					Alias: "careem",
-					Name:  "Careem",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2852511,
+				Alias: "careem",
+				Name:  "Careem",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "careem",
@@ -112,12 +102,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Cloudflare",
 			URL:  "https://www.cloudflare.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    407222,
-					Alias: "cloudflare",
-					Name:  "Cloudflare",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    407222,
+				Alias: "cloudflare",
+				Name:  "Cloudflare",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "cloudflare",
@@ -127,18 +115,18 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudflare-EI_IE430862.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
 			},
-			OttaProfileSlug: "Cloudflare-1",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Cloudflare-1",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/B_RaZ6l5"},
 		},
 		{
 			Name: "Bitly",
 			URL:  "https://bitly.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    552285,
-					Alias: "bitly",
-					Name:  "Bitly",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    552285,
+				Alias: "bitly",
+				Name:  "Bitly",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "bitly",
@@ -154,12 +142,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Cockroach Labs",
 			URL:  "https://www.cockroachlabs.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    9309408,
-					Alias: "cockroach-labs",
-					Name:  "Cockroach Labs",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    9309408,
+				Alias: "cockroach-labs",
+				Name:  "Cockroach Labs",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "cockroachdb",
@@ -175,12 +161,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Reddit",
 			URL:  "https://www.reddit.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    150573,
-					Alias: "reddit-com",
-					Name:  "Reddit, Inc.",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    150573,
+				Alias: "reddit-com",
+				Name:  "Reddit, Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "reddit",
@@ -190,18 +174,18 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Reddit-EI_IE796358.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Reddit-Reviews-E796358.htm",
 			},
-			OttaProfileSlug: "Reddit-1",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Reddit-1",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/l-8sLbJL"},
 		},
 		{
 			Name: "Dailymotion",
 			URL:  "https://www.dailymotion.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    24411,
-					Alias: "dailymotion",
-					Name:  "Dailymotion",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    24411,
+				Alias: "dailymotion",
+				Name:  "Dailymotion",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "dailymotion",
@@ -217,12 +201,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Stream",
 			URL:  "https://getstream.io/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    5338728,
-					Alias: "getstream",
-					Name:  "Stream",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    5338728,
+				Alias: "getstream",
+				Name:  "Stream",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "GetStream",
@@ -232,18 +214,18 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stream-CO-EI_IE1703813.11,20.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stream-CO-Reviews-E1703813.htm",
 			},
-			OttaProfileSlug: "Stream",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Stream",
+			YouTubeChannelURL: "https://www.youtube.com/@streamdevelopers",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3873637399/"},
 		},
 		{
 			Name: "Workato",
 			URL:  "https://www.workato.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    3675685,
-					Alias: "workato",
-					Name:  "Workato",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3675685,
+				Alias: "workato",
+				Name:  "Workato",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "workato",
@@ -259,12 +241,10 @@ func Companies() []domain.Company {
 		{
 			Name: "FerretDB",
 			URL:  "https://www.ferretdb.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    80672744,
-					Alias: "ferretdb",
-					Name:  "FerretDB",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    80672744,
+				Alias: "ferretdb",
+				Name:  "FerretDB",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "FerretDB",
@@ -280,12 +260,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Form3",
 			URL:  "https://www.form3.tech/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    15156804,
-					Alias: "form3-financial-cloud",
-					Name:  "Form3",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15156804,
+				Alias: "form3-financial-cloud",
+				Name:  "Form3",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "form3tech-oss",
@@ -304,12 +282,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Docker",
 			URL:  "https://www.docker.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    1301808,
-					Alias: "docker",
-					Name:  "Docker, Inc",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1301808,
+				Alias: "docker",
+				Name:  "Docker, Inc",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "docker",
@@ -325,12 +301,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Assertive Yield",
 			URL:  "https://www.assertiveyield.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    76806664,
-					Alias: "assertive-yield",
-					Name:  "Assertive Yield B.V.",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    76806664,
+				Alias: "assertive-yield",
+				Name:  "Assertive Yield B.V.",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "Assertive-Yield",
@@ -346,12 +320,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Splunk",
 			URL:  "https://www.splunk.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    20226,
-					Alias: "splunk",
-					Name:  "Splunk",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    20226,
+				Alias: "splunk",
+				Name:  "Splunk",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "splunk",
@@ -369,12 +341,10 @@ func Companies() []domain.Company {
 		{
 			Name: "90POE",
 			URL:  "https://www.90poe.io/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    18466590,
-					Alias: "90poe",
-					Name:  "Ninety Percent of Everything (90POE)",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18466590,
+				Alias: "90poe",
+				Name:  "Ninety Percent of Everything (90POE)",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "90poe",
@@ -390,12 +360,10 @@ func Companies() []domain.Company {
 		{
 			Name: "HelloFresh",
 			URL:  "https://www.hellofresh.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    2454643,
-					Alias: "hellofresh",
-					Name:  "HelloFresh",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2454643,
+				Alias: "hellofresh",
+				Name:  "HelloFresh",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "hellofresh",
@@ -411,12 +379,10 @@ func Companies() []domain.Company {
 		{
 			Name: "AUTODOC",
 			URL:  "https://autodoc.group/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    7703911,
-					Alias: "autodoc",
-					Name:  "AUTODOC",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    7703911,
+				Alias: "autodoc",
+				Name:  "AUTODOC",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "", // unknown
@@ -432,12 +398,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Gymondo",
 			URL:  "https://www.gymondo.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    5233814,
-					Alias: "gymondo-gmbh",
-					Name:  "Gymondo",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    5233814,
+				Alias: "gymondo-gmbh",
+				Name:  "Gymondo",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "Gymondo-git",
@@ -453,12 +417,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Delivery Hero",
 			URL:  "https://www.deliveryhero.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    2393200,
-					Alias: "delivery-hero-se",
-					Name:  "Delivery Hero",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2393200,
+				Alias: "delivery-hero-se",
+				Name:  "Delivery Hero",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "deliveryhero",
@@ -474,12 +436,10 @@ func Companies() []domain.Company {
 		{
 			Name: "HashiCorp",
 			URL:  "https://www.hashicorp.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    2830763,
-					Alias: "hashicorp",
-					Name:  "HashiCorp",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2830763,
+				Alias: "hashicorp",
+				Name:  "HashiCorp",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "hashicorp",
@@ -495,12 +455,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Grafana Labs",
 			URL:  "https://grafana.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    11062162,
-					Alias: "grafana-labs",
-					Name:  "Grafana Labs",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11062162,
+				Alias: "grafana-labs",
+				Name:  "Grafana Labs",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "grafana",
@@ -518,12 +476,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Weaviate",
 			URL:  "https://weaviate.io/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    11702022,
-					Alias: "weaviate-io",
-					Name:  "Weaviate",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11702022,
+				Alias: "weaviate-io",
+				Name:  "Weaviate",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "weaviate",
@@ -539,12 +495,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Palantir",
 			URL:  "https://www.palantir.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    20708,
-					Alias: "palantir-technologies",
-					Name:  "Palantir Technologies",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    20708,
+				Alias: "palantir-technologies",
+				Name:  "Palantir Technologies",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "palantir",
@@ -560,12 +514,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Okta",
 			URL:  "https://www.okta.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    926041,
-					Alias: "okta-inc-",
-					Name:  "Okta",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    926041,
+				Alias: "okta-inc-",
+				Name:  "Okta",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "okta",
@@ -581,12 +533,10 @@ func Companies() []domain.Company {
 		{
 			Name: "1Password",
 			URL:  "https://1password.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    18648301,
-					Alias: "1password",
-					Name:  "1Password",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18648301,
+				Alias: "1password",
+				Name:  "1Password",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "1Password",
@@ -602,12 +552,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Fubo",
 			URL:  "https://www.fubo.tv/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    5316737,
-					Alias: "fubotv",
-					Name:  "Fubo",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    5316737,
+				Alias: "fubotv",
+				Name:  "Fubo",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "fubotv",
@@ -623,12 +571,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Yassir",
 			URL:  "https://yassir.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    19069709,
-					Alias: "yassir",
-					Name:  "Yassir",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    19069709,
+				Alias: "yassir",
+				Name:  "Yassir",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "YAtechnologies",
@@ -644,12 +590,10 @@ func Companies() []domain.Company {
 		{
 			Name: "DoorDash",
 			URL:  "https://doordash.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    3205573,
-					Alias: "doordash",
-					Name:  "DoorDash",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3205573,
+				Alias: "doordash",
+				Name:  "DoorDash",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "doordash",
@@ -665,12 +609,10 @@ func Companies() []domain.Company {
 		{
 			Name: "BeReal.",
 			URL:  "https://bereal.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    34731272,
-					Alias: "bereal-app",
-					Name:  "BeReal.",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    34731272,
+				Alias: "bereal-app",
+				Name:  "BeReal.",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "BeReal-App",
@@ -686,12 +628,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Vio.com",
 			URL:  "https://www.vio.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    1192098,
-					Alias: "viodotcom",
-					Name:  "Vio.com",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1192098,
+				Alias: "viodotcom",
+				Name:  "Vio.com",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "viodotcom",
@@ -707,12 +647,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Monzo",
 			URL:  "https://monzo.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    9471107,
-					Alias: "monzo-bank",
-					Name:  "Monzo Bank",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    9471107,
+				Alias: "monzo-bank",
+				Name:  "Monzo Bank",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "monzo",
@@ -728,12 +666,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Mastercard",
 			URL:  "https://www.mastercard.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    3015,
-					Alias: "mastercard",
-					Name:  "Mastercard",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3015,
+				Alias: "mastercard",
+				Name:  "Mastercard",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "Mastercard",
@@ -743,18 +679,18 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mastercard-Reviews-E3677.htm",
 			},
-			OttaProfileSlug: "Mastercard",
-			MainLanguage:    false,
+			OttaProfileSlug:   "Mastercard",
+			YouTubeChannelURL: "https://www.youtube.com/@MasterCard",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3842471708/"},
 		},
 		{
 			Name: "Cynergy Bank",
 			URL:  "https://www.cynergybank.co.uk/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    18921842,
-					Alias: "cynergy-bank",
-					Name:  "Cynergy Bank",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18921842,
+				Alias: "cynergy-bank",
+				Name:  "Cynergy Bank",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "", // NOP
@@ -764,18 +700,18 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynergy-Bank-EI_IE769090.11,23.htm",
 				ReviewsURL:  "https://www.glassdoor.co.uk/Reviews/Cynergy-Bank-Reviews-E769090.htm",
 			},
-			OttaProfileSlug: "", // NOP
-			MainLanguage:    false,
+			OttaProfileSlug:   "", // NOP
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3868356139/"},
 		},
 		{
 			Name: "Canonical",
 			URL:  "https://canonical.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    234280,
-					Alias: "canonical",
-					Name:  "Canonical",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    234280,
+				Alias: "canonical",
+				Name:  "Canonical",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "canonical",
@@ -791,12 +727,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Vodeno",
 			URL:  "https://vodeno.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    19016391,
-					Alias: "vodeno",
-					Name:  "Vodeno",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    19016391,
+				Alias: "vodeno",
+				Name:  "Vodeno",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "vodeno",
@@ -814,12 +748,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Utility Warehouse",
 			URL:  "https://uw.co.uk/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    457903,
-					Alias: "utilitywarehouse",
-					Name:  "Utility Warehouse",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    457903,
+				Alias: "utilitywarehouse",
+				Name:  "Utility Warehouse",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "utilitywarehouse",
@@ -835,12 +767,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Codenotary",
 			URL:  "https://codenotary.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    35523736,
-					Alias: "codenotary",
-					Name:  "Codenotary",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    35523736,
+				Alias: "codenotary",
+				Name:  "Codenotary",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "codenotary",
@@ -856,12 +786,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Audigent",
 			URL:  "https://audigent.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    10642467,
-					Alias: "audigent",
-					Name:  "Audigent",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10642467,
+				Alias: "audigent",
+				Name:  "Audigent",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "AuDigent",
@@ -877,12 +805,10 @@ func Companies() []domain.Company {
 		{
 			Name: "runZero",
 			URL:  "https://www.runzero.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    33274038,
-					Alias: "runzero",
-					Name:  "runZero",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    33274038,
+				Alias: "runzero",
+				Name:  "runZero",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "runZeroInc",
@@ -898,12 +824,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Pinterest",
 			URL:  "https://www.pinterest.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    1124131,
-					Alias: "pinterest",
-					Name:  "Pinterest",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1124131,
+				Alias: "pinterest",
+				Name:  "Pinterest",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "pinterest",
@@ -920,12 +844,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Tyk",
 			URL:  "https://tyk.io/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    10775050,
-					Alias: "tyk",
-					Name:  "Tyk",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10775050,
+				Alias: "tyk",
+				Name:  "Tyk",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "TykTechnologies",
@@ -941,12 +863,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Sixt",
 			URL:  "https://www.sixt.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    17120,
-					Alias: "sixt",
-					Name:  "SIXT",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    17120,
+				Alias: "sixt",
+				Name:  "SIXT",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "Sixt",
@@ -962,12 +882,10 @@ func Companies() []domain.Company {
 		{
 			Name: "OpenTag",
 			URL:  "https://theopentag.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    20565935,
-					Alias: "theopentag",
-					Name:  "OpenTag",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    20565935,
+				Alias: "theopentag",
+				Name:  "OpenTag",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "OpenTagOS",
@@ -983,16 +901,14 @@ func Companies() []domain.Company {
 		{
 			Name: "Oxla",
 			URL:  "https://oxla.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    79378182,
-					Alias: "oxla",
-					Name:  "Oxla",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    79378182,
+				Alias: "oxla",
+				Name:  "Oxla",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1006,12 +922,10 @@ func Companies() []domain.Company {
 		{
 			Name: "Lightspeed",
 			URL:  "https://www.lightspeedhq.com/",
-			LinkedInProfiles: []domain.LinkedInProfile{
-				{
-					ID:    1557218,
-					Alias: "lightspeedcommerce",
-					Name:  "Lightspeed Commerce",
-				},
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1557218,
+				Alias: "lightspeedcommerce",
+				Name:  "Lightspeed Commerce",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "lightspeed",
@@ -1026,15 +940,184 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://app.otta.com/jobs/RnXM1YTv"},
 		},
+		{
+			Name: "Squarespace",
+			URL:  "https://www.squarespace.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    265314,
+				Alias: "squarespace",
+				Name:  "Squarespace",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "squarespace",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Squarespace-EI_IE466343.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Squarespace-Reviews-E466343.htm",
+			},
+			OttaProfileSlug:   "Squarespace-1",
+			YouTubeChannelURL: "https://www.youtube.com/squarespace",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/qAnITcbo"},
+		},
+		{
+			Name: "Curve",
+			URL:  "https://curve.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10023464,
+				Alias: "curve-ltd",
+				Name:  "Curve",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Curve-EI_IE1739754.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Curve-Reviews-E1739754.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3872933701/"},
+		},
+		{
+			Name: "Tradevest",
+			URL:  "https://www.tradevest.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    92827682,
+				Alias: "tradevestgmbh",
+				Name:  "Tradevest",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://justjoin.it/offers/tv-development-gmbh-senior-backend-developer"},
+		},
+		{
+			Name: "Samsung",
+			URL:  "https://www.samsung.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				IDs:   []int{1753, 13749561, 3270132, 77752302, 3812597, 3220515, 10633911, 1447520, 3238801, 2711168, 10261221, 87464967, 5089912, 9500165, 10218505, 895705, 78467539, 10332849, 10660176, 79815984, 3290134, 76958044, 85881048, 27127559, 9278177, 37470202, 22316801, 81590082, 11229641, 15213487, 68478415, 5552815, 14472582},
+				Alias: "",
+				Name:  "",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Samsung",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Samsung-Electronics-EI_IE3363.11,30.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Samsung-Electronics-Reviews-E3363.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@Samsung",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3864617797/"},
+		},
+		{
+			Name: "Woolsocks",
+			URL:  "https://woolsocks.eu/",
+			LinkedInProfile: domain.LinkedInProfile{
+
+				ID:    79728837,
+				Alias: "woolsocks",
+				Name:  "Woolsocks",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "amsterdam-platform-creation",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3869628047/"},
+		},
+		{
+			Name: "Applied Systems Canada",
+			URL:  "https://www.appliedsystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    908801,
+				Alias: "applied-systems-canada",
+				Name:  "Applied Systems Canada",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Applied-Systems-EI_IE8534.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Applied-Systems-Reviews-E8534.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3879152828/"},
+		},
+		{
+			Name: "Autodesk",
+			URL:  "https://www.autodesk.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1879,
+				Alias: "autodesk",
+				Name:  "Autodesk",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Autodesk",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Autodesk-EI_IE1155.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Autodesk-Reviews-E1155.htm",
+			},
+			OttaProfileSlug:   "Autodesk",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3843045776/"},
+		},
+		{
+			Name: "Vonage",
+			URL:  "https://www.vonage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				IDs:   []int{5028, 1345545, 66428, 76778, 2102},
+				Alias: "vonage",
+				Name:  "Vonage",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Vonage",
+				RepositoryCount: 4,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vonage-EI_IE23019.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vonage-Reviews-E23019.htm",
+			},
+			OttaProfileSlug:   "Vonage",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3818119706/"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
-		//	LinkedInProfiles: []domain.LinkedInProfile{
-		//		{
-		//			ID:    0,
-		//			Alias: "",
-		//			Name:  "",
-		//		},
+		//	LinkedInProfile: domain.LinkedInProfile{
+		//		ID:    0,
+		//		Alias: "",
+		//		Name:  "",
 		//	},
 		//	GitHubProfile: domain.GitHubProfile{
 		//		Login:           "",
@@ -1044,8 +1127,10 @@ func Companies() []domain.Company {
 		//		OverviewURL: "",
 		//		ReviewsURL:  "",
 		//	},
-		//	OttaProfileSlug: "",
-		//	MainLanguage:    false,
+		//	OttaProfileSlug:   "",
+		//	YouTubeChannelURL: "",
+		//	MainLanguage:      false,
+		//	Vacancies:         nil,
 		//},
 	}
 }

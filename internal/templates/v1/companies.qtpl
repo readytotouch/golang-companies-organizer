@@ -38,6 +38,7 @@
             <th><img width="20px" src="./icons/youtube.svg"/> YouTube</th>
             <th>Vacancies</th>
             <th>Go main language</th>
+            <th>SimilarWeb</th>
             <th>Actions</th>
         </tr>
         {% for _, company := range companies %}
@@ -46,9 +47,7 @@
                     <a href="{%s company.URL %}">{%s company.Name %}</a>
                 </td>
                 <td>
-                    {%- for _, profile := range company.LinkedInProfiles -%}
-                        <a href="https://www.linkedin.com/company/{%s profile.Alias %}/" title="{%s profile.Name %}">Overview</a>,
-                    {%- endfor -%}
+                    <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>,
                     <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.Name %}">Connections</a>,
                     <a href="{%s linkedinJobsURL([]Company{company}, keywordsSkills) %}" title="{%s company.Name %}">Jobs</a>
                 </td>
@@ -77,6 +76,9 @@
                 </td>
                 <td>
                     {% if company.MainLanguage %}✔️ TRUE{% endif %}
+                </td>
+                <td>
+                    <a href="{%s similarwebURL(company.URL) %}">Overview</a>
                 </td>
                 <td>
                     <ul>
