@@ -1046,25 +1046,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3869628047/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Applied Systems Canada",
+			URL:  "https://www.appliedsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    908801,
+				Alias: "applied-systems-canada",
+				Name:  "Applied Systems Canada",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
 				RepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Applied-Systems-EI_IE8534.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Applied-Systems-Reviews-E8534.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         nil,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3879152828/"},
 		},
 		//{
 		//	Name: "",
