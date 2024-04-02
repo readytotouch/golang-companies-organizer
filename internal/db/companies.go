@@ -1066,6 +1066,48 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3879152828/"},
 		},
+		{
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				Alias: "",
+				Name:  "",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         nil,
+		},
+		{
+			Name: "Autodesk",
+			URL:  "https://www.autodesk.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1879,
+				Alias: "autodesk",
+				Name:  "Autodesk",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Autodesk",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Autodesk-EI_IE1155.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Autodesk-Reviews-E1155.htm",
+			},
+			OttaProfileSlug:   "Autodesk",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3843045776/"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
