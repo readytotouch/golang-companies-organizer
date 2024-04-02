@@ -2,6 +2,7 @@ package domain
 
 type LinkedInProfile struct {
 	ID    int
+	IDs   []int
 	Alias string
 	Name  string
 }
@@ -19,7 +20,7 @@ type GlassdoorProfile struct {
 type Company struct {
 	Name              string
 	URL               string
-	LinkedInProfiles  []LinkedInProfile
+	LinkedInProfile   LinkedInProfile
 	GitHubProfile     GitHubProfile
 	GlassdoorProfile  GlassdoorProfile
 	OttaProfileSlug   string

@@ -46,9 +46,7 @@
                     <a href="{%s company.URL %}">{%s company.Name %}</a>
                 </td>
                 <td>
-                    {%- for _, profile := range company.LinkedInProfiles -%}
-                        <a href="https://www.linkedin.com/company/{%s profile.Alias %}/" title="{%s profile.Name %}">Overview</a>,
-                    {%- endfor -%}
+                    <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>,
                     <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.Name %}">Connections</a>,
                     <a href="{%s linkedinJobsURL([]Company{company}, keywordsSkills) %}" title="{%s company.Name %}">Jobs</a>
                 </td>

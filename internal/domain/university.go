@@ -1,5 +1,5 @@
 package domain
 
 type University struct {
-	LinkedInProfiles []LinkedInProfile
+	LinkedInProfile LinkedInProfile
 }

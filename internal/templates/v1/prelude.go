@@ -72,21 +72,29 @@ func linkedinJobsURL(companies []Company, keywords string) string {
 }
 
 func companiesToLinkedInIDs(companies []Company) []string {
-	ids := make([]string, 0, len(companies))
+	ids := make([]string, 0, len(companies)*2)
 	for _, company := range companies {
-		for _, profile := range company.LinkedInProfiles {
-			ids = append(ids, strconv.FormatInt(int64(profile.ID), 10))
-		}
+		ids = appendLinkedInProfileIDs(ids, company.LinkedInProfile)
 	}
 	return ids
 }
 
 func universitiesToLinkedInIDs(universities []University) []string {
-	ids := make([]string, 0, len(universities))
-	for _, company := range universities {
-		for _, profile := range company.LinkedInProfiles {
-			ids = append(ids, strconv.FormatInt(int64(profile.ID), 10))
-		}
+	ids := make([]string, 0, len(universities)*2)
+	for _, university := range universities {
+		ids = appendLinkedInProfileIDs(ids, university.LinkedInProfile)
 	}
+	return ids
+}
+
+func appendLinkedInProfileIDs(ids []string, profile domain.LinkedInProfile) []string {
+	if profile.ID > 0 {
+		ids = append(ids, strconv.FormatInt(int64(profile.ID), 10))
+	}
+
+	for _, id := range profile.IDs {
+		ids = append(ids, strconv.FormatInt(int64(id), 10))
+	}
+
 	return ids
 }
