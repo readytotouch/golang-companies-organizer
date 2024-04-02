@@ -1069,27 +1069,6 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3879152828/"},
 		},
 		{
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			MainLanguage:      false,
-			Vacancies:         nil,
-		},
-		{
 			Name: "Autodesk",
 			URL:  "https://www.autodesk.com/",
 			LinkedInProfile: domain.LinkedInProfile{

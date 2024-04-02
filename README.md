@@ -49,6 +49,23 @@
 - https://app.otta.com/jobs/vD3lShdV EvenUp
 - https://app.otta.com/jobs/jqSvKxpk Lyft
 - https://www.linkedin.com/jobs/view/3876325971/ Snowflake
+- https://www.linkedin.com/jobs/view/3875360963/ Typeform
+- https://www.linkedin.com/jobs/view/3874214242/ A5 Labs
+- https://www.linkedin.com/jobs/view/3872601266/ Veza
+- https://www.linkedin.com/jobs/view/3875754541/ Electronic Arts (EA)
+- https://www.linkedin.com/jobs/view/3814738577/ SailPoint
+- https://www.linkedin.com/jobs/view/3873995674/ Mailforge - Cold Email Infrastructure
+- https://www.linkedin.com/jobs/view/3872953963/ AB Tasty
+- https://www.golangprojects.com/golang-go-job-gaw-Senior-Backend-Engineer-Streaming-San-Mateo-Verkada.html Verkada
+- https://www.golangprojects.com/golang-go-job-gci-Remote-Senior-Java-Golang-Engineer-Krakow-OpenX-remotework.html OpenX
+- https://www.golangprojects.com/golang-go-job-giq-Remote-Senior-Software-Engineer-Golang-HouseCanary-remotework.html HouseCanary
+- https://app.otta.com/companies/Turo
+- https://www.golangprojects.com/golang-go-job-gji-Remote-Senior-Backend-Engineer-Madhive-remotework.html
+- https://remoteok.com/remote-jobs/remote-staff-software-engineer-prague-czechia-outreach-566651
+- https://remoteok.com/remote-jobs/remote-backend-engineer-docker-613524
+- https://www.livechat.com/careers/backend-developer-go-livechat/
+- https://wellfound.com/company/workato
+- https://www.golangprojects.com/golang-go-job-gjd-Back-end-Developer-Golang-Sliema-Fast-Track.html
 
 ### Potential outsource companies:
 - https://www.linkedin.com/jobs/view/3844387776/ Revoco (Recruitment) ("London" AND "Golang" AND "Greentech")
