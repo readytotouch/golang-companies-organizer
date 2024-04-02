@@ -1081,13 +1081,13 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3872933701/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Tradevest",
+			URL:  "https://www.tradevest.ai/",
 			LinkedInProfiles: []domain.LinkedInProfile{
 				{
-					ID:    0,
-					Alias: "",
-					Name:  "",
+					ID:    92827682,
+					Alias: "tradevestgmbh",
+					Name:  "Tradevest",
 				},
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1101,7 +1101,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         nil,
+			Vacancies:         []string{"https://justjoin.it/offers/tv-development-gmbh-senior-backend-developer"},
 		},
 		{
 			Name: "",
