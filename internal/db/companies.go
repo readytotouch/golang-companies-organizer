@@ -1024,17 +1024,17 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3864617797/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Woolsocks",
+			URL:  "https://woolsocks.eu/",
 			LinkedInProfile: domain.LinkedInProfile{
 
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    79728837,
+				Alias: "woolsocks",
+				Name:  "Woolsocks",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "amsterdam-platform-creation",
+				RepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1043,7 +1043,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         nil,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3869628047/"},
 		},
 		{
 			Name: "",

@@ -98,3 +98,20 @@ func appendLinkedInProfileIDs(ids []string, profile domain.LinkedInProfile) []st
 
 	return ids
 }
+
+func similarwebURL(s string) string {
+	// https://www.similarweb.com/website/readytotouch.com/
+
+	if s == "" {
+		return ""
+	}
+
+	parsedURL, err := url.Parse(s)
+	if err != nil {
+		// panic allowed because HTML is pre-generated
+
+		panic(err)
+	}
+
+	return fmt.Sprintf("https://www.similarweb.com/website/%s/", parsedURL.Hostname())
+}
