@@ -1132,6 +1132,27 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://app.otta.com/jobs/x-Xm2wSF"},
 		},
+		{
+			Name: "Timescale",
+			URL:  "https://www.timescale.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11065434,
+				Alias: "timescaledb",
+				Name:  "Timescale",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "timescale",
+				RepositoryCount: 11,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Timescale-EI_IE2214356.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Timescale-Reviews-E2214356.htm",
+			},
+			OttaProfileSlug:   "Timescale",
+			YouTubeChannelURL: "https://www.youtube.com/@TimescaleDB",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/qZT84OgV"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
