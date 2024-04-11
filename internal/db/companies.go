@@ -723,6 +723,7 @@ func Companies() []domain.Company {
 			},
 			OttaProfileSlug: "canonical",
 			MainLanguage:    false,
+			Skip:            true, // too many vacancies on LinkedIn
 		},
 		{
 			Name: "Vodeno",

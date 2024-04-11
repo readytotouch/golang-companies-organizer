@@ -39,7 +39,7 @@ func googleCompanySkillsJobsURL(company Company) string {
 }
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
-	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies, false))
 
 	values := url.Values{
 		"currentCompany": {string(companyQueryParam)},
@@ -67,15 +67,19 @@ func linkedinJobsURL(companies []Company, keywords string) string {
 	}
 
 	if len(companies) > 0 {
-		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies), ",")}
+		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies, len(companies) > 1), ",")}
 	}
 
 	return "https://www.linkedin.com/jobs/search/?" + values.Encode()
 }
 
-func companiesToLinkedInIDs(companies []Company) []string {
+func companiesToLinkedInIDs(companies []Company, skip bool) []string {
 	ids := make([]string, 0, len(companies)*2)
 	for _, company := range companies {
+		if skip && company.Skip {
+			continue
+		}
+
 		ids = appendLinkedInProfileIDs(ids, company.LinkedInProfile)
 	}
 	return ids

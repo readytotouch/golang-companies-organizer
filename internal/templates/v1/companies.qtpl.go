@@ -176,6 +176,15 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 	qw422016.E().S(linkedinJobsURL(companies, keywordsSkills))
 	qw422016.N().S(`">LinkedIn Jobs [Golang] [Companies] [Worldwide]</a></li>
     </ul>
+    <h3>Other</h3>
+    <ul>
+        <li><a href="https://justjoin.it/all-locations/go">justjoin.it/all-locations/go</a></li>
+        <li><a href="https://remoteok.com/remote-golang-jobs">remoteok.com/remote-golang-jobs</a></li>
+        <li><a href="https://nofluffjobs.com/golang">nofluffjobs.com/golang</a></li>
+        <li><a href="https://www.golangprojects.com/">golangprojects.com</a></li>
+        <li><a href="https://golang.cafe/">golang.cafe</a></li>
+        <li><a href="https://startup.jobs/golang-jobs">startup.jobs/golang-jobs</a></li>
+    </ul>
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
     </footer>
