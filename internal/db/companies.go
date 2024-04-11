@@ -1153,6 +1153,27 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://app.otta.com/jobs/qZT84OgV"},
 		},
+		{
+			Name: "Arenko",
+			URL:  "https://arenko.group/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10288973,
+				Alias: "arenko-cleantech",
+				Name:  "Arenko",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arenko-Group-EI_IE4554199.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Arenko-Group-Reviews-E4554199.htm",
+			},
+			OttaProfileSlug:   "Arenko-Group",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3889419131/"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
