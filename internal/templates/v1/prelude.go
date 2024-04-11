@@ -10,8 +10,10 @@ import (
 	"github.com/readytotouch/gocompanies/internal/domain"
 )
 
-type Company = domain.Company
-type University = domain.University
+type (
+	Company    = domain.Company
+	University = domain.University
+)
 
 const (
 	keywordsSkills = `"Go" OR "Golang"`

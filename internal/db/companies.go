@@ -1172,7 +1172,112 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Arenko-Group",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3889419131/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3889419131/", "https://app.otta.com/jobs/hKvg-QNr"},
+		},
+		{
+			Name: "Kong",
+			URL:  "https://konghq.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    278819,
+				Alias: "konghq",
+				Name:  "Kong Inc.",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Kong",
+				RepositoryCount: 51,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kong-EI_IE801963.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kong-Reviews-E801963.htm",
+			},
+			OttaProfileSlug:   "Kong",
+			YouTubeChannelURL: "https://www.youtube.com/@KongInc",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/7-RRNkSk"},
+		},
+		{
+			Name: "Xata",
+			URL:  "https://xata.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    69560619,
+				Alias: "xataio",
+				Name:  "Xata.io",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "xataio",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "Xata",
+			YouTubeChannelURL: "https://www.youtube.com/@xataio",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3887215661/"},
+		},
+		{
+			Name: "Dojo",
+			URL:  "https://dojo.careers/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    42391390,
+				Alias: "dojo-tech",
+				Name:  "Dojo",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dojo-EI_IE687810.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dojo-Reviews-E687810.htm",
+			},
+			OttaProfileSlug:   "Dojo",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3887771635/", "https://app.otta.com/jobs/kdaq4_rK"},
+		},
+		{
+			Name: "ScyllaDB",
+			URL:  "https://www.scylladb.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10201068,
+				Alias: "scylladb",
+				Name:  "ScyllaDB",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "scylladb",
+				RepositoryCount: 18,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ScyllaDB-EI_IE1622223.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ScyllaDB-Reviews-E1622223.htm",
+			},
+			OttaProfileSlug:   "ScyllaDB",
+			YouTubeChannelURL: "https://www.youtube.com/@ScyllaDB",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/Xj1J-uAC"},
+		},
+		{
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				Alias: "",
+				Name:  "",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{""},
 		},
 		//{
 		//	Name: "",
@@ -1193,7 +1298,7 @@ func Companies() []domain.Company {
 		//	OttaProfileSlug:   "",
 		//	YouTubeChannelURL: "",
 		//	MainLanguage:      false,
-		//	Vacancies:         nil,
+		//	Vacancies:         []string{""},
 		//},
 	}
 }
