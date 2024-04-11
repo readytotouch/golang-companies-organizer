@@ -1111,6 +1111,27 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3818119706/"},
 		},
+		{
+			Name: "OpenWeb",
+			URL:  "https://www.openweb.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2506872,
+				Alias: "openwebhq",
+				Name:  "OpenWeb",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenWeb-EI_IE1675932.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OpenWeb-Reviews-E1675932.htm",
+			},
+			OttaProfileSlug:   "OpenWeb",
+			YouTubeChannelURL: "https://www.youtube.com/@openwebhq",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/x-Xm2wSF"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
