@@ -24,8 +24,8 @@
 - Golang JivyGroup
 - https://app.otta.com/jobs/f0FEae5C
 - https://www.mycareersfuture.gov.sg/job/information-technology/backend-developer-adtech-bandlab-singapore-5b45f3332b55a3b596589765992b7dbb BANDLAB
-- https://arc.dev/remote-jobs/go-golang
 - https://www.lifewire.com/boolean-search-terms-google-1616810
+- https://brainhub.eu/library/companies-using-golang
 - if "i have LinkedIn Premium" then link to https://www.linkedin.com/company/workato/insights/
 
 ### Potential companies:
@@ -66,6 +66,10 @@
 - https://www.livechat.com/careers/backend-developer-go-livechat/
 - https://wellfound.com/company/workato
 - https://www.golangprojects.com/golang-go-job-gjd-Back-end-Developer-Golang-Sliema-Fast-Track.html
+- https://www.linkedin.com/jobs/view/3797042895/ Sony Interactive Entertainment
+- https://www.linkedin.com/jobs/view/3825364754/ Tabby
+- https://www.linkedin.com/jobs/view/3865839694/ JumpCloud
+- https://www.linkedin.com/jobs/view/3785251691/ Getir
 
 ### Potential outsource companies:
 - https://www.linkedin.com/jobs/view/3844387776/ Revoco (Recruitment) ("London" AND "Golang" AND "Greentech")
@@ -86,3 +90,7 @@
 - https://remoteok.com/remote-golang-jobs
 - https://startup.jobs/?q=Golang
 - https://www.indeed.com/jobs?q=Go+Developer
+- https://nofluffjobs.com/golang
+- https://germantechjobs.de/jobs/Golang/all
+- https://arc.dev/remote-jobs/go-golang
+
