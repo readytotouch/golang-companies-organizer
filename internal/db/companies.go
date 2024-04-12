@@ -1280,6 +1280,27 @@ func Companies() []domain.Company {
 			MainLanguage:      false,
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3890431726/"},
 		},
+		{
+			Name: "AB Tasty",
+			URL:  "https://www.abtasty.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1885711,
+				Alias: "ab-tasty",
+				Name:  "AB Tasty",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AB-Tasty-EI_IE1309242.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AB-Tasty-Reviews-E1309242.htm",
+			},
+			OttaProfileSlug:   "AB-Tasty",
+			YouTubeChannelURL: "https://www.youtube.com/@abtasty",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3872953963/", "https://app.otta.com/jobs/eYKE7Ta_"},
+		},
 		//{
 		//	Name: "",
 		//	URL:  "",
