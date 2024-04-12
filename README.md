@@ -22,7 +22,6 @@
 - Golang Stockbit
 - Golang CountX
 - Golang JivyGroup
-- https://app.otta.com/jobs/f0FEae5C
 - https://www.mycareersfuture.gov.sg/job/information-technology/backend-developer-adtech-bandlab-singapore-5b45f3332b55a3b596589765992b7dbb BANDLAB
 - https://www.lifewire.com/boolean-search-terms-google-1616810
 - https://brainhub.eu/library/companies-using-golang
@@ -30,12 +29,10 @@
 
 ### Potential companies:
 - https://wellfound.com/jobs/1294436-senior-backend-api-engineer-d-f-m Vivenu "TypeScript and Node.js in the backend with a continuously increasing share of Golang"
-- https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
 - https://www.remocate.app/jobs/senior-go-proxy-engineer SOAX
 - https://www.remocate.app/jobs/senior-golang-engineer DWS
 - https://www.remocate.app/jobs/golang-developer Utorg trading system for crypto
 - https://www.remocate.app/jobs/deputy-head-of-backend-golang Scalable Solutions
-- https://www.golangprojects.com/golang-go-job-fzy-Remote-Software-Engineer-Go-Seattle-Bluesky-remotework.html Bluesky
 - https://www.linkedin.com/company/comcast/ Comcast
 - https://app.otta.com/jobs/kgXX99Pm Vimeo
 - https://app.otta.com/jobs/k_17Qlf3 Wise
@@ -44,18 +41,12 @@
 - https://app.otta.com/jobs/rO3hXkv-
 - https://justjoin.it/offers/samsung-r-d-institute-poland-golang-developer-for-cloud-services-warszawa Samsung
 - https://app.otta.com/jobs/Uf3aEKLZ Collective Minds Radiology
-- https://app.otta.com/companies/Ashby
-- https://app.otta.com/jobs/x-Xm2wSF OpenWeb
-- https://app.otta.com/jobs/vD3lShdV EvenUp
-- https://app.otta.com/jobs/jqSvKxpk Lyft
 - https://www.linkedin.com/jobs/view/3876325971/ Snowflake
 - https://www.linkedin.com/jobs/view/3875360963/ Typeform
-- https://www.linkedin.com/jobs/view/3874214242/ A5 Labs
 - https://www.linkedin.com/jobs/view/3872601266/ Veza
 - https://www.linkedin.com/jobs/view/3875754541/ Electronic Arts (EA)
 - https://www.linkedin.com/jobs/view/3814738577/ SailPoint
 - https://www.linkedin.com/jobs/view/3873995674/ Mailforge - Cold Email Infrastructure
-- https://www.linkedin.com/jobs/view/3872953963/ AB Tasty
 - https://www.golangprojects.com/golang-go-job-gaw-Senior-Backend-Engineer-Streaming-San-Mateo-Verkada.html Verkada
 - https://www.golangprojects.com/golang-go-job-gci-Remote-Senior-Java-Golang-Engineer-Krakow-OpenX-remotework.html OpenX
 - https://www.golangprojects.com/golang-go-job-giq-Remote-Senior-Software-Engineer-Golang-HouseCanary-remotework.html HouseCanary
@@ -63,7 +54,6 @@
 - https://www.golangprojects.com/golang-go-job-gji-Remote-Senior-Backend-Engineer-Madhive-remotework.html
 - https://remoteok.com/remote-jobs/remote-staff-software-engineer-prague-czechia-outreach-566651
 - https://remoteok.com/remote-jobs/remote-backend-engineer-docker-613524
-- https://www.livechat.com/careers/backend-developer-go-livechat/
 - https://wellfound.com/company/workato
 - https://www.golangprojects.com/golang-go-job-gjd-Back-end-Developer-Golang-Sliema-Fast-Track.html
 - https://www.linkedin.com/jobs/view/3797042895/ Sony Interactive Entertainment
@@ -94,3 +84,5 @@
 - https://germantechjobs.de/jobs/Golang/all
 - https://arc.dev/remote-jobs/go-golang
 
+### Skip companies:
+- https://www.linkedin.com/company/a5labs/ A5 Labs (Gambling)
