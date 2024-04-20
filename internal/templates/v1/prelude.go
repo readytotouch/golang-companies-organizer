@@ -60,6 +60,7 @@ func linkedinJobsURL(companies []Company, keywords string) string {
 	values := url.Values{
 		"keywords": {keywords},
 		"location": {"Worldwide"},
+		"geoId":    {"92000000"}, // Worldwide
 		"sortBy":   {"DD"},       // order by "Most recent
 		"f_TPR":    {"r2592000"}, // filter "Past month"
 		// Remote
