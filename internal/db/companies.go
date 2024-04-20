@@ -1599,25 +1599,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3875719837/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Pindrop",
+			URL:  "https://www.pindrop.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    2326557,
+				Alias: "pindrop",
+				Name:  "Pindrop",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pindrop-EI_IE709157.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pindrop-Reviews-E709157.htm",
 			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			OttaProfileSlug:   "Pindrop",
+			YouTubeChannelURL: "https://www.youtube.com/@Pindropsecurity",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3901803458/"},
 		},
 		{
 			Name: "",
