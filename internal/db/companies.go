@@ -1704,25 +1704,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3898197086/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Atmail",
+			URL:  "https://www.atmail.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    918978,
+				Alias: "atmail",
+				Name:  "Atmail",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3843643222/"},
 		},
 		{
 			Name: "",
