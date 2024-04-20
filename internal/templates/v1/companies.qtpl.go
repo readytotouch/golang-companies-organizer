@@ -18,8 +18,16 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Golang companies</title>
+    <meta name="description" content="Golang companies">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://gocompanies.readytotouch.com/humans.txt"/>
+
+	`)
+	streamfavicon(qw422016)
+	qw422016.N().S(`
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCD3QKRT9Z"></script>
     <script>
