@@ -1815,12 +1815,12 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3846776554/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Mellifera",
+			URL:  "https://mellifera.team/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    98533069,
+				Alias: "mellifera-operations-limited",
+				Name:  "Mellifera Operations Limited",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
@@ -1833,7 +1833,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3907553857/"},
 		},
 		{
 			Name: "",
