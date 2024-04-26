@@ -2131,12 +2131,12 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910516815/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Asset Reality",
+			URL:  "https://www.assetreality.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    42805677,
+				Alias: "asset-reality",
+				Name:  "Asset Reality",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
@@ -2146,10 +2146,10 @@ func Companies() []domain.Company {
 				OverviewURL: "",
 				ReviewsURL:  "",
 			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			OttaProfileSlug:   "Asset-Reality",
+			YouTubeChannelURL: "https://www.youtube.com/@assetreality",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3897435235/"},
 		},
 		{
 			Name: "",
