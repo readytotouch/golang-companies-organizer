@@ -2047,25 +2047,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3903797937/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "FOX Tech",
+			URL:  "https://tech.fox.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    14850572,
+				Alias: "foxtechteam",
+				Name:  "FOX Tech",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
 				RepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FOX-Broadcasting-EI_IE13272.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FOX-Broadcasting-Reviews-E13272.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3903338524/"},
 		},
 		{
 			Name: "",
