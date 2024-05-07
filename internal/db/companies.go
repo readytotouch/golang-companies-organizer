@@ -116,9 +116,9 @@ func Companies() []domain.Company {
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
 			},
 			OttaProfileSlug:   "Cloudflare-1",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@cloudflare",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://app.otta.com/jobs/B_RaZ6l5", "https://app.otta.com/jobs/e4CavNqx"},
+			Vacancies:         []string{"https://app.otta.com/jobs/RWRkVWNJ", "https://app.otta.com/jobs/B_RaZ6l5", "https://app.otta.com/jobs/e4CavNqx"},
 		},
 		{
 			Name: "Bitly",
