@@ -2257,25 +2257,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910059830/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Rollee",
+			URL:  "https://www.getrollee.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    76353840,
+				Alias: "rollee",
+				Name:  "Rollee",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Rollee",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3908431251/", "https://app.otta.com/jobs/4ajPfsAU"},
 		},
 		{
 			Name: "",
