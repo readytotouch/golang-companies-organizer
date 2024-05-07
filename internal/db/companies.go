@@ -2614,25 +2614,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913102407/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "MarkiTech.AI",
+			URL:  "https://markitech.ca/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    9294422,
+				Alias: "markitech-ai",
+				Name:  "MarkiTech.AI",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Markitech-EI_IE4190913.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Markitech-Reviews-E4190913.htm",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@markitech-digitaltransform6173",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912880597/"},
 		},
 		{
 			Name: "",
