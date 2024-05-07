@@ -2299,25 +2299,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914839595/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Ola Chat",
+			URL:  "https://olachat.sg/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    68332088,
+				Alias: "ola-chat",
+				Name:  "Ola Chat",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "olachat",
+				RepositoryCount: 8,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912130901/"},
 		},
 		{
 			Name: "",
