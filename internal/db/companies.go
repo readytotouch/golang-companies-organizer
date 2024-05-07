@@ -2181,8 +2181,8 @@ func Companies() []domain.Company {
 				Name:  "RxBenefits, Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RxBenefits-EI_IE1175839.11,21.htm",
@@ -2194,25 +2194,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910221910/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "SmithRx",
+			URL:  "https://www.smithrx.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    10886362,
+				Alias: "smithrx",
+				Name:  "SmithRx",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmithRx-EI_IE1901555.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SmithRx-Reviews-E1901555.htm",
 			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			OttaProfileSlug:   "SmithRx",
+			YouTubeChannelURL: "https://www.youtube.com/@SmithRxPBM",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910420916/"},
 		},
 		{
 			Name: "",
