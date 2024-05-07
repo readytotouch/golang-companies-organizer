@@ -2173,25 +2173,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://justjoin.it/offers/limango-polska-mid-senior-backend-developer-golang"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "RxBenefits",
+			URL:  "https://www.rxbenefits.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    2873210,
+				Alias: "rxbenefits-inc-",
+				Name:  "RxBenefits, Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
 				RepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RxBenefits-EI_IE1175839.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/RxBenefits-Reviews-E1175839.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910221910/"},
 		},
 		{
 			Name: "",
