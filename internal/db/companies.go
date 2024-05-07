@@ -2341,12 +2341,12 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913559527/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Salesforge",
+			URL:  "https://www.salesforge.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    91706116,
+				Alias: "salesforgeai",
+				Name:  "Salesforge",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
@@ -2357,9 +2357,9 @@ func Companies() []domain.Company {
 				ReviewsURL:  "",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@salesforge",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912551615/"},
 		},
 		{
 			Name: "",
