@@ -1033,7 +1033,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Samsung",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3864617797/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3882780776/", "https://www.linkedin.com/jobs/view/3864617797/"},
 		},
 		{
 			Name: "Woolsocks",
