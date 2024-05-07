@@ -1833,7 +1833,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3907553857/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912533167/", "https://www.linkedin.com/jobs/view/3907553857/"},
 		},
 		{
 			Name: "BNP Paribas - Securities Services",
