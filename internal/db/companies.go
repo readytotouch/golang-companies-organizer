@@ -118,7 +118,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Cloudflare-1",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://app.otta.com/jobs/B_RaZ6l5"},
+			Vacancies:         []string{"https://app.otta.com/jobs/B_RaZ6l5", "https://app.otta.com/jobs/e4CavNqx"},
 		},
 		{
 			Name: "Bitly",
@@ -2001,7 +2001,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Snyk",
 			YouTubeChannelURL: "https://www.youtube.com/@Snyksec",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3903469567/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3903469567/", "https://app.otta.com/jobs/AOeyI9AM"},
 		},
 		{
 			Name: "Siemens",
