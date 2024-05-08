@@ -2845,27 +2845,6 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915092213/"},
 		},
 		{
-			Name: "AIREV HOLDING LIMITED",
-			URL:  "https://www.airev.ae/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    101034758,
-				Alias: "airev-holding-limited",
-				Name:  "AIREV HOLDING LIMITED",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915080620/"},
-		},
-		{
 			Name: "",
 			URL:  "",
 			LinkedInProfile: domain.LinkedInProfile{
