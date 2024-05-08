@@ -2887,12 +2887,12 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914358799/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Saxon AI",
+			URL:  "https://saxon.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    224935,
+				Alias: "saxonai",
+				Name:  "Saxon AI",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
@@ -2903,9 +2903,9 @@ func Companies() []domain.Company {
 				ReviewsURL:  "",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@saxonai",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914185384/"},
 		},
 		{
 			Name: "",
