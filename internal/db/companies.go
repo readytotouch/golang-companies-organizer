@@ -2845,12 +2845,12 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915092213/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "AIREV HOLDING LIMITED",
+			URL:  "https://www.airev.ae/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    101034758,
+				Alias: "airev-holding-limited",
+				Name:  "AIREV HOLDING LIMITED",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "",
@@ -2863,7 +2863,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915080620/"},
 		},
 		{
 			Name: "",
