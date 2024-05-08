@@ -3034,25 +3034,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://app.otta.com/jobs/hr1D1_FZ"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Nuro",
+			URL:  "https://www.nuro.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    12957486,
+				Alias: "nuro-inc.",
+				Name:  "Nuro",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nuro-EI_IE1550693.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nuro-Reviews-E1550693.htm",
 			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			OttaProfileSlug:   "Nuro",
+			YouTubeChannelURL: "https://www.youtube.com/@NuroTeam",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://app.otta.com/jobs/P5a_50Xb"},
 		},
 		{
 			Name: "",
