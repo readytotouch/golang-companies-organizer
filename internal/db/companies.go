@@ -3076,25 +3076,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3917078597/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Transition Technologies PSC",
+			URL:  "https://ttpsc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    17880075,
+				Alias: "transition-technologies-psc",
+				Name:  "Transition Technologies PSC",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Transition-Technologies-PSC-EI_IE1875542.11,38.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Transition-Technologies-PSC-Reviews-E1875542.htm",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@TransitionTechnologiesPSC",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3886949034/"},
 		},
 		{
 			Name: "",
