@@ -2950,25 +2950,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3911059005/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Group Avows",
+			URL:  "https://avowstech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    3651016,
+				Alias: "group-avows",
+				Name:  "Group Avows",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AVOWS-Technologies-EI_IE870406.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AVOWS-Technologies-Reviews-E870406.htm",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@avowsgroupofficial9907",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3911007016/"},
 		},
 		{
 			Name: "",
