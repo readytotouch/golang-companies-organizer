@@ -3202,25 +3202,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913831485/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Ascendion",
+			URL:  "https://ascendion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    86694680,
+				Alias: "ascendion",
+				Name:  "Ascendion",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ascendion-EI_IE7774544.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ascendion-Reviews-E7774544.htm",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@ascendioninc",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3916325061/"},
 		},
 		{
 			Name: "",
