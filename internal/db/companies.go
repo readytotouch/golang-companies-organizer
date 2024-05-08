@@ -116,9 +116,9 @@ func Companies() []domain.Company {
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
 			},
 			OttaProfileSlug:   "Cloudflare-1",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@cloudflare",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://app.otta.com/jobs/B_RaZ6l5"},
+			Vacancies:         []string{"https://app.otta.com/jobs/RWRkVWNJ", "https://app.otta.com/jobs/B_RaZ6l5", "https://app.otta.com/jobs/e4CavNqx"},
 		},
 		{
 			Name: "Bitly",
@@ -710,9 +710,9 @@ func Companies() []domain.Company {
 				ReviewsURL:  "https://www.glassdoor.co.uk/Reviews/Cynergy-Bank-Reviews-E769090.htm",
 			},
 			OttaProfileSlug:   "", // NOP
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@cynergybank",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3868356139/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3917097524/", "https://www.linkedin.com/jobs/view/3868356139/"},
 		},
 		{
 			Name: "Canonical",
@@ -1033,7 +1033,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Samsung",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3864617797/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3882780776/", "https://www.linkedin.com/jobs/view/3864617797/"},
 		},
 		{
 			Name: "Woolsocks",
@@ -1833,7 +1833,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3907553857/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912533167/", "https://www.linkedin.com/jobs/view/3907553857/"},
 		},
 		{
 			Name: "BNP Paribas - Securities Services",
@@ -1959,7 +1959,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Microsoft",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3905989512/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3908309859/", "https://www.linkedin.com/jobs/view/3905989512/"},
 		},
 		{
 			Name: "OLX",
@@ -2001,7 +2001,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Snyk",
 			YouTubeChannelURL: "https://www.youtube.com/@Snyksec",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3903469567/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3903469567/", "https://app.otta.com/jobs/AOeyI9AM"},
 		},
 		{
 			Name: "Siemens",
@@ -2171,6 +2171,1056 @@ func Companies() []domain.Company {
 			YouTubeChannelURL: "https://www.youtube.com/@limangoPolska",
 			MainLanguage:      false,
 			Vacancies:         []string{"https://justjoin.it/offers/limango-polska-mid-senior-backend-developer-golang"},
+		},
+		{
+			Name: "RxBenefits",
+			URL:  "https://www.rxbenefits.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2873210,
+				Alias: "rxbenefits-inc-",
+				Name:  "RxBenefits, Inc.",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RxBenefits-EI_IE1175839.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/RxBenefits-Reviews-E1175839.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910221910/"},
+		},
+		{
+			Name: "SmithRx",
+			URL:  "https://www.smithrx.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10886362,
+				Alias: "smithrx",
+				Name:  "SmithRx",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmithRx-EI_IE1901555.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SmithRx-Reviews-E1901555.htm",
+			},
+			OttaProfileSlug:   "SmithRx",
+			YouTubeChannelURL: "https://www.youtube.com/@SmithRxPBM",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910420916/"},
+		},
+		{
+			Name: "k-ID",
+			URL:  "https://www.k-id.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    45973117,
+				Alias: "k-id",
+				Name:  "k-ID",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@k-IDofficial",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912660665/"},
+		},
+		{
+			Name: "CAFU",
+			URL:  "https://www.cafu.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    13892019,
+				Alias: "mycafu",
+				Name:  "CAFU",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CAFU-EI_IE3713615.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CAFU-Reviews-E3713615.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3910059830/"},
+		},
+		{
+			Name: "Rollee",
+			URL:  "https://www.getrollee.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    76353840,
+				Alias: "rollee",
+				Name:  "Rollee",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
+			},
+			OttaProfileSlug:   "Rollee",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3908431251/", "https://app.otta.com/jobs/4ajPfsAU"},
+		},
+		{
+			Name: "Net2Phone",
+			URL:  "https://www.net2phone.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2965,
+				Alias: "net2phone",
+				Name:  "Net2Phone",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "net2phone",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Net2Phone-EI_IE9342.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Net2Phone-Reviews-E9342.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914839595/"},
+		},
+		{
+			Name: "Ola Chat",
+			URL:  "https://olachat.sg/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    68332088,
+				Alias: "ola-chat",
+				Name:  "Ola Chat",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "olachat",
+				RepositoryCount: 8,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912130901/"},
+		},
+		{
+			Name: "Veracity Software Inc",
+			URL:  "https://veracity-us.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11137552,
+				Alias: "veracitysoftwareinc",
+				Name:  "Veracity Software Inc",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Veracity-Software-EI_IE1357198.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Veracity-Software-Reviews-E1357198.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913559527/"},
+		},
+		{
+			Name: "Salesforge",
+			URL:  "https://www.salesforge.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    91706116,
+				Alias: "salesforgeai",
+				Name:  "Salesforge",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@salesforge",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912551615/"},
+		},
+		{
+			Name: "Treecard",
+			URL:  "https://www.treecard.org/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    68821773,
+				Alias: "treecardapp",
+				Name:  "Treecard",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "TreeCard",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Treecard-EI_IE5675051.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Treecard-Reviews-E5675051.htm",
+			},
+			OttaProfileSlug:   "Treecard",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3909975571/"},
+		},
+		{
+			Name: "Openprovider",
+			URL:  "https://www.openprovider.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    550698,
+				Alias: "openprovider",
+				Name:  "Openprovider",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "openprovider",
+				RepositoryCount: 10,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Openprovider-EI_IE1267124.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Openprovider-Reviews-E1267124.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@openprovider453",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914419419/"},
+		},
+		{
+			Name: "fiskaly",
+			URL:  "https://www.fiskaly.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18929063,
+				Alias: "fiskaly",
+				Name:  "fiskaly",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "fiskaly",
+				RepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-fiskaly-EI_IE3059515.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/fiskaly-Reviews-E3059515.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@fiskaly",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914242491/"},
+		},
+		{
+			Name: "Vay",
+			URL:  "https://vay.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    12584218,
+				Alias: "vaytechnology",
+				Name:  "Vay",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Reemote",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "Vay",
+			YouTubeChannelURL: "https://www.youtube.com/@vay_io",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912106948/"},
+		},
+		{
+			Name: "Fortinet",
+			URL:  "https://www.fortinet.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    6460,
+				Alias: "fortinet",
+				Name:  "Fortinet",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "fortinet",
+				RepositoryCount: 1,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fortinet-EI_IE23128.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fortinet-Reviews-E23128.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@fortinet",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3907970778/"},
+		},
+		{
+			Name: "GitHub",
+			URL:  "https://github.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1418841,
+				Alias: "github",
+				Name:  "GitHub",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "github",
+				RepositoryCount: 18,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GitHub-EI_IE671945.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GitHub-Reviews-E671945.htm",
+			},
+			OttaProfileSlug:   "Github",
+			YouTubeChannelURL: "https://www.youtube.com/@GitHub",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914880703/"},
+		},
+		{
+			Name: "Voltus",
+			URL:  "https://www.voltus.co/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10866628,
+				Alias: "voltus-inc.",
+				Name:  "Voltus",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "voltusdev",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Voltus-EI_IE2090197.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Voltus-Reviews-E2090197.htm",
+			},
+			OttaProfileSlug:   "Voltus",
+			YouTubeChannelURL: "https://www.youtube.com/@Voltusinc",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/pB_hGf0W"},
+		},
+		{
+			Name: "Grammarly",
+			URL:  "https://www.grammarly.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1253671,
+				Alias: "grammarly",
+				Name:  "Grammarly",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "grammarly",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grammarly-EI_IE636873.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grammarly-Reviews-E636873.htm",
+			},
+			OttaProfileSlug:   "Grammarly",
+			YouTubeChannelURL: "https://www.youtube.com/@grammarly",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/jonw8YN_"},
+		},
+		{
+			Name: "Stonebranch",
+			URL:  "https://www.stonebranch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    71261,
+				Alias: "stonebranch",
+				Name:  "Stonebranch",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "stonebranch-marketplace",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stonebranch-EI_IE408996.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stonebranch-Reviews-E408996.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@Stonebranch",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914103960/"},
+		},
+		{
+			Name: "Rapid7",
+			URL:  "https://www.rapid7.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    39624,
+				Alias: "rapid7",
+				Name:  "Rapid7",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "rapid7",
+				RepositoryCount: 7,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rapid7-EI_IE243542.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Rapid7-Reviews-E243542.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@GoRapid7",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915341496/"},
+		},
+		{
+			Name: "Toggle AI",
+			URL:  "https://toggle.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    28508827,
+				Alias: "toggle-ai",
+				Name:  "Toggle AI",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Toggle-EI_IE3924898.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Toggle-Reviews-E3924898.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@ToggleAI-Investing",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915194291/"},
+		},
+		{
+			Name: "hearX Group",
+			URL:  "https://www.hearxgroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18002825,
+				Alias: "hearx-group",
+				Name:  "hearX Group",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "hearxgroup",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-hearX-Group-EI_IE5800566.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/hearX-Group-Reviews-E5800566.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@hearxgroupptyltd8061",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913102407/"},
+		},
+		{
+			Name: "MarkiTech.AI",
+			URL:  "https://markitech.ca/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    9294422,
+				Alias: "markitech-ai",
+				Name:  "MarkiTech.AI",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Markitech-EI_IE4190913.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Markitech-Reviews-E4190913.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@markitech-digitaltransform6173",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912880597/"},
+		},
+		{
+			Name: "Lantronix",
+			URL:  "https://www.lantronix.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    12612,
+				Alias: "lantronix",
+				Name:  "Lantronix",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Lantronix",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lantronix-EI_IE5498.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lantronix-Reviews-E5498.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@LantronixInc",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915346698/"},
+		},
+		{
+			Name: "Citi",
+			URL:  "https://www.citi.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11448,
+				Alias: "citi",
+				Name:  "Citi",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Citi",
+				RepositoryCount: 1,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/citi",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Citi-Reviews-E8843.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@Citi",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912849197/"},
+		},
+		{
+			Name: "INFOLOB",
+			URL:  "https://www.infolob.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    404211,
+				Alias: "infolob-global",
+				Name:  "INFOLOB",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Infolob-Solutions-EI_IE423113.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Infolob-Solutions-Reviews-E423113.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914415181/"},
+		},
+		{
+			Name: "Argela Technologies",
+			URL:  "https://www.argela.com.tr/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    26805,
+				Alias: "argela-technologies",
+				Name:  "Argela Technologies",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Argela-EI_IE389528.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Argela-Reviews-E389528.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@argelatechnologies",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914290466/"},
+		},
+		{
+			Name: "Top Doctors",
+			URL:  "https://topdoctors.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3035481,
+				Alias: "top-doctors-europe",
+				Name:  "Top Doctors",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Top-Doctors-EI_IE1712721.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Top-Doctors-Reviews-E1712721.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@TopDoctorsUK",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912190311/"},
+		},
+		{
+			Name: "Recurly",
+			URL:  "https://recurly.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    810383,
+				Alias: "recurly",
+				Name:  "Recurly",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "recurly",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Recurly-EI_IE692611.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Recurly-Reviews-E692611.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@Recurly",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912991626/"},
+		},
+		{
+			Name: "Cynet Systems",
+			URL:  "https://www.cynetsystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    5003556,
+				Alias: "cynet-systems",
+				Name:  "Cynet Systems",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynet-Systems-EI_IE654628.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cynet-Systems-Reviews-E654628.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@cynetsystems2026",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912977786/"},
+		},
+		{
+			Name: "Odyssey Information Services",
+			URL:  "https://www.odysseyis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    56445,
+				Alias: "odyssey-information-services",
+				Name:  "Odyssey Information Services",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Odyssey-Information-Services-EI_IE558201.11,39.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Odyssey-Information-Services-Reviews-E558201.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@odysseyinformationservices1641",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3905563294/"},
+		},
+		{
+			Name: "Infomatics Corp",
+			URL:  "https://infomaticscorp.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    821065,
+				Alias: "infomatics-corp",
+				Name:  "Infomatics Corp",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Infomatics-EI_IE925978.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Infomatics-Reviews-E925978.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912956713/"},
+		},
+		{
+			Name: "Mindera",
+			URL:  "https://mindera.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    80044268,
+				Alias: "mindera-world",
+				Name:  "Mindera",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Mindera",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mindera-EI_IE1139926.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mindera-Reviews-E1139926.htm",
+			},
+			OttaProfileSlug:   "Mindera",
+			YouTubeChannelURL: "https://www.youtube.com/@MinderaSoftware",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3915092213/"},
+		},
+		{
+			Name: "Sytac",
+			URL:  "https://sytac.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    626751,
+				Alias: "sytac",
+				Name:  "Sytac",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "sytac",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sytac-EI_IE1255983.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sytac-Reviews-E1255983.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@sytac",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912222258/"},
+		},
+		{
+			Name: "Qumulus Cloud Platform",
+			URL:  "https://www.qumulus.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    81905634,
+				Alias: "qumuluscloudplatform",
+				Name:  "Qumulus Cloud Platform",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "QumulusTechnology",
+				RepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914358799/"},
+		},
+		{
+			Name: "Saxon AI",
+			URL:  "https://saxon.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    224935,
+				Alias: "saxonai",
+				Name:  "Saxon AI",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@saxonai",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914185384/"},
+		},
+		{
+			Name: "Dyninno Group",
+			URL:  "https://dyninno.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    9456141,
+				Alias: "dyninno-group",
+				Name:  "Dyninno Group",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DYNINNO-Group-EI_IE2562842.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DYNINNO-Group-Reviews-E2562842.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@dyninnogroup2702",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914135515/"},
+		},
+		{
+			Name: "Holland & Barrett",
+			URL:  "https://www.hollandandbarrett.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    815488,
+				Alias: "holland-&-barrett",
+				Name:  "Holland & Barrett",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Holland-and-Barrett-EI_IE36174.11,30.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Holland-and-Barrett-Reviews-E36174.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@hollandandbarrett",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3911059005/"},
+		},
+		{
+			Name: "Group Avows",
+			URL:  "https://avowstech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3651016,
+				Alias: "group-avows",
+				Name:  "Group Avows",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AVOWS-Technologies-EI_IE870406.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AVOWS-Technologies-Reviews-E870406.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@avowsgroupofficial9907",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3911007016/"},
+		},
+		{
+			Name: "Cognizant",
+			URL:  "https://www.cognizant.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1680,
+				Alias: "cognizant",
+				Name:  "Cognizant",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cognizant-Technology-Solutions-EI_IE8014.11,41.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cognizant-Technology-Solutions-Reviews-E8014.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@cognizant",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914839625/"},
+		},
+		{
+			Name: "DigitalOcean",
+			URL:  "https://www.digitalocean.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2601253,
+				Alias: "digitalocean",
+				Name:  "DigitalOcean",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "digitalocean",
+				RepositoryCount: 116,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DigitalOcean-Reviews-E823482.htm",
+			},
+			OttaProfileSlug:   "DigitalOcean",
+			YouTubeChannelURL: "https://www.youtube.com/@DigitalOcean",
+			MainLanguage:      true,
+			Vacancies:         []string{"https://app.otta.com/jobs/bwHc4GXE"},
+		},
+		{
+			Name: "Snap",
+			URL:  "https://snap.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15191764,
+				Alias: "snap-inc-co",
+				Name:  "Snap Inc.",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Snapchat",
+				RepositoryCount: 1,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snap-EI_IE671946.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Snap-Reviews-E671946.htm",
+			},
+			OttaProfileSlug:   "Snap",
+			YouTubeChannelURL: "https://www.youtube.com/@snapinc",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/hr1D1_FZ"},
+		},
+		{
+			Name: "Nuro",
+			URL:  "https://www.nuro.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    12957486,
+				Alias: "nuro-inc.",
+				Name:  "Nuro",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nuro-EI_IE1550693.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nuro-Reviews-E1550693.htm",
+			},
+			OttaProfileSlug:   "Nuro",
+			YouTubeChannelURL: "https://www.youtube.com/@NuroTeam",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://app.otta.com/jobs/P5a_50Xb"},
+		},
+		{
+			Name: "CloudWalk",
+			URL:  "https://cloudwalk.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3523168,
+				Alias: "cloudwalk-inc",
+				Name:  "CloudWalk, Inc.",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "cloudwalk",
+				RepositoryCount: 6,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CloudWalk-Inc-EI_IE2722308.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CloudWalk-Inc-Reviews-E2722308.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@cloudwalk_shorts",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3917078597/"},
+		},
+		{
+			Name: "Transition Technologies PSC",
+			URL:  "https://ttpsc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    17880075,
+				Alias: "transition-technologies-psc",
+				Name:  "Transition Technologies PSC",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Transition-Technologies-PSC-EI_IE1875542.11,38.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Transition-Technologies-PSC-Reviews-E1875542.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@TransitionTechnologiesPSC",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3886949034/"},
+		},
+		{
+			Name: "Kroger",
+			URL:  "https://www.kroger.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    4914,
+				Alias: "kroger",
+				Name:  "Kroger",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "Kroger-Technology",
+				RepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kroger-EI_IE386.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kroger-Reviews-E386.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@KrogerCo",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3917025739/"},
+		},
+		{
+			Name: "Precisely",
+			URL:  "https://www.precisely.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    64863146,
+				Alias: "preciselydata",
+				Name:  "Precisely",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "PreciselyData",
+				RepositoryCount: 1,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Precisely-EI_IE3372755.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Precisely-Reviews-E3372755.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@PreciselyData",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3917000992/"},
+		},
+		{
+			Name: "R Systems",
+			URL:  "https://www.rsystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    165636,
+				Alias: "r-systems",
+				Name:  "R Systems",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-R-Systems-EI_IE32444.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/R-Systems-Reviews-E32444.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@RSystems_inc",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3916555239/"},
+		},
+		{
+			Name: "Hays",
+			URL:  "https://www.haysplc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3486,
+				Alias: "hays",
+				Name:  "Hays",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hays-EI_IE10166.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hays-Reviews-E10166.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@HaysTV",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913846166/"},
+		},
+		{
+			Name: "Consort Group",
+			URL:  "https://consort-group.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    46088,
+				Alias: "consortgroup",
+				Name:  "Consort Group",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Groupe-Consort-EI_IE915503.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Groupe-Consort-Reviews-E915503.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@consortgroup",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913831485/"},
+		},
+		{
+			Name: "Ascendion",
+			URL:  "https://ascendion.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    86694680,
+				Alias: "ascendion",
+				Name:  "Ascendion",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ascendion-EI_IE7774544.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ascendion-Reviews-E7774544.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@ascendioninc",
+			MainLanguage:      false,
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3916325061/"},
 		},
 		//{
 		//	Name: "",
