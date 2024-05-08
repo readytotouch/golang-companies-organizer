@@ -3181,25 +3181,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913846166/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Consort Group",
+			URL:  "https://consort-group.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    46088,
+				Alias: "consortgroup",
+				Name:  "Consort Group",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Groupe-Consort-EI_IE915503.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Groupe-Consort-Reviews-E915503.htm",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@consortgroup",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913831485/"},
 		},
 		{
 			Name: "",
