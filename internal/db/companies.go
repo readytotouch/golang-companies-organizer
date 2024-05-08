@@ -710,9 +710,9 @@ func Companies() []domain.Company {
 				ReviewsURL:  "https://www.glassdoor.co.uk/Reviews/Cynergy-Bank-Reviews-E769090.htm",
 			},
 			OttaProfileSlug:   "", // NOP
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@cynergybank",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3868356139/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3917097524/", "https://www.linkedin.com/jobs/view/3868356139/"},
 		},
 		{
 			Name: "Canonical",
