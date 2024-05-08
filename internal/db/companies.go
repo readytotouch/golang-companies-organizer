@@ -3160,25 +3160,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3916555239/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Hays",
+			URL:  "https://www.haysplc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    3486,
+				Alias: "hays",
+				Name:  "Hays",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "", // NOP
+				RepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hays-EI_IE10166.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hays-Reviews-E10166.htm",
 			},
 			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
+			YouTubeChannelURL: "https://www.youtube.com/@HaysTV",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3913846166/"},
 		},
 		{
 			Name: "",
