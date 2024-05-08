@@ -2866,25 +2866,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3912222258/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Qumulus Cloud Platform",
+			URL:  "https://www.qumulus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    81905634,
+				Alias: "qumuluscloudplatform",
+				Name:  "Qumulus Cloud Platform",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "QumulusTechnology",
+				RepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "", // NOP
+				ReviewsURL:  "", // NOP
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3914358799/"},
 		},
 		{
 			Name: "",
