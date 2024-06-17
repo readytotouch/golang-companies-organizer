@@ -56,19 +56,39 @@ func FaangCompanyGroup() domain.FaangCompanyGroup {
 				Name:  "Google",
 			},
 			{
-				ID:    0,
-				IDs:   []int{},
-				Alias: "",
-				Name:  "",
+				ID: 0,
+				IDs: []int{
+					1035,    // Microsoft
+					1337,    // LinkedIn
+					1418841, // GitHub
+				},
+				Alias: "microsoft",
+				Name:  "Microsoft",
 			},
 			{
-				ID:    0,
-				IDs:   []int{},
-				Alias: "",
-				Name:  "",
+				ID: 0,
+				IDs: []int{
+					3608, // NVIDIA
+				},
+				Alias: "nvidia",
+				Name:  "NVIDIA",
 			},
 		},
 		OtherCompanies: []domain.LinkedInProfile{
+			// https://www.linkedin.com/company/openai/
+
+			// https://www.linkedin.com/company/intel-corporation/
+			// https://www.linkedin.com/company/amd/
+
+			// https://www.linkedin.com/company/oracle/
+
+			// https://www.linkedin.com/company/ibm/
+			// https://www.linkedin.com/company/hashicorp/
+
+			// https://www.linkedin.com/company/uber-com/
+
+			// https://www.linkedin.com/company/gitlab-com/
+
 			// https://www.linkedin.com/company/red-hat/
 		},
 	}
