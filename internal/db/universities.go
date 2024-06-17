@@ -38,6 +38,7 @@ func Universities() []domain.University {
 				Name:  "Ukrainian Catholic University",
 			},
 		},
+
 		// ХНЕУ | Харківський національний економічний університет імені Семена Кузнеця
 		{
 			LinkedInProfile: domain.LinkedInProfile{
@@ -46,6 +47,7 @@ func Universities() []domain.University {
 				Name:  "Simon Kuznets Kharkiv National University of Economics",
 			},
 		},
+
 		// КНУ ім. Шевченка | Київський національний університет імені Тараса Шевченка
 		{
 			LinkedInProfile: domain.LinkedInProfile{
