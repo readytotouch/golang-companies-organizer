@@ -1,0 +1,55 @@
+{%- func UkraineUniversitiesRatingByFAANG(universities []University) -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ukraine universities rating by FAANG</title>
+    <meta name="description" content="Ukraine universities rating by FAANG">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://gocompanies.readytotouch.com/humans.txt"/>
+
+	{%= favicon() %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCD3QKRT9Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VCD3QKRT9Z');
+    </script>
+    <style>
+        td {
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-right:5px;
+        }
+
+        td:first-child {
+            padding-left:5px;
+            padding-right:0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ukraine universities rating by FAANG</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+        </tr>
+        {% for i, university := range universities %}
+            <tr>
+                <td>
+                    {%d i %} | <a href="https://www.linkedin.com/school/{%s university.LinkedInProfile.Alias %}/">{%s university.LinkedInProfile.Name %}</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <footer>
+        <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
+    </footer>
+</body>
+</html>
+{%- endfunc -%}
