@@ -11,8 +11,9 @@ import (
 )
 
 type (
-	Company    = domain.Company
-	University = domain.University
+	Company           = domain.Company
+	University        = domain.University
+	FaangCompanyGroup = domain.FaangCompanyGroup
 )
 
 const (
@@ -56,6 +57,27 @@ func linkedinConnectionsURL(companies []Company, universities []University) stri
 	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
 }
 
+func linkedinUniversityConnectionsURL(
+	university University,
+	currentCompanies []domain.LinkedInProfile,
+	pastCompanies []domain.LinkedInProfile,
+) string {
+	var (
+		currentCompanyQueryParam, _ = json.Marshal(linkedInProfileIDs(currentCompanies))
+		pastCompanyQueryParam, _    = json.Marshal(linkedInProfileIDs(pastCompanies))
+		schoolQueryParam, _         = json.Marshal(universitiesToLinkedInIDs([]University{university}))
+	)
+
+	values := url.Values{
+		"currentCompany": {string(currentCompanyQueryParam)},
+		"pastCompany":    {string(pastCompanyQueryParam)},
+		"network":        {}, // any connection level
+		"schoolFilter":   {string(schoolQueryParam)},
+	}
+
+	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+}
+
 func linkedinJobsURL(companies []Company, keywords string) string {
 	values := url.Values{
 		"keywords": {keywords},
@@ -91,6 +113,16 @@ func universitiesToLinkedInIDs(universities []University) []string {
 	for _, university := range universities {
 		ids = appendLinkedInProfileIDs(ids, university.LinkedInProfile)
 	}
+	return ids
+}
+
+func linkedInProfileIDs(profiles []domain.LinkedInProfile) []string {
+	var ids []string
+
+	for _, profile := range profiles {
+		ids = appendLinkedInProfileIDs(ids, profile)
+	}
+
 	return ids
 }
 

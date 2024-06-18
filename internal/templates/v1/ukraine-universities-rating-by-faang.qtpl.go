@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universities []University) {
+func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universities []University, faangCompanyGroup FaangCompanyGroup) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +55,10 @@ func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universit
     <table border="1">
         <tr>
             <th>Name</th>
+            <th>FAANG (current company)</th>
+            <th>FAANG (past company)</th>
+            <th>Other (current company)</th>
+            <th>Other (past company)</th>
         </tr>
         `)
 	for i, university := range universities {
@@ -69,6 +73,18 @@ func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universit
 		qw422016.E().S(university.LinkedInProfile.Name)
 		qw422016.N().S(`</a>
                 </td>
+                <td><a href="`)
+		qw422016.E().S(linkedinUniversityConnectionsURL(university, faangCompanyGroup.FaangCompanies, nil))
+		qw422016.N().S(`">Connections</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinUniversityConnectionsURL(university, nil, faangCompanyGroup.FaangCompanies))
+		qw422016.N().S(`">Connections</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinUniversityConnectionsURL(university, faangCompanyGroup.OtherCompanies, nil))
+		qw422016.N().S(`">Connections</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinUniversityConnectionsURL(university, nil, faangCompanyGroup.OtherCompanies))
+		qw422016.N().S(`">Connections</a></td>
             </tr>
         `)
 	}
@@ -83,15 +99,15 @@ func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universit
 `)
 }
 
-func WriteUkraineUniversitiesRatingByFAANG(qq422016 qtio422016.Writer, universities []University) {
+func WriteUkraineUniversitiesRatingByFAANG(qq422016 qtio422016.Writer, universities []University, faangCompanyGroup FaangCompanyGroup) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamUkraineUniversitiesRatingByFAANG(qw422016, universities)
+	StreamUkraineUniversitiesRatingByFAANG(qw422016, universities, faangCompanyGroup)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func UkraineUniversitiesRatingByFAANG(universities []University) string {
+func UkraineUniversitiesRatingByFAANG(universities []University, faangCompanyGroup FaangCompanyGroup) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteUkraineUniversitiesRatingByFAANG(qb422016, universities)
+	WriteUkraineUniversitiesRatingByFAANG(qb422016, universities, faangCompanyGroup)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

@@ -1,4 +1,4 @@
-{%- func UkraineUniversitiesRatingByFAANG(universities []University) -%}
+{%- func UkraineUniversitiesRatingByFAANG(universities []University, faangCompanyGroup FaangCompanyGroup) -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +37,20 @@
     <table border="1">
         <tr>
             <th>Name</th>
+            <th>FAANG (current company)</th>
+            <th>FAANG (past company)</th>
+            <th>Other (current company)</th>
+            <th>Other (past company)</th>
         </tr>
         {% for i, university := range universities %}
             <tr>
                 <td>
                     {%d i %} | <a href="https://www.linkedin.com/school/{%s university.LinkedInProfile.Alias %}/">{%s university.LinkedInProfile.Name %}</a>
                 </td>
+                <td><a href="{%s linkedinUniversityConnectionsURL(university, faangCompanyGroup.FaangCompanies, nil) %}">Connections</a></td>
+                <td><a href="{%s linkedinUniversityConnectionsURL(university, nil, faangCompanyGroup.FaangCompanies) %}">Connections</a></td>
+                <td><a href="{%s linkedinUniversityConnectionsURL(university, faangCompanyGroup.OtherCompanies, nil) %}">Connections</a></td>
+                <td><a href="{%s linkedinUniversityConnectionsURL(university, nil, faangCompanyGroup.OtherCompanies) %}">Connections</a></td>
             </tr>
         {% endfor %}
     </table>
