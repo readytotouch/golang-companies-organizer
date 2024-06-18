@@ -91,6 +91,36 @@ func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universit
 	qw422016.N().S(`
     </table>
 
+    <h2>FAANG companies</h2>
+    <ul>
+        `)
+	for _, company := range faangCompanyGroup.FaangCompanies {
+		qw422016.N().S(`
+            <li><a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.Alias)
+		qw422016.N().S(`/">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a></li>
+        `)
+	}
+	qw422016.N().S(`
+    </ul>
+
+    <h2>Other companies</h2>
+    <ul>
+        `)
+	for _, company := range faangCompanyGroup.OtherCompanies {
+		qw422016.N().S(`
+            <li><a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.Alias)
+		qw422016.N().S(`/">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a></li>
+        `)
+	}
+	qw422016.N().S(`
+    </ul>
+
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
     </footer>

@@ -55,6 +55,20 @@
         {% endfor %}
     </table>
 
+    <h2>FAANG companies</h2>
+    <ul>
+        {% for _, company := range faangCompanyGroup.FaangCompanies %}
+            <li><a href="https://www.linkedin.com/company/{%s company.Alias %}/">{%s company.Name %}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>Other companies</h2>
+    <ul>
+        {% for _, company := range faangCompanyGroup.OtherCompanies %}
+            <li><a href="https://www.linkedin.com/company/{%s company.Alias %}/">{%s company.Name %}</a></li>
+        {% endfor %}
+    </ul>
+
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
     </footer>

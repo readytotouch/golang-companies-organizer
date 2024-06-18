@@ -75,21 +75,78 @@ func FaangCompanyGroup() domain.FaangCompanyGroup {
 			},
 		},
 		OtherCompanies: []domain.LinkedInProfile{
-			// https://www.linkedin.com/company/openai/
-
-			// https://www.linkedin.com/company/intel-corporation/
-			// https://www.linkedin.com/company/amd/
-
-			// https://www.linkedin.com/company/oracle/
-
-			// https://www.linkedin.com/company/ibm/
-			// https://www.linkedin.com/company/hashicorp/
-
-			// https://www.linkedin.com/company/uber-com/
-
-			// https://www.linkedin.com/company/gitlab-com/
-
-			// https://www.linkedin.com/company/red-hat/
+			{
+				ID: 0,
+				IDs: []int{
+					11130470, // OpenAI
+				},
+				Alias: "openai",
+				Name:  "OpenAI",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					1053, // Intel Corporation
+				},
+				Alias: "intel-corporation",
+				Name:  "Intel Corporation",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					1497, // AMD
+				},
+				Alias: "amd",
+				Name:  "AMD",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					1028, // Oracle
+				},
+				Alias: "oracle",
+				Name:  "Oracle",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					1009, // IBM
+				},
+				Alias: "ibm",
+				Name:  "IBM",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					2830763, // HashiCorp
+				},
+				Alias: "hashicorp",
+				Name:  "HashiCorp",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					1815218, // Uber
+				},
+				Alias: "uber-com",
+				Name:  "Uber",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					5101804, // GitLab
+				},
+				Alias: "gitlab-com",
+				Name:  "GitLab",
+			},
+			{
+				ID: 0,
+				IDs: []int{
+					3545, // Red Hat
+				},
+				Alias: "red-hat",
+				Name:  "Red Hat",
+			},
 		},
 	}
 }
