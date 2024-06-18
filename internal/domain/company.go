@@ -29,3 +29,8 @@ type Company struct {
 	Vacancies         []string
 	Skip              bool
 }
+
+type FaangCompanyGroup struct {
+	FaangCompanies []LinkedInProfile
+	OtherCompanies []LinkedInProfile
+}
