@@ -1251,7 +1251,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Dojo",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3887771635/", "https://app.otta.com/jobs/kdaq4_rK"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3926951138/", "https://www.linkedin.com/jobs/view/3887771635/", "https://app.otta.com/jobs/kdaq4_rK"},
 		},
 		{
 			Name: "ScyllaDB",
