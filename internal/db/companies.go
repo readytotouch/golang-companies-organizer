@@ -536,7 +536,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Okta",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://app.otta.com/jobs/FtbF4gpB"},
+			Vacancies:         []string{"https://app.otta.com/jobs/FtbF4gpB", "https://app.otta.com/jobs/QcMdOhR_"},
 			Skip:              false,
 		},
 		{
@@ -694,7 +694,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "Mastercard",
 			YouTubeChannelURL: "https://www.youtube.com/@MasterCard",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3842471708/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3842471708/", "https://www.linkedin.com/jobs/view/3928338037/"},
 		},
 		{
 			Name: "Cynergy Bank",
@@ -3247,25 +3247,25 @@ func Companies() []domain.Company {
 			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3926321626/"},
 		},
 		{
-			Name: "",
-			URL:  "",
+			Name: "Wise",
+			URL:  "https://wise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    0,
-				Alias: "",
-				Name:  "",
+				Alias: "wiseaccount",
+				Name:  "Wise",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:           "transferwise",
+				RepositoryCount: 35,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wise-EI_IE637715.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wise-Reviews-E637715.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Wise",
 			YouTubeChannelURL: "",
 			MainLanguage:      false,
-			Vacancies:         []string{""},
+			Vacancies:         []string{"https://app.otta.com/jobs/UVRcHQhe"},
 		},
 		{
 			Name: "",
