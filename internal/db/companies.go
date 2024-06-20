@@ -672,8 +672,11 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Monzo-Bank-EI_IE1557148.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Monzo-Bank-Reviews-E1557148.htm",
 			},
-			OttaProfileSlug: "Monzo",
-			MainLanguage:    true,
+			OttaProfileSlug:   "Monzo",
+			YouTubeChannelURL: "",
+			MainLanguage:      true,
+			Vacancies:         []string{"https://app.otta.com/jobs/ZwnXtENr"},
+			Skip:              false,
 		},
 		{
 			Name: "Mastercard",
