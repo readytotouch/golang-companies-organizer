@@ -11,5 +11,10 @@
 
     Name: Anastasiia Sihetii
     Role: Designer
-    Profile: https://github.com/AnastasiiaSihetii
+    Profile: https://www.behance.net/AnastasiiaSihetii
+    From: Ukraine
+
+    Name: Liliia Shpak
+    Role: Designer
+    Profile: https://dribbble.com/LiliiaShpak
     From: Ukraine
