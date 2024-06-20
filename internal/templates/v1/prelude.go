@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/readytotouch/gocompanies/internal/domain"
+	"github.com/readytotouch/golang-companies-organizer/internal/domain"
 )
 
 type (

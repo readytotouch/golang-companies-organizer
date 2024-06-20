@@ -18,11 +18,11 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Golang companies</title>
-    <meta name="description" content="Golang companies">
+    <title>Golang companies organizer</title>
+    <meta name="description" content="Golang companies organizer">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="author" type="text/plain" href="https://gocompanies.readytotouch.com/humans.txt"/>
+    <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
 
 	`)
 	streamfavicon(qw422016)
@@ -51,7 +51,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
     </style>
 </head>
 <body>
-    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
+    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=golang-companies-organizer&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
     <table border="1">
         <tr>
             <th>Name</th>

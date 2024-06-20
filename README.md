@@ -1,4 +1,4 @@
-# Companies that use Golang
+# Golang companies organizer
 
 ### Usage
 - https://www.netlify.com/

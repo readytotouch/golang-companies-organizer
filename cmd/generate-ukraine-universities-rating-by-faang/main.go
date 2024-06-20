@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/readytotouch/gocompanies/internal/db"
+	"github.com/readytotouch/golang-companies-organizer/internal/db"
 
-	tv1 "github.com/readytotouch/gocompanies/internal/templates/v1"
+	tv1 "github.com/readytotouch/golang-companies-organizer/internal/templates/v1"
 )
 
 func main() {
