@@ -1022,8 +1022,8 @@ func Companies() []domain.Company {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    0,
 				IDs:   []int{1753, 13749561, 3270132, 77752302, 3812597, 3220515, 10633911, 1447520, 3238801, 2711168, 10261221, 87464967, 5089912, 9500165, 10218505, 895705, 78467539, 10332849, 10660176, 79815984, 3290134, 76958044, 85881048, 27127559, 9278177, 37470202, 22316801, 81590082, 11229641, 15213487, 68478415, 5552815, 14472582},
-				Alias: "",
-				Name:  "",
+				Alias: "samsung-electronics",
+				Name:  "Samsung Electronics",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:           "Samsung",
@@ -1036,7 +1036,7 @@ func Companies() []domain.Company {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Samsung",
 			MainLanguage:      false,
-			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3882780776/", "https://www.linkedin.com/jobs/view/3864617797/"},
+			Vacancies:         []string{"https://www.linkedin.com/jobs/view/3919334242/", "https://www.linkedin.com/jobs/view/3882780776/", "https://www.linkedin.com/jobs/view/3864617797/"},
 		},
 		{
 			Name: "Woolsocks",
