@@ -24,7 +24,7 @@
 <header class="header">
 	<div class="header__wrapper">
 		<a href="/" class="header__logo">
-			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
+			<img class="header__logo-img" src="./assets/images/pages/online/logo.svg" alt="logo">
 			<h3 class="header__logo-title">Ready To Touch</h3>
 		</a>
 		<div class="header__stars">
@@ -47,27 +47,27 @@
                                     <span>Name</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/linkedin.svg" alt="linkedin">
+                                    <img src="./assets/images/pages/common-images/linkedin.svg" alt="linkedin">
                                     <span>LinkedIn</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/online/github-black.svg" alt="github-black">
+                                    <img src="./assets/images/pages/online/github-black.svg" alt="github-black">
                                     <span>GitHub</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
+                                    <img src="./assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
                                     <span>Glassdoor</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
+                                    <img src="./assets/images/pages/common-images/similarweb.svg" alt="SimilarWeb">
                                     <span>SimilarWeb</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/otta.svg" alt="otta">
+                                    <img src="./assets/images/pages/common-images/otta.svg" alt="otta">
                                     <span>Otta</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common/link.svg" alt="link">
+                                    <img src="./assets/images/pages/common/link.svg" alt="link">
                                     <span>Vacancies</span>
                                 </th>
                             </tr>
@@ -83,15 +83,15 @@
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/response.svg">
+                                            <img src="./assets/images/pages/common/response.svg">
                                             <a class="table__item-link" href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.LinkedInProfile.Name %}">Connections</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/vacancy/briefcase.svg">
+                                            <img src="./assets/images/pages/vacancy/briefcase.svg">
                                             <a class="table__item-link" href="{%s linkedinJobsURL([]Company{company}, keywordsTitles) %}" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
                                         </div>
                                     </div>
@@ -100,11 +100,11 @@
                                     <div class="table__item">
                                         {%- if company.GitHubProfile.Login != "" -%}
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="https://github.com/{%s company.GitHubProfile.Login %}">Overview</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/database.svg">
+                                            <img src="./assets/images/pages/common/database.svg">
                                             <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>&nbsp;({%d company.GitHubProfile.RepositoryCount %})
                                         </div>
                                         {%- endif -%}
@@ -113,11 +113,11 @@
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/message.svg">
+                                            <img src="./assets/images/pages/common/message.svg">
                                             <a class="table__item-link" href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a>
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="{%s similarwebURL(company.URL) %}">Overview</a>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@
                                     <div class="table__item">
                                         {%- if company.OttaProfileSlug != "" -%}
                                             <div class="table__link-group">
-                                                <img src="/assets/images/pages/common/square.svg">
+                                                <img src="./assets/images/pages/common/square.svg">
                                                 <a class="table__item-link" href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
                                             </div>
                                         {%- endif -%}
@@ -176,7 +176,7 @@
                 </a>
                 <p class="footer__subtitle">Anonymous job search</p>
                 <div class="footer__map">
-                    <img class="footer__map-Ukraine" src="/assets/images/pages/online/map-of-Ukraine.png" alt="Map of Ukraine">
+                    <img class="footer__map-Ukraine" src="./assets/images/pages/online/map-of-Ukraine.png" alt="Map of Ukraine">
                 </div>
             </div>
             <div class="footer__middle-section">
@@ -189,20 +189,20 @@
                     <figure class="footer__figure">
                         <img width="60" height="24" src="https://savelife.in.ua/wp-content/themes/savelife/assets/images/new-logo-en.svg" alt="support">
                         <figcaption class="footer__caption">Support</figcaption>
-                        <img src="/assets/images/pages/online/arrow-up.svg" alt="arrow">
+                        <img src="./assets/images/pages/online/arrow-up.svg" alt="arrow">
                     </figure>
                 </a>
                 <a href="https://war.ukraine.ua/" target="_blank" class="footer__link">
                     <figure class="footer__figure">
                         <figcaption class="footer__caption">war.ukraine.ua</figcaption>
-                        <img src="/assets/images/pages/online/arrow-up.svg"  alt="arrow">
+                        <img src="./assets/images/pages/online/arrow-up.svg"  alt="arrow">
                     </figure>
                 </a>
             </div>
         </div>
         <div class="footer__copyrights">
             <span>© 2024 Yaroslav Podorvanov</span>
-            <img class="footer__flag-UA" src="/assets/images/pages/online/flag-of-Ukraine.svg" alt="Flag of Ukraine">
+            <img class="footer__flag-UA" src="./assets/images/pages/online/flag-of-Ukraine.svg" alt="Flag of Ukraine">
         </div>
     </div>
 </footer>

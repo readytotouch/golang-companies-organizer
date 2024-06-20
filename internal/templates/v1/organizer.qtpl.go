@@ -46,7 +46,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 <header class="header">
 	<div class="header__wrapper">
 		<a href="/" class="header__logo">
-			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
+			<img class="header__logo-img" src="./assets/images/pages/online/logo.svg" alt="logo">
 			<h3 class="header__logo-title">Ready To Touch</h3>
 		</a>
 		<div class="header__stars">
@@ -71,27 +71,27 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                                     <span>Name</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/linkedin.svg" alt="linkedin">
+                                    <img src="./assets/images/pages/common-images/linkedin.svg" alt="linkedin">
                                     <span>LinkedIn</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/online/github-black.svg" alt="github-black">
+                                    <img src="./assets/images/pages/online/github-black.svg" alt="github-black">
                                     <span>GitHub</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
+                                    <img src="./assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
                                     <span>Glassdoor</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
+                                    <img src="./assets/images/pages/common-images/similarweb.svg" alt="SimilarWeb">
                                     <span>SimilarWeb</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/otta.svg" alt="otta">
+                                    <img src="./assets/images/pages/common-images/otta.svg" alt="otta">
                                     <span>Otta</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common/link.svg" alt="link">
+                                    <img src="./assets/images/pages/common/link.svg" alt="link">
                                     <span>Vacancies</span>
                                 </th>
                             </tr>
@@ -113,7 +113,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="https://www.linkedin.com/company/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
 		qw422016.N().S(`/" title="`)
@@ -121,7 +121,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 		qw422016.N().S(`">Overview</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/response.svg">
+                                            <img src="./assets/images/pages/common/response.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(linkedinConnectionsURL([]Company{company}, universities))
 		qw422016.N().S(`" title="`)
@@ -129,7 +129,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 		qw422016.N().S(`">Connections</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/vacancy/briefcase.svg">
+                                            <img src="./assets/images/pages/vacancy/briefcase.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(linkedinJobsURL([]Company{company}, keywordsTitles))
 		qw422016.N().S(`" title="`)
@@ -143,13 +143,13 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 `)
 		if company.GitHubProfile.Login != "" {
 			qw422016.N().S(`                                        <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="https://github.com/`)
 			qw422016.E().S(company.GitHubProfile.Login)
 			qw422016.N().S(`">Overview</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/database.svg">
+                                            <img src="./assets/images/pages/common/database.svg">
                                             <a class="table__item-link" href="https://github.com/orgs/`)
 			qw422016.E().S(company.GitHubProfile.Login)
 			qw422016.N().S(`/repositories?q=lang:go">Repositories</a>&nbsp;(`)
@@ -163,13 +163,13 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
 		qw422016.N().S(`">Overview</a>
                                         </div>
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/message.svg">
+                                            <img src="./assets/images/pages/common/message.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
 		qw422016.N().S(`">Reviews</a>
@@ -179,7 +179,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
-                                            <img src="/assets/images/pages/common/square.svg">
+                                            <img src="./assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(similarwebURL(company.URL))
 		qw422016.N().S(`">Overview</a>
@@ -191,7 +191,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 `)
 		if company.OttaProfileSlug != "" {
 			qw422016.N().S(`                                            <div class="table__link-group">
-                                                <img src="/assets/images/pages/common/square.svg">
+                                                <img src="./assets/images/pages/common/square.svg">
                                                 <a class="table__item-link" href="https://app.otta.com/companies/`)
 			qw422016.E().S(company.OttaProfileSlug)
 			qw422016.N().S(`">Overview</a>
@@ -256,7 +256,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                 </a>
                 <p class="footer__subtitle">Anonymous job search</p>
                 <div class="footer__map">
-                    <img class="footer__map-Ukraine" src="/assets/images/pages/online/map-of-Ukraine.png" alt="Map of Ukraine">
+                    <img class="footer__map-Ukraine" src="./assets/images/pages/online/map-of-Ukraine.png" alt="Map of Ukraine">
                 </div>
             </div>
             <div class="footer__middle-section">
@@ -269,20 +269,20 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                     <figure class="footer__figure">
                         <img width="60" height="24" src="https://savelife.in.ua/wp-content/themes/savelife/assets/images/new-logo-en.svg" alt="support">
                         <figcaption class="footer__caption">Support</figcaption>
-                        <img src="/assets/images/pages/online/arrow-up.svg" alt="arrow">
+                        <img src="./assets/images/pages/online/arrow-up.svg" alt="arrow">
                     </figure>
                 </a>
                 <a href="https://war.ukraine.ua/" target="_blank" class="footer__link">
                     <figure class="footer__figure">
                         <figcaption class="footer__caption">war.ukraine.ua</figcaption>
-                        <img src="/assets/images/pages/online/arrow-up.svg"  alt="arrow">
+                        <img src="./assets/images/pages/online/arrow-up.svg"  alt="arrow">
                     </figure>
                 </a>
             </div>
         </div>
         <div class="footer__copyrights">
             <span>© 2024 Yaroslav Podorvanov</span>
-            <img class="footer__flag-UA" src="/assets/images/pages/online/flag-of-Ukraine.svg" alt="Flag of Ukraine">
+            <img class="footer__flag-UA" src="./assets/images/pages/online/flag-of-Ukraine.svg" alt="Flag of Ukraine">
         </div>
     </div>
 </footer>
