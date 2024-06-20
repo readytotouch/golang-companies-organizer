@@ -36,6 +36,10 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
     `)
 	streamorganizerStyles(qw422016)
 	qw422016.N().S(`
+
+    `)
+	streamgoogletagmanager(qw422016)
+	qw422016.N().S(`
 </head>
 
 <body>
@@ -62,1005 +66,181 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
                     </div>
                     <table class="organizer__table table">
                         <thead class="organizer__head">
-                        <tr>
-                            <th>
-                                <span>Name</span>
-                            </th>
-                            <th>
-                                <img src="/assets/images/pages/common-images/linkedin.svg" alt="linkedin">
-                                <span>LinkedIn</span>
-                            </th>
-                            <th>
-                                <img src="/assets/images/pages/online/github-black.svg" alt="github-black">
-                                <span>GitHub</span>
-                            </th>
-                            <th>
-                                <img src="/assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
-                                <span>Glassdoor</span>
-                            </th>
-                            <th>
-                                <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
-                                <span>SimilarWeb</span>
-                            </th>
-                            <th>
-                                <img src="/assets/images/pages/common-images/otta.svg" alt="otta">
-                                <span>Otta</span>
-                            </th>
-                            <th>
-                                <img src="/assets/images/pages/common/link.svg" alt="link">
-                                <span>Vacancies</span>
-                            </th>
-                        </tr>
+                            <tr>
+                                <th>
+                                    <span>Name</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/linkedin.svg" alt="linkedin">
+                                    <span>LinkedIn</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/online/github-black.svg" alt="github-black">
+                                    <span>GitHub</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
+                                    <span>Glassdoor</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
+                                    <span>SimilarWeb</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/otta.svg" alt="otta">
+                                    <span>Otta</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common/link.svg" alt="link">
+                                    <span>Vacancies</span>
+                                </th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
+                            `)
+	for _, company := range companies {
+		qw422016.N().S(`
+                            <tr class="table__item">
+                                <td>
+                                    <div class="table__item name">
+                                        <a class="table__item-link" href="`)
+		qw422016.E().S(company.URL)
+		qw422016.N().S(`">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" title="`)
+		qw422016.E().S(company.LinkedInProfile.Name)
+		qw422016.N().S(`">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/response.svg">
+                                            <a class="table__item-link" href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, universities))
+		qw422016.N().S(`" title="`)
+		qw422016.E().S(company.LinkedInProfile.Name)
+		qw422016.N().S(`">Connections</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/vacancy/briefcase.svg">
+                                            <a class="table__item-link" href="`)
+		qw422016.E().S(linkedinJobsURL([]Company{company}, keywordsTitles))
+		qw422016.N().S(`" title="`)
+		qw422016.E().S(company.LinkedInProfile.Name)
+		qw422016.N().S(`">Jobs</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+`)
+		if company.GitHubProfile.Login != "" {
+			qw422016.N().S(`                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="https://github.com/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/database.svg">
+                                            <a class="table__item-link" href="https://github.com/orgs/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`/repositories?q=lang:go">Repositories</a>&nbsp;(`)
+			qw422016.N().D(company.GitHubProfile.RepositoryCount)
+			qw422016.N().S(`)
+                                        </div>
+`)
+		}
+		qw422016.N().S(`                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="`)
+		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+		qw422016.N().S(`">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/message.svg">
+                                            <a class="table__item-link" href="`)
+		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
+		qw422016.N().S(`">Reviews</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="`)
+		qw422016.E().S(similarwebURL(company.URL))
+		qw422016.N().S(`">Overview</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+`)
+		if company.OttaProfileSlug != "" {
+			qw422016.N().S(`                                            <div class="table__link-group">
+                                                <img src="/assets/images/pages/common/square.svg">
+                                                <a class="table__item-link" href="https://app.otta.com/companies/`)
+			qw422016.E().S(company.OttaProfileSlug)
+			qw422016.N().S(`">Overview</a>
+                                            </div>
+`)
+		}
+		qw422016.N().S(`                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+`)
+		for i, vacancy := range company.Vacancies {
+			qw422016.N().S(`                                            <a class="table__item-link vacancies" href="`)
+			qw422016.E().S(vacancy)
+			qw422016.N().S(`">Vacancy #`)
+			qw422016.N().D(i)
+			qw422016.N().S(`</a>
+`)
+		}
+		qw422016.N().S(`                                    </div>
+                                </td>
+                            </tr>
+                            `)
+	}
+	qw422016.N().S(`
                         </tbody>
                     </table>
                 </div>
                 <div class="organizer__linkedin">
                     <h2 class="headline headline--lvl1 organizer__block-title">LinkedIn</h2>
                     <div class="organizer__links">
-                        <a class="organizer__link" href="/">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a>
-                        <a class="organizer__link" href="/">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian
-                            University]</a>
-                        <a class="organizer__link" href="/">LinkedIn Jobs [Golang] [Worldwide]</a>
-                        <a class="organizer__link" href="/">LinkedIn Jobs [Golang] [Companies] [Worldwide]</a>
+                        <a class="organizer__link" href="`)
+	qw422016.E().S(linkedinConnectionsURL(companies, nil))
+	qw422016.N().S(`">LinkedIn Connections [Companies]</a>
+                        `)
+	if len(universities) > 0 {
+		qw422016.N().S(`
+                            <a class="organizer__link" href="`)
+		qw422016.E().S(linkedinConnectionsURL(companies, universities))
+		qw422016.N().S(`">LinkedIn Connections [Companies] [Universities]</a>
+                        `)
+	}
+	qw422016.N().S(`
+                        <a class="organizer__link" href="`)
+	qw422016.E().S(linkedinJobsURL(companies, keywordsTitles))
+	qw422016.N().S(`">LinkedIn Jobs [Companies] [Worldwide]</a>
+                        <a class="organizer__link" href="`)
+	qw422016.E().S(linkedinJobsURL(nil, keywordsTitles))
+	qw422016.N().S(`">LinkedIn Jobs [Worldwide]</a>
                     </div>
                 </div>
             </div>

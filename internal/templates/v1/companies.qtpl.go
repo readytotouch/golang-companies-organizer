@@ -28,15 +28,6 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
 	streamfavicon(qw422016)
 	qw422016.N().S(`
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCD3QKRT9Z"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-VCD3QKRT9Z');
-    </script>
     <style>
         td {
             padding-top:5px;
@@ -49,6 +40,10 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
             padding-right:0;
         }
     </style>
+
+    `)
+	streamgoogletagmanager(qw422016)
+	qw422016.N().S(`
 </head>
 <body>
     <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=golang-companies-organizer&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
@@ -85,12 +80,12 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
                     <a href="`)
 		qw422016.E().S(linkedinConnectionsURL([]Company{company}, universities))
 		qw422016.N().S(`" title="`)
-		qw422016.E().S(company.Name)
+		qw422016.E().S(company.LinkedInProfile.Name)
 		qw422016.N().S(`">Connections</a>,
                     <a href="`)
-		qw422016.E().S(linkedinJobsURL([]Company{company}, keywordsSkills))
+		qw422016.E().S(linkedinJobsURL([]Company{company}, keywordsTitles))
 		qw422016.N().S(`" title="`)
-		qw422016.E().S(company.Name)
+		qw422016.E().S(company.LinkedInProfile.Name)
 		qw422016.N().S(`">Jobs</a>
                 </td>
                 <td>

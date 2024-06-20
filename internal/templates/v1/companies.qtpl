@@ -47,8 +47,8 @@
                 </td>
                 <td>
                     <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>,
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.Name %}">Connections</a>,
-                    <a href="{%s linkedinJobsURL([]Company{company}, keywordsSkills) %}" title="{%s company.Name %}">Jobs</a>
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.LinkedInProfile.Name %}">Connections</a>,
+                    <a href="{%s linkedinJobsURL([]Company{company}, keywordsTitles) %}" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
                 </td>
                 <td>
                     {%- if company.GitHubProfile.Login != "" -%}

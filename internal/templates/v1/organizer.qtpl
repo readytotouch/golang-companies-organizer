@@ -73,104 +73,94 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <tr class="table__item">
-                            <td>
-                                <div class="table__item name">
-                                    <button class="favorite in-favorite">
-                                        <svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 28 28"
-                                             xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-                                    </button>
-                                    <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
+                            {% for _, company := range companies %}
+                            <tr class="table__item">
+                                <td>
+                                    <div class="table__item name">
+                                        <a class="table__item-link" href="{%s company.URL %}">{%s company.Name %}</a>
                                     </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/response.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Connections</a>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/response.svg">
+                                            <a class="table__item-link" href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.LinkedInProfile.Name %}">Connections</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/vacancy/briefcase.svg">
+                                            <a class="table__item-link" href="{%s linkedinJobsURL([]Company{company}, keywordsTitles) %}" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
+                                        </div>
                                     </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/vacancy/briefcase.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Jobs</a>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        {%- if company.GitHubProfile.Login != "" -%}
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="https://github.com/{%s company.GitHubProfile.Login %}">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/database.svg">
+                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>&nbsp;({%d company.GitHubProfile.RepositoryCount %})
+                                        </div>
+                                        {%- endif -%}
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/message.svg">
+                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a>
+                                        </div>
                                     </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/database.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Repositories (10)</a>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="{%s similarwebURL(company.URL) %}">Overview</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        {%- if company.OttaProfileSlug != "" -%}
+                                            <div class="table__link-group">
+                                                <img src="/assets/images/pages/common/square.svg">
+                                                <a class="table__item-link" href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
+                                            </div>
+                                        {%- endif -%}
                                     </div>
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/message.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Reviews</a>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        {%- for i, vacancy := range company.Vacancies -%}
+                                            <a class="table__item-link vacancies" href="{%s vacancy %}">Vacancy #{%d i %}</a>
+                                        {%- endfor -%}
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <div class="table__link-group">
-                                        <img src="/assets/images/pages/common/square.svg"
-                                             alt="response">
-                                        <a class="table__item-link" href="/" target="_blank">Overview</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__item">
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #1</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #2</a>
-                                    <a class="table__item-link vacancies" href="/" target="_blank">Vacancy #3</a>
-                                </div>
-                                <button class="table__item-button">
-                                    <img src="/assets/images/pages/common/popup-icon.svg" alt="button">
-                                </button>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
                 <div class="organizer__linkedin">
                     <h2 class="headline headline--lvl1 organizer__block-title">LinkedIn</h2>
                     <div class="organizer__links">
-                        <a class="organizer__link" href="/">LinkedIn Connections ["Go" OR "Golang"] [Companies]</a>
-                        <a class="organizer__link" href="/">LinkedIn Connections ["Go" OR "Golang"] [Companies] [Ukrainian
-                            University]</a>
-                        <a class="organizer__link" href="/">LinkedIn Jobs [Golang] [Worldwide]</a>
-                        <a class="organizer__link" href="/">LinkedIn Jobs [Golang] [Companies] [Worldwide]</a>
+                        <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, nil) %}">LinkedIn Connections [Companies]</a>
+                        {% if len(universities) > 0 %}
+                            <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, universities)  %}">LinkedIn Connections [Companies] [Universities]</a>
+                        {% endif %}
+                        <a class="organizer__link" href="{%s linkedinJobsURL(companies, keywordsTitles) %}">LinkedIn Jobs [Companies] [Worldwide]</a>
+                        <a class="organizer__link" href="{%s linkedinJobsURL(nil, keywordsTitles) %}">LinkedIn Jobs [Worldwide]</a>
                     </div>
                 </div>
             </div>
