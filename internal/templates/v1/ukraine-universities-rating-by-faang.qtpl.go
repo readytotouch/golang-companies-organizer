@@ -22,7 +22,7 @@ func StreamUkraineUniversitiesRatingByFAANG(qw422016 *qt422016.Writer, universit
     <meta name="description" content="Ukraine universities rating by FAANG">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="author" type="text/plain" href="https://gocompanies.readytotouch.com/humans.txt"/>
+    <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
 
 	`)
 	streamfavicon(qw422016)

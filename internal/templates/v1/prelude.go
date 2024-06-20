@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/readytotouch/gocompanies/internal/domain"
+	"github.com/readytotouch/golang-companies-organizer/internal/domain"
 )
 
 type (
@@ -19,6 +19,7 @@ type (
 const (
 	keywordsSkills = `"Go" OR "Golang"`
 	keywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
+	keywordsCommon = `"Developer" OR "Engineer"`
 )
 
 func googleCompanyTitlesJobsURL(company Company) string {
@@ -45,7 +46,7 @@ func linkedinConnectionsURL(companies []Company, universities []University) stri
 	values := url.Values{
 		"currentCompany": {string(companyQueryParam)},
 		"network":        {`["F","S"]`},
-		"keywords":       {keywordsSkills},
+		"keywords":       {keywordsCommon},
 	}
 
 	if len(universities) > 0 {

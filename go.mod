@@ -1,4 +1,4 @@
-module github.com/readytotouch/gocompanies
+module github.com/readytotouch/golang-companies-organizer
 
 go 1.21.0
 

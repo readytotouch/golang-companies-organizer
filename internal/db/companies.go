@@ -1,6 +1,6 @@
 package db
 
-import "github.com/readytotouch/gocompanies/internal/domain"
+import "github.com/readytotouch/golang-companies-organizer/internal/domain"
 
 func Companies() []domain.Company {
 	return []domain.Company{

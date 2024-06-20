@@ -2,23 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Golang companies</title>
-    <meta name="description" content="Golang companies">
+    <title>Golang companies organizer</title>
+    <meta name="description" content="Golang companies organizer">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="author" type="text/plain" href="https://gocompanies.readytotouch.com/humans.txt"/>
+    <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
 
 	{%= favicon() %}
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCD3QKRT9Z"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-VCD3QKRT9Z');
-    </script>
     <style>
         td {
             padding-top:5px;
@@ -31,9 +22,11 @@
             padding-right:0;
         }
     </style>
+
+    {%= googletagmanager() %}
 </head>
 <body>
-    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=gocompanies&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
+    <h1>Companies that use Golang <img width="20px" src="./icons/go.svg"><iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=golang-companies-organizer&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe></h1>
     <table border="1">
         <tr>
             <th>Name</th>
@@ -54,8 +47,8 @@
                 </td>
                 <td>
                     <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>,
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.Name %}">Connections</a>,
-                    <a href="{%s linkedinJobsURL([]Company{company}, keywordsSkills) %}" title="{%s company.Name %}">Jobs</a>
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.LinkedInProfile.Name %}">Connections</a>,
+                    <a href="{%s linkedinJobsURL([]Company{company}, keywordsTitles) %}" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
                 </td>
                 <td>
                     {%- if company.GitHubProfile.Login != "" -%}
