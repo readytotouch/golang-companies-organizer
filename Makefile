@@ -5,5 +5,5 @@ generate-template:
 generate-html: generate-template
 	go run ./cmd/generate-main-pages/main.go
 	go run ./cmd/generate-ukrainian-universities-rating-by-faang/main.go
-	go run ./cmd/generate-ukrainian-courses/main.go
+	go run ./cmd/generate-ukrainian-courses-employment/main.go
 	git add .
