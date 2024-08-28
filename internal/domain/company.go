@@ -34,3 +34,8 @@ type FaangCompanyGroup struct {
 	FaangCompanies []LinkedInProfile
 	OtherCompanies []LinkedInProfile
 }
+
+type DouCompany struct {
+	LinkedInProfile LinkedInProfile
+	EmployeeCount   int
+}

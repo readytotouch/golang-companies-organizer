@@ -21,18 +21,28 @@
     console.log(content);
 }
 {
+    const $companies = document.querySelectorAll("#chart-top50_table tr");
 
-    const $companies = document.querySelectorAll("#chart-top50_table a.company-name");
+    const content = Array.from($companies).map($company => {
+        const $name = $company.querySelector('a.company-name');
 
-    const content = Array.from($companies).map($company =>
-        `// ${$company.textContent.trim()} ${$company.href}
-        {
-			ID:    0,
-			IDs:   nil,
-			Alias: "",
-			Name:  "",
-		},`
-    ).join('\n');
+        if ($name === null) {
+            return '';
+        }
+
+        const employeeCount = $company.querySelector('span.staffTotal-value').textContent.trim().replaceAll(' ', '');
+
+        return `// ${$name.textContent.trim()} ${$name.href}
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				IDs:   nil,
+				Alias: "",
+				Name:  "",
+			},
+			EmployeeCount:   ${employeeCount},
+		},`;
+    }).join('\n');
 
     console.log(content);
 }
