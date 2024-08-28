@@ -68,9 +68,9 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
                     `)
 		qw422016.N().D(i)
 		qw422016.N().S(` | <a href="https://www.linkedin.com/school/`)
-		qw422016.E().S(university.LinkedInProfile.Alias)
+		qw422016.E().S(course.LinkedInProfile.Alias)
 		qw422016.N().S(`/">`)
-		qw422016.E().S(university.LinkedInProfile.Name)
+		qw422016.E().S(course.LinkedInProfile.Name)
 		qw422016.N().S(`</a>
                 </td>
                 <td><a href="javascript:void(0);">Connections</a></td>
@@ -82,6 +82,21 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
 	}
 	qw422016.N().S(`
     </table>
+
+    <h2>FAANG companies</h2>
+    <ul>
+        `)
+	for _, company := range faangCompanyGroup.FaangCompanies {
+		qw422016.N().S(`
+            <li><a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.Alias)
+		qw422016.N().S(`/">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a></li>
+        `)
+	}
+	qw422016.N().S(`
+    </ul>
 
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>

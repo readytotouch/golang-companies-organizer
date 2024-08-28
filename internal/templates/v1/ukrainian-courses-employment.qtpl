@@ -45,7 +45,7 @@
         {% for i, course := range courses %}
             <tr>
                 <td>
-                    {%d i %} | <a href="https://www.linkedin.com/school/{%s university.LinkedInProfile.Alias %}/">{%s university.LinkedInProfile.Name %}</a>
+                    {%d i %} | <a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/">{%s course.LinkedInProfile.Name %}</a>
                 </td>
                 <td><a href="javascript:void(0);">Connections</a></td>
                 <td><a href="javascript:void(0);">Connections</a></td>
@@ -54,6 +54,13 @@
             </tr>
         {% endfor %}
     </table>
+
+    <h2>FAANG companies</h2>
+    <ul>
+        {% for _, company := range faangCompanyGroup.FaangCompanies %}
+            <li><a href="https://www.linkedin.com/company/{%s company.Alias %}/">{%s company.Name %}</a></li>
+        {% endfor %}
+    </ul>
 
     <footer>
         <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
