@@ -17,7 +17,7 @@ func main() {
 func v00_00_00() {
 	f := mustOpen("./netlify-public/v00.00.00.html")
 
-	tv1.WriteCompanies(f, db.Companies(), db.Universities())
+	tv1.WriteCompanies(f, db.GoCompanies(), db.Universities())
 
 	mustClose(f)
 }
@@ -26,7 +26,7 @@ func v00_00_01() {
 	{
 		f := mustOpen("./netlify-public/v00.00.01.html")
 
-		tv1.WriteOrganizer(f, db.Companies(), db.Universities())
+		tv1.WriteOrganizer(f, db.GoCompanies(), db.Universities())
 
 		mustClose(f)
 	}
@@ -35,7 +35,7 @@ func v00_00_01() {
 	{
 		f := mustOpen("./netlify-public/index.html")
 
-		tv1.WriteOrganizer(f, db.Companies(), nil)
+		tv1.WriteOrganizer(f, db.GoCompanies(), nil)
 
 		mustClose(f)
 	}
@@ -44,7 +44,7 @@ func v00_00_01() {
 	{
 		f := mustOpen("./netlify-public/ukraine.html")
 
-		tv1.WriteOrganizer(f, db.Companies(), db.Universities())
+		tv1.WriteOrganizer(f, db.GoCompanies(), db.Universities())
 
 		mustClose(f)
 	}
