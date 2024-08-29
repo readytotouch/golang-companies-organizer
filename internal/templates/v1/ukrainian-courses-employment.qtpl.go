@@ -126,7 +126,7 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
         `)
 	for _, company := range faangCompanyGroup.FaangCompanies {
 		qw422016.N().S(`
-            <li><a href="https://mpany/`)
+            <li><a href="https://www.linkedin.com/company/`)
 		qw422016.E().S(company.Alias)
 		qw422016.N().S(`/">`)
 		qw422016.E().S(company.Name)
