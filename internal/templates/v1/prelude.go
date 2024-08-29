@@ -12,6 +12,7 @@ import (
 
 type (
 	Company           = domain.Company
+	DouCompany        = domain.DouCompany
 	University        = domain.University
 	Course            = domain.Course
 	FaangCompanyGroup = domain.FaangCompanyGroup

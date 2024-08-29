@@ -1,4 +1,4 @@
-{%- func UkrainianCoursesEmployment(courses []Course, faangCompanyGroup FaangCompanyGroup) -%}
+{%- func UkrainianCoursesEmployment(courses []Course, douCompanies []DouCompany, faangCompanyGroup FaangCompanyGroup) -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>

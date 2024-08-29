@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"os"
+	"sort"
 
 	"github.com/readytotouch/golang-companies-organizer/internal/db"
 
@@ -15,7 +16,12 @@ func main() {
 		log.Fatal(err)
 	}
 
-	tv1.WriteUkrainianCoursesEmployment(f, db.Courses(), db.FaangCompanyGroup())
+	courses := db.Courses()
+	sort.Slice(courses, func(i, j int) bool {
+		return courses[i].AlumniCount > courses[j].AlumniCount
+	})
+
+	tv1.WriteUkrainianCoursesEmployment(f, courses, db.DouTop50Companies(), db.FaangCompanyGroup())
 
 	err = f.Close()
 	if err != nil {

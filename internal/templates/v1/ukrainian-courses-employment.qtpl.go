@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Course, faangCompanyGroup FaangCompanyGroup) {
+func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Course, douCompanies []DouCompany, faangCompanyGroup FaangCompanyGroup) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,15 +106,15 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
 `)
 }
 
-func WriteUkrainianCoursesEmployment(qq422016 qtio422016.Writer, courses []Course, faangCompanyGroup FaangCompanyGroup) {
+func WriteUkrainianCoursesEmployment(qq422016 qtio422016.Writer, courses []Course, douCompanies []DouCompany, faangCompanyGroup FaangCompanyGroup) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamUkrainianCoursesEmployment(qw422016, courses, faangCompanyGroup)
+	StreamUkrainianCoursesEmployment(qw422016, courses, douCompanies, faangCompanyGroup)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func UkrainianCoursesEmployment(courses []Course, faangCompanyGroup FaangCompanyGroup) string {
+func UkrainianCoursesEmployment(courses []Course, douCompanies []DouCompany, faangCompanyGroup FaangCompanyGroup) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteUkrainianCoursesEmployment(qb422016, courses, faangCompanyGroup)
+	WriteUkrainianCoursesEmployment(qb422016, courses, douCompanies, faangCompanyGroup)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
