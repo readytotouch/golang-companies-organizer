@@ -37,6 +37,7 @@
     <table border="1">
         <tr>
             <th>Name</th>
+            <th>Alumni</th>
             <th>TOP-50 UA (current company)</th>
             <th>TOP-50 UA (past company)</th>
             <th>FAANG (current company)</th>
@@ -47,10 +48,11 @@
                 <td>
                     {%d i %} | <a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/">{%s course.LinkedInProfile.Name %}</a>
                 </td>
-                <td><a href="javascript:void(0);">Connections</a></td>
-                <td><a href="javascript:void(0);">Connections</a></td>
-                <td><a href="javascript:void(0);">Connections</a></td>
-                <td><a href="javascript:void(0);">Connections</a></td>
+                <td><a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/people/">{%d course.AlumniCount %}</a></td>
+                <td><a href="{%s linkedinCourseDouConnectionsURL(course, douCompanies, nil) %}">Connections</a></td>
+                <td><a href="{%s linkedinCourseDouConnectionsURL(course, nil, douCompanies) %}">Connections</a></td>
+                <td><a href="{%s linkedinCourseConnectionsURL(course, faangCompanyGroup.FaangCompanies, nil) %}">Connections</a></td>
+                <td><a href="{%s linkedinCourseConnectionsURL(course, nil, faangCompanyGroup.FaangCompanies) %}">Connections</a></td>
             </tr>
         {% endfor %}
     </table>

@@ -55,6 +55,7 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
     <table border="1">
         <tr>
             <th>Name</th>
+            <th>Alumni</th>
             <th>TOP-50 UA (current company)</th>
             <th>TOP-50 UA (past company)</th>
             <th>FAANG (current company)</th>
@@ -73,10 +74,23 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
 		qw422016.E().S(course.LinkedInProfile.Name)
 		qw422016.N().S(`</a>
                 </td>
-                <td><a href="javascript:void(0);">Connections</a></td>
-                <td><a href="javascript:void(0);">Connections</a></td>
-                <td><a href="javascript:void(0);">Connections</a></td>
-                <td><a href="javascript:void(0);">Connections</a></td>
+                <td><a href="https://www.linkedin.com/school/`)
+		qw422016.E().S(course.LinkedInProfile.Alias)
+		qw422016.N().S(`/people/">`)
+		qw422016.N().D(course.AlumniCount)
+		qw422016.N().S(`</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinCourseDouConnectionsURL(course, douCompanies, nil))
+		qw422016.N().S(`">Connections</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinCourseDouConnectionsURL(course, nil, douCompanies))
+		qw422016.N().S(`">Connections</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinCourseConnectionsURL(course, faangCompanyGroup.FaangCompanies, nil))
+		qw422016.N().S(`">Connections</a></td>
+                <td><a href="`)
+		qw422016.E().S(linkedinCourseConnectionsURL(course, nil, faangCompanyGroup.FaangCompanies))
+		qw422016.N().S(`">Connections</a></td>
             </tr>
         `)
 	}
