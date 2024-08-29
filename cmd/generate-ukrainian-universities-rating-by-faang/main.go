@@ -15,7 +15,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	tv1.WriteUkraineUniversitiesRatingByFAANG(f, db.Universities(), db.FaangCompanyGroup())
+	tv1.WriteUkrainianUniversitiesRatingByFAANG(f, db.Universities(), db.FaangCompanyGroup())
 
 	err = f.Close()
 	if err != nil {

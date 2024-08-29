@@ -1,0 +1,77 @@
+{%- func UkrainianCoursesEmployment(courses []Course, douCompanies []DouCompany, faangCompanyGroup FaangCompanyGroup) -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ukrainian courses employment</title>
+    <meta name="description" content="Ukrainian courses employment">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
+
+	{%= favicon() %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCD3QKRT9Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VCD3QKRT9Z');
+    </script>
+    <style>
+        td {
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-right:5px;
+        }
+
+        td:first-child {
+            padding-left:5px;
+            padding-right:0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ukrainian courses employment</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Alumni</th>
+            <th>TOP-50 UA (current company)</th>
+            <th>TOP-50 UA (past company)</th>
+            <th>FAANG (current company)</th>
+            <th>FAANG (past company)</th>
+            <th>Rate</th>
+        </tr>
+        {% for i, course := range courses %}
+            <tr>
+                <td>
+                    {%d i %} | <a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/">{%s course.LinkedInProfile.Name %}</a>
+                </td>
+                <td><a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/people/">{%d course.AlumniCount %}</a></td>
+                <td><a href="{%s linkedinCourseDouConnectionsURL(course, douCompanies, nil) %}">{%d course.DouCurrentCount %}</a></td>
+                <td><a href="{%s linkedinCourseDouConnectionsURL(course, nil, douCompanies) %}">{%d course.DouPastCount %}</a></td>
+                <td><a href="{%s linkedinCourseConnectionsURL(course, faangCompanyGroup.FaangCompanies, nil) %}">{%d course.FaangCurrentCount %}</a></td>
+                <td><a href="{%s linkedinCourseConnectionsURL(course, nil, faangCompanyGroup.FaangCompanies) %}">{%d course.FaangPastCount %}</a></td>
+                <td>
+                    ({%d course.DouCurrentCount %} + {%d course.DouCurrentCount %} + {%d course.FaangCurrentCount %} + {%d course.FaangPastCount %}) / {%d course.AlumniCount %} = {%f.2 courseRate(course) %}%
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>FAANG companies</h2>
+    <ul>
+        {% for _, company := range faangCompanyGroup.FaangCompanies %}
+            <li><a href="https://www.linkedin.com/company/{%s company.Alias %}/">{%s company.Name %}</a></li>
+        {% endfor %}
+    </ul>
+
+    <footer>
+        <p>© 2024 <a href="https://readytotouch.com/">ReadyToTouch</a></p>
+    </footer>
+</body>
+</html>
+{%- endfunc -%}
+www.linkedin.com/co

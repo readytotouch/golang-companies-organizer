@@ -12,7 +12,9 @@ import (
 
 type (
 	Company           = domain.Company
+	DouCompany        = domain.DouCompany
 	University        = domain.University
+	Course            = domain.Course
 	FaangCompanyGroup = domain.FaangCompanyGroup
 )
 
@@ -66,7 +68,49 @@ func linkedinUniversityConnectionsURL(
 	var (
 		currentCompanyQueryParam, _ = json.Marshal(linkedInProfileIDs(currentCompanies))
 		pastCompanyQueryParam, _    = json.Marshal(linkedInProfileIDs(pastCompanies))
-		schoolQueryParam, _         = json.Marshal(universitiesToLinkedInIDs([]University{university}))
+		schoolQueryParam, _         = json.Marshal(linkedInProfileIDs([]domain.LinkedInProfile{university.LinkedInProfile}))
+	)
+
+	values := url.Values{
+		"currentCompany": {string(currentCompanyQueryParam)},
+		"pastCompany":    {string(pastCompanyQueryParam)},
+		"network":        {}, // any connection level
+		"schoolFilter":   {string(schoolQueryParam)},
+	}
+
+	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+}
+
+func linkedinCourseConnectionsURL(
+	course Course,
+	currentCompanies []domain.LinkedInProfile,
+	pastCompanies []domain.LinkedInProfile,
+) string {
+	var (
+		currentCompanyQueryParam, _ = json.Marshal(linkedInProfileIDs(currentCompanies))
+		pastCompanyQueryParam, _    = json.Marshal(linkedInProfileIDs(pastCompanies))
+		schoolQueryParam, _         = json.Marshal(linkedInProfileIDs([]domain.LinkedInProfile{course.LinkedInProfile}))
+	)
+
+	values := url.Values{
+		"currentCompany": {string(currentCompanyQueryParam)},
+		"pastCompany":    {string(pastCompanyQueryParam)},
+		"network":        {}, // any connection level
+		"schoolFilter":   {string(schoolQueryParam)},
+	}
+
+	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+}
+
+func linkedinCourseDouConnectionsURL(
+	course Course,
+	currentCompanies []domain.DouCompany,
+	pastCompanies []domain.DouCompany,
+) string {
+	var (
+		currentCompanyQueryParam, _ = json.Marshal(linkedInProfileIDs(douToLinkedInProfiles(currentCompanies)))
+		pastCompanyQueryParam, _    = json.Marshal(linkedInProfileIDs(douToLinkedInProfiles(pastCompanies)))
+		schoolQueryParam, _         = json.Marshal(linkedInProfileIDs([]domain.LinkedInProfile{course.LinkedInProfile}))
 	)
 
 	values := url.Values{
@@ -154,4 +198,16 @@ func similarwebURL(s string) string {
 	}
 
 	return fmt.Sprintf("https://www.similarweb.com/website/%s/", parsedURL.Hostname())
+}
+
+func douToLinkedInProfiles(companies []domain.DouCompany) []domain.LinkedInProfile {
+	result := make([]domain.LinkedInProfile, len(companies))
+	for i, company := range companies {
+		result[i] = company.LinkedInProfile
+	}
+	return result
+}
+
+func courseRate(course Course) float64 {
+	return 100 * float64(course.DouCurrentCount+course.DouPastCount+course.FaangCurrentCount+course.FaangPastCount) / float64(course.AlumniCount)
 }

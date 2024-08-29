@@ -2,7 +2,7 @@ package db
 
 import "github.com/readytotouch/golang-companies-organizer/internal/domain"
 
-func Companies() []domain.Company {
+func GoCompanies() []domain.Company {
 	return []domain.Company{
 		{
 			Name: "Google",
