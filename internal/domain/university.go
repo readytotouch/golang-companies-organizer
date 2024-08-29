@@ -5,6 +5,10 @@ type University struct {
 }
 
 type Course struct {
-	LinkedInProfile LinkedInProfile
-	AlumniCount     int
+	LinkedInProfile   LinkedInProfile
+	AlumniCount       int
+	DouCurrentCount   int
+	DouPastCount      int
+	FaangCurrentCount int
+	FaangPastCount    int
 }

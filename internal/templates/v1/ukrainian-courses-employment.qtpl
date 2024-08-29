@@ -42,6 +42,7 @@
             <th>TOP-50 UA (past company)</th>
             <th>FAANG (current company)</th>
             <th>FAANG (past company)</th>
+            <th>Rate</th>
         </tr>
         {% for i, course := range courses %}
             <tr>
@@ -49,10 +50,13 @@
                     {%d i %} | <a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/">{%s course.LinkedInProfile.Name %}</a>
                 </td>
                 <td><a href="https://www.linkedin.com/school/{%s course.LinkedInProfile.Alias %}/people/">{%d course.AlumniCount %}</a></td>
-                <td><a href="{%s linkedinCourseDouConnectionsURL(course, douCompanies, nil) %}">Connections</a></td>
-                <td><a href="{%s linkedinCourseDouConnectionsURL(course, nil, douCompanies) %}">Connections</a></td>
-                <td><a href="{%s linkedinCourseConnectionsURL(course, faangCompanyGroup.FaangCompanies, nil) %}">Connections</a></td>
-                <td><a href="{%s linkedinCourseConnectionsURL(course, nil, faangCompanyGroup.FaangCompanies) %}">Connections</a></td>
+                <td><a href="{%s linkedinCourseDouConnectionsURL(course, douCompanies, nil) %}">{%d course.DouCurrentCount %}</a></td>
+                <td><a href="{%s linkedinCourseDouConnectionsURL(course, nil, douCompanies) %}">{%d course.DouPastCount %}</a></td>
+                <td><a href="{%s linkedinCourseConnectionsURL(course, faangCompanyGroup.FaangCompanies, nil) %}">{%d course.FaangCurrentCount %}</a></td>
+                <td><a href="{%s linkedinCourseConnectionsURL(course, nil, faangCompanyGroup.FaangCompanies) %}">{%d course.FaangPastCount %}</a></td>
+                <td>
+                    ({%d course.DouCurrentCount %} + {%d course.DouCurrentCount %} + {%d course.FaangCurrentCount %} + {%d course.FaangPastCount %}) / {%d course.AlumniCount %} = {%f.2 courseRate(course) %}%
+                </td>
             </tr>
         {% endfor %}
     </table>
@@ -60,7 +64,7 @@
     <h2>FAANG companies</h2>
     <ul>
         {% for _, company := range faangCompanyGroup.FaangCompanies %}
-            <li><a href="https://www.linkedin.com/company/{%s company.Alias %}/">{%s company.Name %}</a></li>
+            <li><a href="https://mpany/{%s company.Alias %}/">{%s company.Name %}</a></li>
         {% endfor %}
     </ul>
 
@@ -70,3 +74,4 @@
 </body>
 </html>
 {%- endfunc -%}
+www.linkedin.com/co

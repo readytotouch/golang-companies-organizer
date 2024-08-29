@@ -207,3 +207,7 @@ func douToLinkedInProfiles(companies []domain.DouCompany) []domain.LinkedInProfi
 	}
 	return result
 }
+
+func courseRate(course Course) float64 {
+	return 100 * float64(course.DouCurrentCount+course.DouPastCount+course.FaangCurrentCount+course.FaangPastCount) / float64(course.AlumniCount)
+}

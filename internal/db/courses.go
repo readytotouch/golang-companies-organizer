@@ -12,7 +12,11 @@ func Courses() []domain.Course {
 				Alias: "cs50",
 				Name:  "CS50",
 			},
-			AlumniCount: 4191,
+			AlumniCount:       4191,
+			DouCurrentCount:   12,
+			DouPastCount:      18,
+			FaangCurrentCount: 45,
+			FaangPastCount:    55,
 		},
 		// Mate academy
 		{
@@ -22,7 +26,11 @@ func Courses() []domain.Course {
 				Alias: "mateacademy",
 				Name:  "Mate academy",
 			},
-			AlumniCount: 4719,
+			AlumniCount:       4719,
+			DouCurrentCount:   185,
+			DouPastCount:      160,
+			FaangCurrentCount: 5,
+			FaangPastCount:    12,
 		},
 		// IT STEP
 		{
@@ -32,7 +40,11 @@ func Courses() []domain.Course {
 				Alias: "it-step-academy",
 				Name:  "IT STEP Academy",
 			},
-			AlumniCount: 1418,
+			AlumniCount:       1418,
+			DouCurrentCount:   38,
+			DouPastCount:      63,
+			FaangCurrentCount: 3,
+			FaangPastCount:    2,
 		},
 		// Lemon School
 		// https://www.linkedin.com/company/lemonschool/
@@ -54,7 +66,11 @@ func Courses() []domain.Course {
 				Alias: "ithillel",
 				Name:  "Hillel IT School",
 			},
-			AlumniCount: 10745,
+			AlumniCount:       10745,
+			DouCurrentCount:   404,
+			DouPastCount:      449,
+			FaangCurrentCount: 14,
+			FaangPastCount:    19,
 		},
 		// GoIT
 		{
@@ -64,7 +80,11 @@ func Courses() []domain.Course {
 				Alias: "goit-start-your-career-in-it",
 				Name:  "GoIT",
 			},
-			AlumniCount: 15433,
+			AlumniCount:       15433,
+			DouCurrentCount:   115,
+			DouPastCount:      147,
+			FaangCurrentCount: 16,
+			FaangPastCount:    42,
 		},
 		// CyberBionic Systematics
 		// https://www.linkedin.com/company/cbsystematics-development/
@@ -86,7 +106,11 @@ func Courses() []domain.Course {
 				Alias: "beetrootacademy",
 				Name:  "Beetroot Academy",
 			},
-			AlumniCount: 3960,
+			AlumniCount:       3960,
+			DouCurrentCount:   141,
+			DouPastCount:      176,
+			FaangCurrentCount: 1,
+			FaangPastCount:    5,
 		},
 		// Web Academy
 		{
@@ -96,7 +120,11 @@ func Courses() []domain.Course {
 				Alias: "webacademyukraine",
 				Name:  "Web Academy",
 			},
-			AlumniCount: 772,
+			AlumniCount:       772,
+			DouCurrentCount:   70,
+			DouPastCount:      75,
+			FaangCurrentCount: 3,
+			FaangPastCount:    10,
 		},
 		// Logos IT Academy
 		// https://www.linkedin.com/company/logos-training-center/
@@ -118,7 +146,11 @@ func Courses() []domain.Course {
 				Alias: "foxminded",
 				Name:  "FoxmindEd",
 			},
-			AlumniCount: 648,
+			AlumniCount:       648,
+			DouCurrentCount:   30,
+			DouPastCount:      27,
+			FaangCurrentCount: 0,
+			FaangPastCount:    0,
 		},
 		// Okten School
 		{
@@ -128,7 +160,11 @@ func Courses() []domain.Course {
 				Alias: "okten-school-it",
 				Name:  "OKTEN SCHOOL",
 			},
-			AlumniCount: 227,
+			AlumniCount:       227,
+			DouCurrentCount:   5,
+			DouPastCount:      8,
+			FaangCurrentCount: 0,
+			FaangPastCount:    0,
 		},
 		// Projector
 		{
@@ -138,7 +174,11 @@ func Courses() []domain.Course {
 				Alias: "projector-institute",
 				Name:  "Projector Institute",
 			},
-			AlumniCount: 4711,
+			AlumniCount:       4711,
+			DouCurrentCount:   162,
+			DouPastCount:      297,
+			FaangCurrentCount: 6,
+			FaangPastCount:    14,
 		},
 		// SkillUP
 		// https://www.linkedin.com/company/skillup-ukraine/
@@ -196,7 +236,11 @@ func Courses() []domain.Course {
 				Alias: "robot-dreams",
 				Name:  "Robot_dreams",
 			},
-			AlumniCount: 192,
+			AlumniCount:       192,
+			DouCurrentCount:   11,
+			DouPastCount:      11,
+			FaangCurrentCount: 0,
+			FaangPastCount:    0,
 		},
 	}
 }
