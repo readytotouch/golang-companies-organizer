@@ -13,7 +13,7 @@ import (
 type (
 	Company           = domain.Company
 	University        = domain.University
-	Course            = domain.University
+	Course            = domain.Course
 	FaangCompanyGroup = domain.FaangCompanyGroup
 )
 
