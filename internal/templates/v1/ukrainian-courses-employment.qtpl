@@ -42,6 +42,7 @@
             <th>TOP-50 UA (past company)</th>
             <th>FAANG (current company)</th>
             <th>FAANG (past company)</th>
+            <th>Formula</th>
             <th>Rate</th>
         </tr>
         {% for i, course := range courses %}
@@ -55,7 +56,10 @@
                 <td><a href="{%s linkedinCourseConnectionsURL(course, faangCompanyGroup.FaangCompanies, nil) %}">{%d course.FaangCurrentCount %}</a></td>
                 <td><a href="{%s linkedinCourseConnectionsURL(course, nil, faangCompanyGroup.FaangCompanies) %}">{%d course.FaangPastCount %}</a></td>
                 <td>
-                    ({%d course.DouCurrentCount %} + {%d course.DouCurrentCount %} + {%d course.FaangCurrentCount %} + {%d course.FaangPastCount %}) / {%d course.AlumniCount %} = {%f.2 courseRate(course) %}%
+                    ({%d course.DouCurrentCount %} + {%d course.DouCurrentCount %} + {%d course.FaangCurrentCount %} + {%d course.FaangPastCount %}) / {%d course.AlumniCount %}
+                </td>
+                <td>
+                    {%f.2 courseRate(course) %}%
                 </td>
             </tr>
         {% endfor %}

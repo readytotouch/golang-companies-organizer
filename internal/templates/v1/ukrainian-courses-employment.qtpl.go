@@ -60,6 +60,7 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
             <th>TOP-50 UA (past company)</th>
             <th>FAANG (current company)</th>
             <th>FAANG (past company)</th>
+            <th>Formula</th>
             <th>Rate</th>
         </tr>
         `)
@@ -111,7 +112,10 @@ func StreamUkrainianCoursesEmployment(qw422016 *qt422016.Writer, courses []Cours
 		qw422016.N().D(course.FaangPastCount)
 		qw422016.N().S(`) / `)
 		qw422016.N().D(course.AlumniCount)
-		qw422016.N().S(` = `)
+		qw422016.N().S(`
+                </td>
+                <td>
+                    `)
 		qw422016.N().FPrec(courseRate(course), 2)
 		qw422016.N().S(`%
                 </td>
