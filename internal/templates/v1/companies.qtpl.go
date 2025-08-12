@@ -23,6 +23,7 @@ func StreamCompanies(qw422016 *qt422016.Writer, companies []Company, universitie
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
+    <meta http-equiv="refresh" content="5; url=https://readytotouch.com/golang/companies?has-employees-from-country=ukraine">
 
 	`)
 	streamfavicon(qw422016)
